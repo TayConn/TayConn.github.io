@@ -1,0 +1,30 @@
+//Fonts
+$font-title: 'Space Grotesk', sans-serif;
+$font-body: 'Karla', sans-serif;
+
+//Colors
+$color-darkBlue: #130F49;
+$color-mediumBlue: #55527c;
+$color-lightGreyBlue: #b4b2c5;
+$color-skyBlue: #34a1cd;
+$color-lightCoral: #f8979b;
+$color-lightYellow: #ffd697;
+$color-babyBlue: #d9f4ff;
+$color-lilacWhite: #f4f3ff;
+$color-background: #F8F8Fa;
+
+// Breakpoints
+$breakpoints: (
+    small: 499px,
+    medium: 899px,
+    large: 999px,
+    xlarge: 1399px
+);
+
+@mixin breakpoint($size){
+    $breakpoint-value: map-get($breakpoints, $size);
+
+    @media screen and (min-width: $breakpoint-value){
+        @content;
+    }
+}

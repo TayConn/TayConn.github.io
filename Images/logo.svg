@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_2" data-name="Ellipse 2" cx="28.5" cy="28.5" r="28.5" transform="translate(0.299 -0.164)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Group_3" data-name="Group 3" transform="translate(-190 -12)">
+    <path id="Path_6" data-name="Path 6" d="M25,0H175a25,25,0,0,1,25,25V175a25,25,0,0,1-25,25H25A25,25,0,0,1,0,175V25A25,25,0,0,1,25,0Z" transform="translate(190 12)" fill="rgba(255,255,255,0.11)"/>
+    <g id="Group_2" data-name="Group 2" transform="translate(195.122 55.899)">
+      <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(55.878 19.101)" fill="#fff" stroke="#130f49" stroke-width="5.5">
+        <circle cx="38.5" cy="38.5" r="38.5" stroke="none"/>
+        <circle cx="38.5" cy="38.5" r="35.75" fill="none"/>
+      </g>
+      <g id="Mask_Group_1" data-name="Mask Group 1" transform="translate(66.58 29.266)" clip-path="url(#clip-path)">
+        <g id="Group_1" data-name="Group 1" transform="translate(-0.732 -0.732)">
+          <path id="Polygon_3" data-name="Polygon 3" d="M12,0,24,30H0Z" transform="translate(18.031 29.567)" fill="#fff1e6"/>
+          <path id="Polygon_4" data-name="Polygon 4" d="M12,0,24,30H0Z" transform="translate(42.031 29.567) rotate(180)" fill="#fad2e1"/>
+          <path id="Polygon_5" data-name="Polygon 5" d="M12,0,24,30H0Z" transform="translate(30.031 17.567) rotate(90)" fill="#dbe7e4"/>
+          <path id="Polygon_6" data-name="Polygon 6" d="M12,0,24,29H0Z" transform="translate(30.031 41.567) rotate(-90)" fill="#99c1de"/>
+          <path id="Polygon_7" data-name="Polygon 7" d="M12.167,0,24.334,29.657H0Z" transform="translate(21.054 21.054) rotate(45)" fill="#eddcd2"/>
+          <path id="Polygon_8" data-name="Polygon 8" d="M12.167,0,24.334,29.657H0Z" transform="translate(38.261 38.261) rotate(-135)" fill="#c5dedd"/>
+          <path id="Polygon_9" data-name="Polygon 9" d="M12.167,0,24.334,29.657H0Z" transform="translate(38.261 21.054) rotate(135)" fill="#faf3dd"/>
+          <path id="Polygon_10" data-name="Polygon 10" d="M12.167,0,24.334,29.657H0Z" transform="translate(21.054 38.261) rotate(-45)" fill="#fde2e4"/>
+        </g>
+      </g>
+      <circle id="Ellipse_3" data-name="Ellipse 3" cx="11" cy="11" r="11" transform="translate(83.878 47.101)" fill="#130f49"/>
+      <text id="_" data-name="{" transform="translate(-0.122 78.101)" fill="#130f49" font-size="87" font-family="PTSans-Caption, PT Sans Caption"><tspan x="0" y="0">{</tspan></text>
+      <path id="Path_3" data-name="Path 3" d="M283.289,202.028Z" transform="translate(-220.156 -112.015)" fill="none" stroke="#707070" stroke-width="1"/>
+      <path id="Path_4" data-name="Path 4" d="M243.908,145.414l38.038-30.283,4.865-2.668-15.269,15.593-3.689,17.357,3.689,18.967,16.1,14.728-4.8-2.764Z" transform="translate(-209.588 -87.98)" fill="#130f49" stroke="#130f49" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_5" data-name="Path 5" d="M287.646,145.414,251.3,116.891l-6.553-4.427,15.269,15.593,3.689,17.357-3.689,18.967-16.863,14.677,6.361-3.68Z" transform="translate(-132.034 -87.98)" fill="#130f49" stroke="#130f49" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <text id="_2" data-name="{" transform="matrix(-1, 0, 0, 1, 189.878, 78.101)" fill="#130f49" font-size="87" font-family="PTSans-Caption, PT Sans Caption"><tspan x="0" y="0">{</tspan></text>
+      <line id="Line_1" data-name="Line 1" x1="9.511" y1="10.971" transform="translate(68.409 12.32)" fill="none" stroke="#130f49" stroke-linecap="round" stroke-width="5"/>
+      <line id="Line_2" data-name="Line 2" x1="0.101" y1="13.642" transform="translate(95.378 6.601)" fill="none" stroke="#130f49" stroke-linecap="round" stroke-width="5"/>
+      <line id="Line_3" data-name="Line 3" y1="12.19" x2="12.438" transform="translate(111.576 12.32)" fill="none" stroke="#130f49" stroke-linecap="round" stroke-width="5"/>
+      <circle id="Ellipse_4" data-name="Ellipse 4" cx="6" cy="6" r="6" transform="translate(98.878 45.101)" fill="#fffdfd"/>
+    </g>
+  </g>
+</svg>

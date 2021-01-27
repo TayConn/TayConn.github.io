@@ -1,0 +1,115 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Karla', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.3;
+  background-color: #F8F8Fa;
+  background-image: url("/Images/img_Circle.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.mainHeader {
+  margin: 10vh 20vh 0 20vh;
+  display: -ms-grid;
+  display: grid;
+  grid: 2fr 1.5fr / 1.5fr 2fr;
+      grid-template-areas: "heading cartoon" "intro cartoon";
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.mainHeader h1 span {
+  color: #34a1cd;
+}
+
+.mainHeader .welcome {
+  font-family: "Space Grotesk", sans-serif;
+  color: #130F49;
+  font-size: 6rem;
+  line-height: 6.25rem;
+  font-weight: bold;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: heading;
+}
+
+.mainHeader .intro {
+  font-family: "Karla", sans-serif;
+  color: #55527c;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: intro;
+}
+
+.mainHeader .cartoonMe {
+  padding: 5vh 5vw 5vh 20vw;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: cartoon;
+  min-height: 30vh;
+  max-height: 60vh;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  background-color: #F8F8Fa;
+  color: #130F49;
+  padding: 25px 20px 50px 20px;
+}
+
+header .logo {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+@media screen and (min-width: 999px) {
+  header .logo {
+    width: 150px;
+  }
+}
+
+header .circleAccent {
+  background-image: url("/Images/img_Circle.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+header a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: #130F49;
+}
+
+@media screen and (min-width: 999px) {
+  header {
+    padding: 75px 80px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
