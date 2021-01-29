@@ -4,14 +4,11 @@ header{
     grid-gap: 1rem;
     background-color: $color-background;
     color: $color-darkBlue;
-    // align-items: center;
-    padding: 25px 20px 50px 20px;
 
 
     .logo{
-        max-width: 100px;
-        max-height: 100px;
-        // margin: 1vh 0 1vh 9vh;
+        width: 100px;
+        align-self: center;
 
         @include breakpoint(large){
             width: 150px;
@@ -23,18 +20,21 @@ header{
     background-image: url('/Images/img_Circle.svg');
     background-position: top right;
     background-repeat: no-repeat;
+    display: overflow;
     
     }
 
     a{
-        font-size: 1.5rem;
+        font-size: 1.5vw;
         text-decoration: none;
         font-weight: bold;
         color: $color-darkBlue;
+        align-self: center;
+        justify-self: center;
     }
 
     @include breakpoint(large){
-        padding: 75px 80px;
+        padding: 25px 80px;
     }
 
 }
