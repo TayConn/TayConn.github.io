@@ -13,21 +13,34 @@ body {
     padding: 0;
     font-family: 'Space Grotesk', sans-serif;
     font-family: 'Karla', sans-serif;
-    font-size: 1vw;
-    line-height: 1.3vw;
+    // font-size: 1vw;
+    // line-height: 1.3vw;
     background-color: $color-background;
     background-image: url('/Images/img_Circle.svg');
     background-position: top right;
     background-repeat: no-repeat;
-    z-index: 0;
+    // z-index: 0;
     
 }
 
-.mainHeader{
+h2{
+    font-family: $font-title;
+    font-size: 1.5vw;
+    color: $color-lightGreyBlue;
+}
 
-    margin: 10vh 20vh 0 20vh;
+h1{
+    font-family: $font-title;
+    font-size: 4vw;
+    color: $color-darkBlue;
+}
+
+.mainHero{
+
+    margin: 0 10vw 0 10vw;
     display: grid;
-    grid: 2fr 1.5fr / 1.5fr 2fr;
+    grid-template-columns: 2fr 1.5fr ;
+    grid-template-rows: auto;
     grid-template-areas: 
         "heading cartoon"
         "intro cartoon";
@@ -59,33 +72,37 @@ body {
     }
 
     .cartoonMe{
-        padding: 5vh 5vw 5vh 15vw;
+        padding: 5vh 5vw 5vh 5vw;
         grid-area: cartoon;
         min-height: 30vh;
         max-height: 60vh;
-        justify-self: center;
+        // justify-self: center;
     }
     
 }
 
+    .sectionTitle{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        
+        gap: 1vh 1vh;
+
+    }
+
     .expertise{
-        display: grid;
-        margin: 0 10vw 0 10vw;
-        grid: 1fr / 2fr;
-        justify-items: center;
-
-    h2{
-        font-family: $font-title;
-        font-size: 2vw;
-        color: $color-lightGreyBlue;
-    }
-
-    h1{
-        font-family: $font-title;
-        font-size: 4vw;
-        color: $color-darkBlue;
-    }
+        margin: 50px 0 25px 0;
+        
 }
+
+    .experience{
+        margin: 50px 0 25px 0;
+        background-color: $color-snowPink;
+    }
+
+    
 
 
 

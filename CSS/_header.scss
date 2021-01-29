@@ -1,7 +1,8 @@
 header{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 1rem;
+    grid-template-columns: 50vw repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 5px;
     background-color: $color-background;
     color: $color-darkBlue;
 
