@@ -1,0 +1,49 @@
+    .expCards{
+        margin: 2vh 10vw 2vh 10vw;
+        display: flex;
+        flex-flow: row wrap;
+        gap: 3vw 3vw;
+        justify-content: space-between;
+    }
+
+    .card{
+        display: flex;
+        flex-flow: column nowrap;
+        background-color: $color-lilacWhite;
+        border-radius: 30px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 2.5vh 2.5vw;
+        width: 33%;
+
+        a{
+            color: $color-skyBlue;
+            text-decoration: none;
+        }
+
+        span{
+            color: $color-lightGreyBlue;
+            font-size: 1vh;
+        }
+
+        .icon{
+            width: 50%;
+            height: 50%;
+            display: inline-block;
+            padding: 1vh 0 1vh 0;
+
+        }
+
+        .line{
+            max-width: 2vw;
+            max-height: 1vh;
+        }
+
+        h4{
+            color: $color-darkBlue;
+            font-size: 1.25vw;
+            font-weight: bold;
+            line-height: 1vw;
+        }
+    }
