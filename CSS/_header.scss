@@ -1,41 +1,70 @@
 header{
-    display: grid;
-    grid-template-columns: 50vw repeat(auto-fill, minmax(150px, 1fr));
-    grid-template-rows: auto;
-    grid-gap: 5px;
+    // display: grid;
+    // grid-template-columns: 50vw repeat(auto-fill, minmax(150px, 1fr));
+    // grid-template-rows: auto;
+    // grid-gap: 5px;
     background-color: $color-background;
     color: $color-darkBlue;
 
+    .wrapper{
+    display: flex;
+    flex-flow: column wrap;
 
-    .logo{
-        width: 100px;
-        align-self: center;
-
-        @include breakpoint(large){
-            width: 150px;
-        }
-
+    justify-content: space-between;
+    margin: .5rem;
     }
 
-    .circleAccent{
-    background-image: url('/Images/img_Circle.svg');
-    background-position: top right;
-    background-repeat: no-repeat;
-    display: overflow;
-    
-    }
-
-    a{
-        font-size: 1.5vw;
+    li{
+        font-size: 1.5rem;
         text-decoration: none;
         font-weight: bold;
         color: $color-darkBlue;
-        align-self: center;
-        justify-self: center;
+        text-align: center;
+        list-style-type: none;
+
+        a{
+            text-decoration: none;
+            color: $color-darkBlue;
+        }
     }
 
-    @include breakpoint(large){
-        padding: 25px 80px;
+
+
+//images
+
+.logo{
+    width: 100px;
+    align-self: center;
+
+}
+
+.circleAccent{
+background-image: url('/Images/img_Circle.svg');
+background-position: top right;
+background-repeat: no-repeat;
+// display: overflow;
+
+}
+
+//media queries
+
+@media screen and (max-width: 499px){
+    header{
+        flex-flow: column nowrap;
     }
+
+    .wrapper{
+        margin: 0;
+        padding: 0;
+    }
+
+    ul{
+        padding: 0;
+    }
+
+    .logo{
+        display:none;
+    }
+}
 
 }
