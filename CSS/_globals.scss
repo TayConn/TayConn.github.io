@@ -13,97 +13,53 @@ body {
     padding: 0;
     font-family: 'Space Grotesk', sans-serif;
     font-family: 'Karla', sans-serif;
-    // font-size: 1vw;
-    // line-height: 1.3vw;
+    
     background-color: $color-background;
     background-image: url('/Images/img_Circle.svg');
     background-position: top right;
     background-repeat: no-repeat;
-    // z-index: 0;
+    
     
 }
 
 h2{
     font-family: $font-title;
-    font-size: 1.5vw;
-    line-height: 1.5vh;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
     color: $color-lightGreyBlue;
 }
 
 h1{
     font-family: $font-title;
-    font-size: 4vw;
-    line-height: 4vh;
+    font-size: 4rem;
+    line-height: 4rem;
     color: $color-darkBlue;
 }
 
 p{
     font-family: $font-body;
-    font-size: 1vw;
-    line-height: 1vh;
+    font-size: 1rem;
+    line-height: 1rem;
     color: $color-lightGreyBlue;
 }
 
-.mainHero{
-
-    margin: 0 10vw 0 10vw;
-    display: grid;
-    grid-template-columns: 2fr 2fr ;
-    grid-template-rows: auto;
-    grid-template-areas: 
-        "heading cartoon"
-        "intro cartoon";
-    
-    justify-self: center;
-    align-self: center;
-
-    h1{
-        font-family: $font-title;
-        color: $color-darkBlue;
-        font-size: 5vw;
-        line-height: 5vw;
-        font-weight: bold;
-        grid-area: heading;
-        margin: 0;
-
-        span{
-            color:$color-skyBlue;
-        }
+    .pink{
+    // margin: 50px 0 25px 0;
+    background-color: $color-snowPink;
     }
 
-
-    p{
-        font-family: $font-body;
-        color: $color-mediumBlue;
-        font-size:1.25vw;
-        line-height: 2vw;
-        grid-area: intro;
-        
-    }
-
-    .cartoonMe{
-        padding: 0 5vw 0 5vw;
-        grid-area: cartoon;
-        min-height: 15vh;
-        max-height: 45vh;
-        justify-self: start;
-        
-        
-    }
-    
-}
-    .wrapper{
+    .SubWrapper{
         display: flex;
         flex-flow: column wrap;
-        gap: 1vh 1vh;
-        margin: 5vh 0 5vh 0;
-        padding: 5vh 0 5vh 0;
+        gap: 1rem 1rem;
+        margin: 5rem 0 5rem 0;
+        padding: 5rem 0 5rem 0;
     }
 
     .sectionTitle{
         display: flex;
         flex-flow: column wrap;
-        flex-basis: 4vh;
+        flex-basis: 4rem;
         flex-grow: 1;
         flex-shrink: 1;
         
@@ -111,29 +67,21 @@ p{
         align-content: center;
         text-align: center;
         
-        gap: 1vh 1vh;
-        margin-bottom: 5vh;
+        gap: 1rem 1rem;
+        margin-bottom: 5rem;
 
         h1{
-            margin: 1vh 0 1vh 0;
+            margin: 1rem 0 1rem 0;
             padding: 0;
             // line-height: auto;
         }
 
         h2{
-            margin: 1vh 0 1vh 0;
+            margin: 1rem 0 1rem 0;
             padding: 0;
         }
 
     }
-
-
-    .pink{
-        // margin: 50px 0 25px 0;
-        background-color: $color-snowPink;
-    }
-
-    
 
 
 
