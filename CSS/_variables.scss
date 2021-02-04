@@ -14,18 +14,18 @@ $color-lilacWhite: #f4f3ff;
 $color-background: #FFFFFF;
 $color-snowPink: #fff5f6;
 
-// Breakpoints
-$breakpoints: (
-    small: 499px,
-    medium: 899px,
-    large: 999px,
-    xlarge: 1399px
-);
+// // Breakpoints
+// $breakpoints: (
+//     small: 499px,
+//     medium: 899px,
+//     large: 999px,
+//     xlarge: 1399px
+// );
 
-@mixin breakpoint($size){
-    $breakpoint-value: map-get($breakpoints, $size);
+// @mixin breakpoint($size){
+//     $breakpoint-value: map-get($breakpoints, $size);
 
-    @media screen and (min-width: $breakpoint-value){
-        @content;
-    }
-}
+//     @media screen and (min-width: $breakpoint-value){
+//         @content;
+//     }
+// }
