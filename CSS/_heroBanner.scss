@@ -1,18 +1,19 @@
 
 .mainHero{
 
-    margin: 0 5rem 0 5rem;
+    margin: 5rem 5rem 0 5rem;
     display: grid;
     grid-template-columns: 1fr 1fr ;
     grid-template-rows: 1fr;
     grid-template-areas: "text cartoon";
-    justify-self: center;
+    justify-items: center;
     align-items: center;
 
     
 
     .heroText{
         grid-area: text;
+        justify-self: center;
         
         .heroHello{
             font-family: $font-title;
@@ -30,6 +31,7 @@
         .heroSubtext{
             font-family: $font-body;
             color: $color-mediumBlue;
+            padding-top: 2rem;
             font-size:1.25rem;
             line-height: 1.5rem;
             
@@ -40,6 +42,7 @@
 
     .cartoonMe{
         padding: 0 5rem 0 5rem;
+        justify-self: center;
         min-height: 15rem;
         max-height: 35rem;
         grid-area: cartoon;
@@ -67,7 +70,7 @@
 
 @media screen and (max-width: 499px){
     .mainHero{
-    margin: 1.5rem 1.75rem 1.5rem 1.75rem;
+    margin: 3rem 2rem 1.5rem 2rem;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
@@ -96,8 +99,23 @@
             text-align: center;
             font-size: 1.25rem;
             line-height: 1.5rem;
+            padding-top: 1rem;
         }
     }
 
     }
 }
+
+// //margin media query
+// @media screen and (max-width: 1399px){
+//     .mainHero{
+//         margin: 5rem 5rem 1.5rem 5rem;
+//     }
+// }
+
+// //margin media query
+// @media screen and (max-width: 1920px){
+//     .mainHero{
+//         margin: 5rem 10rem 1.5rem 10rem;
+//     }
+// }

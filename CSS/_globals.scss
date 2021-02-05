@@ -19,8 +19,9 @@ body {
 
 h2{
     font-family: $font-title;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    letter-spacing: 2px;
     color: $color-lightGreyBlue;
 }
 
@@ -43,11 +44,12 @@ p{
     background-color: $color-snowPink;
     }
 
-    .SubWrapper{
-        display: flex;
-        flex-flow: column wrap;
-        gap: 1rem 1rem;
-        margin: 5rem 0 5rem 0;
+    .subWrapper{
+        // display: flex;
+        // flex-flow: column wrap;
+        // gap: 1rem 1rem;
+        // position: relative;
+        margin: 5rem;
         padding: 5rem 0 5rem 0;
     }
 
@@ -63,20 +65,31 @@ p{
         text-align: center;
         
         gap: 1rem 1rem;
+        margin-top: 5rem;
         margin-bottom: 5rem;
 
         h1{
-            margin: 1rem 0 1rem 0;
+            margin: .5rem 0 .5rem 0;
             padding: 0;
-            // line-height: auto;
+            
         }
 
         h2{
-            margin: 1rem 0 1rem 0;
+            margin: .5rem 0 .5rem 0;;
             padding: 0;
+            text-transform: uppercase;
+            
         }
 
     }
+
+    @media screen and (max-width: 499px) {
+        .sectionTitle{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+
 
 
 
