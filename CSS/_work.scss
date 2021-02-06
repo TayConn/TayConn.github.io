@@ -1,10 +1,42 @@
 //Work examples section
-.workContainer{
+.workWrapper{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem 1rem;
     position: relative;
-    width: 100%;
-    margin-right: 5rem;
-    margin-left: 5rem;
+    margin: 5rem 0 5rem 0;
+    
+    // padding: 5rem 0 5rem 0;
 }
+
+.workCollectionWrapper{
+    // display: grid;
+    // grid-template-columns: 1fr 1fr 1fr;
+    // grid-template-rows: auto;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+
+    // display:flex;
+    // gap: 1rem 1rem;
+    // justify-items: center;
+    // align-content: center;
+    // margin: 0;
+    // padding: 0;
+
+    // align-self: center;
+    // justify-self: center;
+    
+}
+// .workContainer{
+//     position: relative;
+//     width: 100%;
+//     margin-right: 5rem;
+//     margin-left: 5rem;
+// }
 .workTitle{
     display: flex;
     flex-flow: column wrap;
@@ -12,7 +44,7 @@
     flex-grow: 1;
     flex-shrink: 1;
     
-    justify-content: space-between;
+    justify-content: centers;
     align-items: flex-start;
     text-align: left;
     
@@ -34,7 +66,7 @@
 
 }
     .work-bg-block{
-        position:absolute;
+        position: absolute;
         left: auto;
         top: 0%;
         right: 0%;
@@ -45,20 +77,10 @@
         border-top-left-radius: 55px;
         border-bottom-left-radius: 55px;
         background-color: $color-snowPink;
+        z-index: -2;
     }
 
-    .workCollectionWrapper{
-        
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        // display: flex;
-        // flex-flow: row wrap;
-        gap: 1rem 1rem;
-        justify-content: space-between;
-        align-content: center;
-    }
-
+    
     .projectName{
         color: white;
         font-size: 1.25rem;
@@ -69,47 +91,59 @@
     .projectBlock{
         position: absolute;
         left: 0%;
-        top: auto;
+        top: 0%;
         right: 0%;
         bottom: 0%;
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
         align-items: center;
-
-        min-height: 20rem;
-        min-width: 20rem;
         margin: 4rem 4rem 4rem 4rem;
-        padding: 1.5rem;
+        // padding: 1.5rem;
         border-radius: 16px;
         background-color: rgba(85, 82, 124, 0.9);
         text-align: center;
 
-        // transform: 
-        // translate3d(0px, 15px, 0px) 
-        // scale3d(1, 1, 1) 
+        transform: 
+        translate3d(0px, 15px, 0px) 
+        scale3d(1, 1, 1);  
         // rotateX(0deg) 
         // rotateY(0deg) 
         // rotateZ(0deg) 
         // skew(0deg); 
-        // transform-style: preserve-3d; opacity: 0;
+        transform-style: preserve-3d; 
+        // opacity: 0;
     }
+
+    .projectBlock:hover {
+        transform: 
+        translate3d(0px, 0px, 0px) 
+        scale3d(1, 1, 1);
+        // rotateX(0deg) 
+        // rotateY(0deg) 
+        // rotateZ(0deg) 
+        // skew(0deg); 
+        transform-style: preserve-3d; 
+        transition: opacity .55s ease-in;
+        }
+    
 
     .projectWrap{
         position: relative;
-        height: 25rem;
+        // height: 10rem;
     }
     
     .projectItem{
-        width: 33.333%;
+        width: 25%;
+        height: auto;
         padding: 1rem;
-        justify-content: center;
+        justify-self: space-between;
         align-content: center;
         text-align: center;
     }
 
    .projectImage{
-        max-width: 479px;
+        max-width: 300px;
         border-radius: 20px;
         box-shadow: 10px 0 30px 0 rgba(206, 212, 224, 0.26);
         object-fit: cover;
@@ -118,15 +152,16 @@
     .buttonPink{
         display: flex;
         align-items: center;
-        margin-top: 2.5rem;
-        padding: 1rem 2rem;
+        margin-top: 1rem;
+        padding: .5rem 2rem;
         border:2px solid #f8979b;
         border-radius: 12px;
         background: transparent;
-        transition: all 500ms ease;
         color: #f8979b;
         font-size: 1.25rem;
         text-decoration: none;
+
+        transition: all 500ms ease;
         cursor: pointer;
     }
 
