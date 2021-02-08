@@ -15,6 +15,14 @@ body {
     font-family: 'Karla', sans-serif;
     
     background-color: $color-background;
+
+    //scroll top code
+    position: relative;
+
+    *:last-child {
+        margin-bottom: 0;
+    }
+
 }
 
 h2{
@@ -83,6 +91,45 @@ p{
 
     }
 
+    $scrollLength: 100vh;
+
+    .scrollUpWrapper{
+    // uncomment to visualize "track"
+    //outline: 1px solid red;
+    position: absolute;
+    top: $scrollLength;
+    right: 0.25rem;
+    bottom: -5em;
+    width: 3em;
+    pointer-events: none;
+    }
+
+    .scrollUpLink{
+    position: fixed;
+    position: sticky;
+    pointer-events: all;
+    top: calc(100vh - 5rem);
+
+    display: inline-block;
+    text-decoration: none;
+    font-family: $font-title;
+    color: $color-darkBlue;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: $color-lilacWhite;
+    padding: 0.25rem;
+    }
+
+    @media screen and (prefers-reduced-motion: no-preference) {
+        html {
+          scroll-behavior: smooth;
+        }
+      }
+
     @media screen and (max-width: 499px) {
         .sectionTitle{
             margin-top: 2rem;
@@ -92,4 +139,14 @@ p{
 
 
 
+//resources
 
+//https://css-tricks.com/aos-css-driven-scroll-animation-library/ 
+
+//https://codepen.io/mafevito/pen/oNjQNvy
+
+//scroll up
+//https://moderncss.dev/pure-css-smooth-scroll-back-to-top/
+
+//template
+//https://nero-portfolio.webflow.io/
