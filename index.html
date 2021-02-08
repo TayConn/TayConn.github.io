@@ -11,13 +11,13 @@
 </head>
 <body>
 
-    <header>
+    <header id="top">
         <!-- <img class="logo" src="Images/logo.svg" /> -->
         <ul class="wrapper menuLinks">
-            <li><a href="#">Work</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Experience</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </header>
 
@@ -29,7 +29,7 @@
         </div>
     </section>
 
-    <section class="subWrapper">
+    <section class="subWrapper" id="about">
         <div class="sectionTitle">
             <h2>Skills</h2>
             <h1>My Expertise</h1>
@@ -37,7 +37,7 @@
 
     </section>
 
-    <section class="workWrapper">
+    <section class="workWrapper" id="work">
         
                 <div class="workTitle">
                     <h2>Portfolio</h2>
@@ -74,7 +74,7 @@
             <div class="work-bg-block"></div>
     </section>
 
-    <section class="experienceSection pink">
+    <section class="experienceSection pink" id="experience">
         <div class="sectionTitle">
             <h2>Always Learning</h2>
             <h1>Experience</h1>
@@ -112,7 +112,9 @@
             </div>
         </div>
     </section>
- 
+    <div class="scrollUpWrapper">
+        <a href="#top" class="scrollUpLink" aria-label="Scroll to Top">&#94;</a>
+    </div>
     <script src="/JS/script.js"></script>
 </body>
 </html>
