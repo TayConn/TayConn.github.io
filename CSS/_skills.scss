@@ -1,0 +1,47 @@
+.skillWrapper{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem 1rem;
+
+}
+
+.skillCard{
+    background-color: white;
+    border-radius: 55px;
+    // display: flex;
+    // flex-flow: row nowrap;
+}
+
+.skillCardTitle{
+    font-family: $font-title;
+    
+
+    h3{
+        font-size: 2rem;
+        color: $color-darkBlue;
+    }
+}
+
+.skillFeature{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.skillCardIcon{
+    width: 65px;
+    height: 65px;
+    // border-radius: 15px;
+    
+}
+
+.strategy{
+    background-color: $color-babyBlue;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+}
+
+.skillDetails{
+    font-family: $font-body;
+    
+}
