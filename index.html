@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Karla&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Taylor Conn | Portfolio</title>
 </head>
 <body>
@@ -14,6 +15,7 @@
     <header id="top">
         <!-- <img class="logo" src="Images/logo.svg" /> -->
         <ul class="wrapper menuLinks">
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#work">Work</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
@@ -21,7 +23,7 @@
         </ul>
     </header>
 
-    <section class="mainHero">
+    <section class="mainHero contentWrap">
         <img class="cartoonMe" src="Images/ZenTaylor.svg" alt="A cartoon of Taylor in cute colors holding a keyboard and pen with SPARKLES!">
         <div class="heroText">
             <h1 class="heroHello"><span>Hey there!</span> It's nice to meet you. I'm <span>Taylor Conn</span> :)</h1>
@@ -29,15 +31,15 @@
         </div>
     </section>
 
-    <section class="subWrapper" id="about">
+    <section class="subWrapper contentWrap" id="skills">
         <div class="sectionTitle">
             <h2>Skills</h2>
             <h1>My Expertise</h1>
         </div>
-
+        
     </section>
 
-    <section class="workWrapper" id="work">
+    <section class="workWrapper contentWrap" id="work">
         
                 <div class="workTitle">
                     <h2>Portfolio</h2>
@@ -57,7 +59,7 @@
                     <div class="projectWrap">
                         <img class="projectImage" src="/Images/DirectMail_Thumbnail.png" alt="">
                         <div class="projectBlock">
-                        <div class="projectName"><p>Email Marketing</p></div>
+                        <div class="projectName"><p>Print Design</p></div>
                         <a class="buttonPink" href="">View Work</a>
                     </div>
                     </div>
@@ -65,7 +67,7 @@
                     <div class="projectWrap">
                         <img class="projectImage" src="/Images/WebDev_Thumbnail.png" alt="">
                         <div class="projectBlock">
-                        <div class="projectName"><p>Email Marketing</p></div>
+                        <div class="projectName"><p>Web Development</p></div>
                         <a class="buttonPink" href="">View Work</a>
                     </div>
                     </div>
@@ -73,8 +75,27 @@
             </div>
             <div class="work-bg-block"></div>
     </section>
+    
+    <section id="about" class="aboutWrapper contentWrap">
+        <div>
+            <div class="aboutTitle">
+                <h2>Nice to meet you.</h2>
+                <h1>I'm Taylor, a developer & digital designer</h1>
+            </div>
+            <div class="aboutBody">
+                <p>I'm a digital designer and developer located in the Bay Area, California with experience in delivering end-to-end marketing campaigns, web development, UX and UI services (and a whole lot of other things).
+                </p>
+                <p>Most of my professional experience has focused on designing and shipping digital products for a variety of devices and platforms - from responsive web design to email marketing, digital ads and print design. I'm typically focused on the "why" first, then the "how".
+                </p>
+                <p>Digging into data to help make informed strategic decisions is one of my strong suites, I love finding reasons that explain why people make decisions and what drives their user experience in products I help create. Using that data to inform future designs and decisions is part of my workflow.
+                </p>
+                <p >I have experience mentoring others and work extremely well in collaborative team settings as well as solo projects. </p>
+            </div>
+        </div>
+        <div class="about-bg-block"></div>
+    </section>
 
-    <section class="experienceSection pink" id="experience">
+    <section class="experienceSection contentWrap pink" id="experience">
         <div class="sectionTitle">
             <h2>Always Learning</h2>
             <h1>Experience</h1>
@@ -112,9 +133,32 @@
             </div>
         </div>
     </section>
+    <section class="contentWrap" id="contact">
+        <div class="contactMe">
+            <div class="contactTitle">
+                <h2>Contact Me</h2>
+                <h1>Interested in something? Let's talk!</h1>
+            </div>
+            <div class="contactInfo">
+                <img src="/Images/email-icon.svg" alt="An icon of an envelope with an @ symbol in it, meaning email.">
+                <h3>tayjoconn@gmail.com</h3>
+            </div>
+        </div>
+    </section>
     <div class="scrollUpWrapper">
         <a href="#top" class="scrollUpLink" aria-label="Scroll to Top">&#94;</a>
     </div>
     <script src="/JS/script.js"></script>
+
+    <footer class="footerInfo">
+        <ul class="wrapper menuLinks">
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <p>This site was made by Taylor Conn :)</p>
+    </footer>
 </body>
 </html>
