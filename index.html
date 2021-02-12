@@ -11,7 +11,6 @@
     <title>Taylor Conn | Portfolio</title>
 </head>
 <body>
-
     <header id="top">
         <!-- <img class="logo" src="Images/logo.svg" /> -->
         <ul class="wrapper menuLinks">
@@ -36,6 +35,18 @@
             <h2>Skills</h2>
             <h1>My Expertise</h1>
         </div>
+
+        <div class="skillsWrapper">
+            <div class="skillCard">
+                <div class="skillFeature">
+                    <img src="/Images/Layers.svg" alt="" class="skillCardIcon strategy">
+                    <h3>Title of Skill #1</h3>
+                </div>
+                <div class="skillDetails">
+                    <p><strong>Understand First.</strong> Always start with a clear vision. What results are we looking for and how will we get there? What shows success? I enjoy talking about challenges and creative solutions.</p>
+                </div>
+            </div>
+        </div>
         
     </section>
 
@@ -51,7 +62,7 @@
                         <img class="projectImage" src="/Images/Email-Thumbnail2.png" alt="">
                         <div class="projectBlock">
                         <div class="projectName"><p>Email Marketing</p></div>
-                        <a class="buttonPink" href="">View Work</a>
+                        <a class="buttonPink" href="#">View Work</a>
                     </div>
                     </div>
                 </div>
@@ -60,7 +71,7 @@
                         <img class="projectImage" src="/Images/DirectMail_Thumbnail.png" alt="">
                         <div class="projectBlock">
                         <div class="projectName"><p>Print Design</p></div>
-                        <a class="buttonPink" href="">View Work</a>
+                        <a class="buttonPink" href="#">View Work</a>
                     </div>
                     </div>
                 </div><div class="projectItem">
@@ -68,7 +79,7 @@
                         <img class="projectImage" src="/Images/WebDev_Thumbnail.png" alt="">
                         <div class="projectBlock">
                         <div class="projectName"><p>Web Development</p></div>
-                        <a class="buttonPink" href="">View Work</a>
+                        <a class="buttonPink" href="#">View Work</a>
                     </div>
                     </div>
                 </div>
@@ -96,7 +107,8 @@
     </section>
 
     <section class="experienceSection contentWrap pink" id="experience">
-        <div class="sectionTitle">
+        <div class="mask"></div>
+        <div class="experienceTitle">
             <h2>Always Learning</h2>
             <h1>Experience</h1>
         </div>
@@ -141,17 +153,16 @@
             </div>
             <div class="contactInfo">
                 <img src="/Images/email-icon.svg" alt="An icon of an envelope with an @ symbol in it, meaning email.">
-                <h3>tayjoconn@gmail.com</h3>
+                <h3><a href="mailto:tayjoconn@gmail.com" alt="click here to send me an email.">tayjoconn@gmail.com</a></h3>
             </div>
         </div>
     </section>
     <div class="scrollUpWrapper">
         <a href="#top" class="scrollUpLink" aria-label="Scroll to Top">&#94;</a>
     </div>
-    <script src="/JS/script.js"></script>
-
+    
     <footer class="footerInfo">
-        <ul class="wrapper menuLinks">
+        <ul class="wrapper footerMenuLinks">
             <li><a href="#skills">Skills</a></li>
             <li><a href="#work">Work</a></li>
             <li><a href="#about">About</a></li>
@@ -160,5 +171,8 @@
         </ul>
         <p>This site was made by Taylor Conn :)</p>
     </footer>
+
+
+    <script src="/JS/script.js"></script>
 </body>
 </html>
