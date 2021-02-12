@@ -19,9 +19,9 @@ body {
     //scroll top code
     position: relative;
 
-    *:last-child {
-        margin-bottom: 0;
-    }
+    // *:last-child {
+    //     margin-bottom: 0;
+    // }
 
 }
 
@@ -57,8 +57,13 @@ p{
         flex-flow: row wrap;
         gap: 1rem 1rem;
         // position: relative;
-        margin: 5rem;
-        padding: 5rem 0 5rem 0;
+        // margin: 5rem;
+        // padding: 5rem 0 5rem 0;
+    }
+
+    .contentWrap{
+        margin: 3rem 15rem;
+        
     }
 
     .sectionTitle{
@@ -74,7 +79,7 @@ p{
         
         gap: 1rem 1rem;
         margin-top: 5rem;
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
 
         h1{
             margin: .5rem 0 .5rem 0;
@@ -123,6 +128,18 @@ p{
     background-color: $color-lilacWhite;
     padding: 0.25rem;
     }
+    
+    .footerInfo{
+        font-family: $font-body;
+        font-size: 1rem;
+        line-height: 1rem;
+        color: $color-darkBlue;
+        text-align: center;
+
+        ul{
+            margin-bottom: 3rem;
+        }
+    }
 
     @media screen and (prefers-reduced-motion: no-preference) {
         html {
@@ -140,6 +157,8 @@ p{
 
 
 //resources
+
+//https://animate.style/
 
 //https://css-tricks.com/aos-css-driven-scroll-animation-library/ 
 
