@@ -11,7 +11,7 @@
         
         gap: 1rem 1rem;
         padding-bottom: 5rem;
-        margin-bottom: 5rem;
+        margin: 0 -5rem 0 -5rem;
 
         h1{
             margin: .5rem 0 .5rem 0;
@@ -27,7 +27,8 @@
         }
     }
     .expCards{
-        margin: 0 10rem 2rem 10rem;
+        // margin: 0 10rem 2rem 10rem;
+        margin-bottom: 2rem;
         padding-top: 3rem;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -42,9 +43,12 @@
     .cardBlock{
         display: flex;
         flex-flow: column nowrap;
-        padding: 0 2rem 1.5rem 2rem;
-        justify-content: flex-start;
+        justify-content: center;
         align-items:center;
+
+        padding: 0 2rem 1.5rem 2rem;
+        margin: 0 2rem;
+
         background-color: white;
         border-radius: 16px;
         text-align: center;
