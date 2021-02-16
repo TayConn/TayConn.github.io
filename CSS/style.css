@@ -125,18 +125,6 @@ p {
   padding: 0.25rem;
 }
 
-.footerInfo {
-  font-family: "Karla", sans-serif;
-  font-size: 1rem;
-  line-height: 1rem;
-  color: #130F49;
-  text-align: center;
-}
-
-.footerInfo ul {
-  margin-bottom: 3rem;
-}
-
 @media screen and (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
@@ -144,9 +132,14 @@ p {
 }
 
 @media screen and (max-width: 499px) {
-  .sectionTitle {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+  .contentWrap {
+    margin: 0;
+  }
+  .subWrapper {
+    margin: 3rem 2rem 1.5rem 2rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -181,8 +174,6 @@ header {
   font-weight: bold;
   color: #130F49;
   list-style: none;
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
 }
 
 .menuLinks a {
@@ -226,6 +217,9 @@ header {
 }
 
 @media screen and (max-width: 499px) {
+  header {
+    margin: 2rem;
+  }
   .wrapper {
     margin: 1.5rem 0 1.5rem 0;
     -ms-flex-wrap: wrap;
@@ -294,9 +288,10 @@ header {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: cartoon;
-  background-image: url("/Images/img_Circle.svg");
+  background-image: url("/Images/purpleDots.svg");
   background-position: top right;
   background-repeat: no-repeat;
+  background-size: 298px 186px;
 }
 
 @media screen and (max-width: 999px) {
@@ -307,46 +302,58 @@ header {
   .heroSubtext {
     font-size: 1rem;
     line-height: 1rem;
+    padding-bottom: 2rem;
   }
 }
 
 @media screen and (max-width: 499px) {
   .mainHero {
-    margin: 3rem 2rem 1.5rem 2rem;
+    margin: 1rem 2rem;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: "cartoon"
- "text";
+        grid-template-areas: "text" "cartoon";
   }
   .mainHero .cartoonMe {
-    padding: 0 0 2rem 0;
+    padding: 0 0 1rem 0;
     min-height: 5rem;
     max-height: 15rem;
     -ms-grid-column-align: center;
         justify-self: center;
-    -ms-grid-row: 1;
+    -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: cartoon;
     background-image: none;
   }
   .mainHero .heroText {
-    -ms-grid-row: 2;
+    -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: text;
   }
   .mainHero .heroText .heroHello {
-    text-align: center;
+    text-align: left;
     font-size: 2rem;
     line-height: 2rem;
   }
   .mainHero .heroText .heroSubtext {
-    text-align: center;
+    text-align: left;
     font-size: 1.25rem;
     line-height: 1.5rem;
     padding-top: 1rem;
   }
+}
+
+.mask {
+  --svg: url(/Images/drips-alpha-short.svg);
+  background-color: white;
+  height: 186px;
+  width: 100vw;
+  mask-image: var(--svg);
+  -webkit-mask-image: var(--svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .experienceSection {
@@ -387,6 +394,44 @@ header {
   letter-spacing: 2px;
 }
 
+.experienceTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -ms-flex-preferred-size: 4rem;
+      flex-basis: 4rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  gap: 1rem 1rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  margin: 3rem 15rem 0 15rem;
+}
+
+.experienceTitle h1 {
+  margin: .5rem 0 .5rem 0;
+  padding: 0;
+}
+
+.experienceTitle h2 {
+  margin: .5rem 0 .5rem 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
 .expCards {
   margin-bottom: 2rem;
   padding-top: 3rem;
@@ -402,6 +447,7 @@ header {
           justify-content: space-between;
   -ms-flex-line-pack: center;
       align-content: center;
+  margin: 3rem 15rem;
 }
 
 .cardBlock {
@@ -467,6 +513,10 @@ header {
   color: #b4b2c5;
 }
 
+.card a:hover {
+  color: #130F49;
+}
+
 .card .icon {
   width: 100px;
   height: 100px;
@@ -483,7 +533,23 @@ header {
 
 @media screen and (max-width: 499px) {
   .experienceSection {
-    margin-bottom: 1rem;
+    margin: 0 0 1rem 0;
+  }
+  .experienceTitle {
+    margin: 2rem 2rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+  }
+  .experienceTitle h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .experienceTitle h2 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
   }
   .expCards {
     -ms-grid-columns: 1fr;
@@ -501,17 +567,21 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
+    margin: 0 1rem;
+    padding: 0;
   }
   .card {
-    margin: 0;
+    margin: 0 .5rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
+    min-width: 0;
   }
   .card p {
     font-size: 1.25rem;
     line-height: 1.5rem;
+    padding: 0 .5rem;
   }
   .card h4 {
     font-size: 1.75rem;
@@ -546,6 +616,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   z-index: -1;
+  margin-bottom: 2rem;
 }
 
 .workTitle {
@@ -592,7 +663,7 @@ header {
   top: 0%;
   right: 0%;
   bottom: auto;
-  margin-right: -10rem;
+  margin-right: -15rem;
   z-index: -1;
   width: 80%;
   min-height: 470px;
@@ -651,6 +722,7 @@ header {
 
 .projectImage {
   max-width: 350px;
+  height: auto;
   border-radius: 20px;
   -webkit-box-shadow: 10px 0 30px 0 rgba(206, 212, 224, 0.26);
           box-shadow: 10px 0 30px 0 rgba(206, 212, 224, 0.26);
@@ -673,14 +745,93 @@ header {
   color: #f8979b;
   font-size: 1.25rem;
   text-decoration: none;
-  -webkit-transition: all 500ms ease;
-  transition: all 500ms ease;
-  cursor: pointer;
 }
 
 .buttonPink:hover {
   border-color: #f66565;
   color: #f66565;
+}
+
+@media screen and (max-width: 499px) {
+  .work-bg-block {
+    width: 70%;
+    margin: -2rem;
+  }
+  .workTitle {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+  }
+  .workTitle h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .workTitle h2 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .workWrapper {
+    margin: 3rem 2rem 1.5rem 2rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .workCollectionWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: -1;
+  }
+  .projectItem {
+    width: 100%;
+    height: auto;
+    padding: 1rem 0 1rem 0;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    text-align: center;
+    min-width: 0;
+  }
+  .projectImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .projectBlock {
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 15%;
+  }
 }
 
 .contactMe {
@@ -777,11 +928,61 @@ header {
 
 .contactInfo a {
   text-decoration: none;
+  color: #130F49;
+}
+
+.contactInfo a:hover {
+  color: #34a1cd;
 }
 
 .contactInfo img {
   max-width: 50px;
   margin-right: 2rem;
+  margin-top: 1rem;
+}
+
+.pinkDots {
+  display: inline-block;
+  position: absolute;
+  max-width: 100%;
+  z-index: 1;
+  left: 10vw;
+  bottom: 45vh;
+}
+
+@media screen and (max-width: 499px) {
+  .contactMe {
+    margin: 3rem 2rem 1.5rem 2rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contactTitle {
+    margin: 1rem 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+  }
+  .contactTitle h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .contactTitle h2 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .contactInfo {
+    padding: .5rem;
+  }
+  .contactInfo img {
+    margin: 0;
+  }
+  .pinkDots {
+    left: 5vw;
+    bottom: 102vh;
+  }
 }
 
 .aboutWrapper {
@@ -847,7 +1048,7 @@ header {
   font-size: 1.25rem;
   line-height: 2rem;
   letter-spacing: -0.03rem;
-  max-width: 85%;
+  max-width: 75%;
 }
 
 .about-bg-block {
@@ -858,7 +1059,7 @@ header {
   bottom: auto;
   margin-left: -15rem;
   z-index: -1;
-  width: 80%;
+  width: 85%;
   min-height: 100%;
   border-top-right-radius: 55px;
   border-bottom-right-radius: 55px;
@@ -867,5 +1068,262 @@ header {
   -o-object-fit: fill;
      object-fit: fill;
   opacity: 75%;
+}
+
+@media screen and (max-width: 499px) {
+  .aboutWrapper {
+    margin: 3rem 2rem 1.5rem 2rem;
+  }
+  .about-bg-block {
+    display: none;
+  }
+  .aboutTitle {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    max-width: 100%;
+  }
+  .aboutTitle h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .aboutTitle h2 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .aboutBody {
+    padding-bottom: 1rem;
+  }
+  .aboutBody p {
+    max-width: 100%;
+  }
+}
+
+.footerInfo {
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #130F49;
+  text-align: center;
+}
+
+.footerInfo ul {
+  margin-bottom: 3rem;
+}
+
+.footerInfo p {
+  text-align: center;
+}
+
+.footerInfo .footerMenuLinks {
+  gap: 4rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #130F49;
+  list-style: none;
+}
+
+.footerInfo .footerMenuLinks a {
+  text-decoration: none;
+  color: #130F49;
+}
+
+.footerInfo .footerMenuLinks a:hover {
+  color: #34a1cd;
+}
+
+@media screen and (max-width: 499px) {
+  .footerInfo {
+    display: none;
+  }
+}
+
+.skillWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-bottom: 2rem;
+}
+
+.skillCard {
+  background-color: white;
+  border-radius: 16px;
+  max-width: 45%;
+  padding: 1.5rem 2rem 1.5rem 2rem;
+  margin: 1rem 1rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  gap: .5rem .5rem;
+  -webkit-transition: -webkit-box-shadow 500ms ease;
+  transition: -webkit-box-shadow 500ms ease;
+  transition: box-shadow 500ms ease;
+  transition: box-shadow 500ms ease, -webkit-box-shadow 500ms ease;
+}
+
+.skillCard:hover {
+  -webkit-box-shadow: 11px 11px 130px 70px rgba(206, 212, 224, 0.18);
+          box-shadow: 11px 11px 130px 70px rgba(206, 212, 224, 0.18);
+}
+
+.skillSectionTitle {
+  font-family: "Space Grotesk", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -ms-flex-preferred-size: 4rem;
+      flex-basis: 4rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  gap: 1rem 1rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.skillSectionTitle h1 {
+  margin: .5rem 0 .5rem 0;
+  padding: 0;
+}
+
+.skillSectionTitle h2 {
+  margin: .5rem 0 .5rem 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.skillFeature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  gap: 0 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skillFeature h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: #130F49;
+}
+
+.skillCardIcon {
+  width: 65px;
+  height: 65px;
+}
+
+.strategyBackground {
+  background-color: #d9f4ff;
+  width: 65px;
+  height: 65px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.designBackground {
+  background-color: #fff4e4;
+  width: 65px;
+  height: 65px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.devBackground {
+  background-color: #f4f3ff;
+  width: 65px;
+  height: 65px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.launchBackground {
+  background-color: #fff5f6;
+  width: 65px;
+  height: 65px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.skillDetails p {
+  font-family: "Karla", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: #55527c;
+}
+
+@media screen and (max-width: 499px) {
+  .skillSectionTitle {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+  }
+  .skillSectionTitle h1 {
+    font-size: 2rem;
+    line-height: 1.5rem;
+  }
+  .skillSectionTitle h2 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .skillWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin-bottom: 1rem;
+  }
+  .skillCard {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 100%;
+    padding: .5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

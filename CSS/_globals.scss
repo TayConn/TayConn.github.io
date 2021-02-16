@@ -63,7 +63,6 @@ p{
 
     .contentWrap{
         margin: 3rem 15rem;
-        
     }
 
     .sectionTitle{
@@ -139,9 +138,22 @@ p{
       }
 
     @media screen and (max-width: 499px) {
-        .sectionTitle{
-            margin-top: 2rem;
-            margin-bottom: 2rem;
+        // .sectionTitle{
+        //     margin-top: 2rem;
+        //     margin-bottom: 2rem;
+        //     justify-content: center;
+        //     flex-shrink: 1;
+        // }
+
+        .contentWrap{
+            margin: 0;
+        }
+
+        .subWrapper{
+            // gap: 1rem 1rem;
+            margin: 3rem 2rem 1.5rem 2rem;
+            justify-content: center;
+
         }
     }
 

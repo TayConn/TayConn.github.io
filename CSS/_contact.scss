@@ -79,3 +79,46 @@
         margin-top: 1rem;
     }
 }
+
+.pinkDots{
+    display: inline-block;
+    position: absolute;
+    max-width: 100%;
+    z-index: 1;
+    left: 10vw;
+    bottom: 45vh;
+}
+
+@media screen and (max-width: 499px){
+    .contactMe{
+        margin: 3rem 2rem 1.5rem 2rem;
+        justify-content: center;
+    }
+
+    .contactTitle{
+        margin: 1rem 1rem;
+        justify-content: center;
+        flex-shrink: 1;
+        h1{
+            font-size: 2rem;
+            line-height: 2rem;
+        }
+
+        h2{
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+        }
+    }
+
+    .contactInfo{
+        padding: .5rem;
+        img{
+            margin: 0;
+        }
+    }
+
+    .pinkDots{
+        left: 5vw;
+        bottom: 102vh;
+    }
+}

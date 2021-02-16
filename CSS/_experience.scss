@@ -10,8 +10,8 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-      
   }
+  
   .experienceSection{
         display: flex;
         flex-flow: column wrap;
@@ -111,10 +111,7 @@
         flex-flow: column nowrap;
         align-items: center;
         text-align: center;
-        // min-width: 325px;
-        // max-width: 500px;
         
-
         a{
             color: $color-skyBlue;
             text-decoration: underline;
@@ -142,6 +139,10 @@
             color: $color-lightGreyBlue;
         }
 
+        a:hover{
+            color: $color-darkBlue;
+        }
+
         .icon{
             width: 100px;
             height: 100px;
@@ -159,8 +160,25 @@
 
     @media screen and (max-width: 499px) {
         .experienceSection{
-            margin-bottom: 1rem;
+            margin: 0 0 1rem 0;
         }
+
+        .experienceTitle{
+            margin: 2rem 2rem;
+            justify-content: center;
+            flex-shrink: 1;
+            h1{
+                font-size: 2rem;
+                line-height: 2rem;
+            }
+    
+            h2{
+                font-size: 1.5rem;
+                line-height: 1.5rem;
+            }
+            
+        }
+
         .expCards{
             grid-template-columns: 1fr;
             grid-template-rows: auto;
@@ -170,34 +188,24 @@
         }
         .cardBlock{
             flex-flow: column wrap;
+            margin: 0 1rem;
+            padding: 0;
         }
         .card{
-            margin: 0;
+            margin: 0 .5rem;
             flex-flow: column wrap;
-
+            min-width: 0;
 
             p{
                 font-size: 1.25rem;
                 line-height: 1.5rem;
+                padding: 0 .5rem;
+                
             }
 
             h4{
                 font-size: 1.75rem;
-                line-height: 1.75rem; 
+                line-height: 1.75rem;
             }
         }
     }
-
-//     //margin media query
-// @media screen and (max-width: 1399px){
-//     .expCards{
-//         margin: 0rem 5rem 1.5rem 5rem;
-//     }
-// }
-
-// //margin media query
-// @media screen and (max-width: 1920px){
-//     .expCards{
-//         margin: 0rem 5rem 1.5rem 5rem;
-//     }
-// }

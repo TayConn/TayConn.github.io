@@ -4,8 +4,6 @@
     flex-flow: column wrap;
     gap: 1rem 1rem;
     position: relative;
-    
-    
 }
 
 .workCollectionWrapper{
@@ -14,6 +12,7 @@
     justify-content: center;
     align-items: center;
     z-index: -1;
+    margin-bottom: 2rem;
     
 }
 
@@ -105,6 +104,7 @@
 
    .projectImage{
         max-width: 350px;
+        height:auto;
         border-radius: 20px;
         box-shadow: 10px 0 30px 0 rgba(206, 212, 224, 0.26);
         object-fit: cover;
@@ -131,3 +131,69 @@
     }
 
     
+    @media screen and (max-width: 499px){
+        .work-bg-block{
+            width: 70%;
+            margin: -2rem;
+        }
+
+        .workTitle{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        justify-content: center;
+        flex-shrink: 1;
+
+        h1{
+            font-size: 2rem;
+            line-height: 2rem;
+        }
+
+        h2{
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+        }
+        }
+        .workWrapper{
+            margin: 3rem 2rem 1.5rem 2rem;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column nowrap;
+        }
+
+        .workCollectionWrapper{
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            z-index: -1;
+            
+        }
+
+        .projectItem{
+        width:100%;
+        height: auto;
+        padding: 1rem 0 1rem 0;
+        justify-self: center;
+        align-content: center;
+        text-align: center;
+        min-width: 0;
+        }
+
+        .projectImage{
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            object-fit: contain;
+        }
+
+        .projectBlock{
+            position: absolute;
+    
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+        
+            margin: 15%;
+            
+    
+        }
+    }
