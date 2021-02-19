@@ -1,34 +1,49 @@
     header{
     background-color: $color-background;
     color: $color-darkBlue;
-    margin: 3rem 3rem 7rem 3rem;
+    margin: 1rem 15rem 3.5rem 15rem;
     }
 
-    .wrapper{
+    nav{
     display: flex;
-    flex-flow: row nowrap;
-    flex: 1;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     
     }
 
-    .menuLinks{
-        gap: 4rem;
+    .nav-ul{
+        display: flex;
+        // align-items: center;
+        // justify-content: center;
+        padding: 0;
+        list-style-type: none;
+        font-size: 1.25rem;
 
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: $color-darkBlue;
-        list-style: none;
-
-        a{
-            text-decoration: none;
+        li a{
+            display: inline-block;
             color: $color-darkBlue;
+            font-family: $font-body;
+            padding: .75rem 1.2rem;
+            text-decoration: none;
         }
 
         a:hover{
             color: $color-skyBlue;
         }
+    }
+
+    .hamburger{
+        background-color: transparent;
+        border: 0;
+        color: $color-darkBlue;
+        font-size: 1.25rem;
+        cursor: pointer;
+        display: none;
+    }
+
+    .hamburger:focus{
+        outline: none;
     }
 
 //images
@@ -47,39 +62,32 @@
 //media queries
 
     @media screen and (max-width: 999px){
-        .wrapper{
-            margin: 3rem 0 3rem 0;
-            padding: 0;
+        header{
+            margin: 2rem;
+        }
+        nav{
+            justify-content: flex-end;
+        }
+        .nav-ul{
+            display: none;
+            width: 100%;
+            flex-flow: column wrap;
+            text-align: center;
+        }
 
-            .menuLinks{
-                flex-wrap: wrap;
-                text-align: center;
-                gap: 2rem;
-            }
+        .nav-ul.show{
+            display: flex;
+            
+            
+        }
 
-            li{
-                flex: 1 1 50%;
-            }
+        .hamburger{
+            display:block;
         }
     }
 
     @media screen and (max-width: 499px){
 
-        header{
-            margin: 2rem;
-        }
-        
-        .wrapper{
-            margin: 1.5rem 0 1.5rem 0;
-            flex-wrap: wrap;
-            flex-basis: 100%;
-            text-align: center;
-            gap: 1rem;
-
-            li{
-                flex-basis: 100%;
-            }
-        }
 
 
     }

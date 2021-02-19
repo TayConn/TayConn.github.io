@@ -19,10 +19,6 @@ body {
     //scroll top code
     position: relative;
 
-    // *:last-child {
-    //     margin-bottom: 0;
-    // }
-
 }
 
 h2{
@@ -48,7 +44,6 @@ p{
 }
 
     .pink{
-    // margin: 50px 0 25px 0;
     background-color: $color-snowPink;
     }
 
@@ -56,44 +51,65 @@ p{
         display: flex;
         flex-flow: row wrap;
         gap: 1rem 1rem;
-        // position: relative;
-        // margin: 5rem;
-        // padding: 5rem 0 5rem 0;
     }
 
     .contentWrap{
         margin: 3rem 15rem;
     }
 
-    .sectionTitle{
+    .sectionTitleMid{
+        display: flex;
+        flex-flow: column wrap;
+        
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        
+        gap: .5rem 1rem;
+        margin-top: 5rem;
+        
+            h1{
+                margin: .5rem 0 .5rem 0;
+                padding: 0;
+                
+            }
+
+            h2{
+                margin: .5rem 0 .5rem 0;;
+                padding: 0;
+                text-transform: uppercase;
+                
+            }
+
+    }
+
+    .sectionTitleLeft{        
         display: flex;
         flex-flow: column wrap;
         flex-basis: 4rem;
         flex-grow: 1;
         flex-shrink: 1;
-        
-        justify-content: space-between;
-        align-content: center;
-        text-align: center;
-        
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
         gap: 1rem 1rem;
-        margin-top: 5rem;
-        margin-bottom: 3rem;
         
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        max-width: 60%;
 
-        h1{
-            margin: .5rem 0 .5rem 0;
-            padding: 0;
-            
-        }
+            h1{
+                margin: .5rem 0 .5rem 0;
+                padding: 0;
+                
+            }
 
-        h2{
-            margin: .5rem 0 .5rem 0;;
-            padding: 0;
-            text-transform: uppercase;
-            
-        }
-
+            h2{
+                margin: .5rem 0 .5rem 0;;
+                padding: 0;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
     }
 
     $scrollLength: 100vh;
@@ -103,7 +119,7 @@ p{
     //outline: 1px solid red;
     position: absolute;
     top: $scrollLength;
-    right: 0.25rem;
+    right: 0.75rem;
     bottom: -5em;
     width: 3em;
     pointer-events: none;
@@ -113,19 +129,22 @@ p{
     position: fixed;
     position: sticky;
     pointer-events: all;
-    top: calc(100vh - 5rem);
+    top: calc(100vh - 4rem);
 
     display: inline-block;
     text-decoration: none;
     font-family: $font-title;
-    color: $color-darkBlue;
+    color: $color-background;
     font-size: 2rem;
     line-height: 3rem;
     text-align: center;
     width: 3rem;
     height: 3rem;
-    border-radius: 50%;
-    background-color: $color-lilacWhite;
+    // border-radius: 50%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    background-color: $color-darkBlue;
+    opacity: 15%;
     padding: 0.25rem;
     }
     
@@ -138,19 +157,43 @@ p{
       }
 
     @media screen and (max-width: 499px) {
-        // .sectionTitle{
-        //     margin-top: 2rem;
-        //     margin-bottom: 2rem;
-        //     justify-content: center;
-        //     flex-shrink: 1;
-        // }
+        .sectionTitleMid{
+            margin: 2rem 2rem 0 2rem;
+            justify-content: center;
+            
+            h1{
+                font-size: 2rem;
+                line-height: 2rem;
+            }
+    
+            h2{
+                font-size: 1.5rem;
+                line-height: 1.5rem;
+            }
+            
+        }
+
+        .sectionTitleLeft{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        max-width: 100%;
+
+        h1{
+            font-size: 2rem;
+            line-height: 2rem;
+        }
+
+        h2{
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+        }
+        }
 
         .contentWrap{
             margin: 0;
         }
 
         .subWrapper{
-            // gap: 1rem 1rem;
             margin: 3rem 2rem 1.5rem 2rem;
             justify-content: center;
 

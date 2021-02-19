@@ -5,7 +5,8 @@
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
 }
 
 .skillCard{
@@ -18,42 +19,9 @@
     gap: .5rem .5rem;
 
     transition: box-shadow 500ms ease;
-
 }
 .skillCard:hover{
     box-shadow: 11px 11px 130px 70px rgba(206, 212, 224, 0.18);
-}
-
-.skillSectionTitle{
-    font-family: $font-title;
-    
-    display: flex;
-    flex-flow: column wrap;
-    flex-basis: 4rem;
-    flex-grow: 1;
-    flex-shrink: 1;
-    
-    justify-content: space-between;
-    align-content: center;
-    text-align: center;
-    
-    gap: 1rem 1rem;
-    margin-top: 5rem;
-    margin-bottom: 3rem;
-    
-
-    h1{
-        margin: .5rem 0 .5rem 0;
-        padding: 0;
-        
-    }
-
-    h2{
-        margin: .5rem 0 .5rem 0;;
-        padding: 0;
-        text-transform: uppercase;
-        
-    }
 }
 
 .skillFeature{
@@ -110,32 +78,17 @@
 .skillDetails{
 
     p{
-    font-family: $font-body;
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-    color: $color-mediumBlue;
+        font-family: $font-body;
+        font-size: 1.25rem;
+        line-height: 2rem;
+        letter-spacing: -0.03rem;
+        color: $color-mediumBlue;
     }
     
 }
 
 @media screen and (max-width: 499px) {
 
-    .skillSectionTitle{
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        justify-content: center;
-        flex-shrink: 1;
-
-        h1{
-            font-size: 2rem;
-            line-height: 1.5rem;
-        }
-
-        h2{
-            font-size: 1.5rem;
-            line-height: 1.5rem;
-        }
-    }
     .skillWrapper{
         display: flex;
         flex-flow: column wrap;
@@ -150,11 +103,6 @@
         justify-content: center;
         max-width: 100%;
         padding: .5rem;
-        // margin: .5rem;
-        // flex: 0 1 auto;
     }
 
-    // .skillFeature{
-    //     align-items: center;
-    // }
 }

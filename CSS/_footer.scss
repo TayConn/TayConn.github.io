@@ -1,4 +1,8 @@
 .footerInfo{
+    // display: flex;
+    // flex-flow: row wrap;
+
+    margin: 3rem 15rem 1rem 15rem;
     font-family: $font-body;
     font-size: 1rem;
     line-height: 1rem;
@@ -6,7 +10,7 @@
     text-align: center;
 
     ul{
-        margin-bottom: 3rem;
+        margin-bottom: 1.5rem;
     }
 
     p{
@@ -14,10 +18,12 @@
     }
 
     .footerMenuLinks{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
         gap: 4rem;
 
         font-size: 1rem;
-        font-weight: bold;
         color: $color-darkBlue;
         list-style: none;
 

@@ -89,8 +89,19 @@
         background-color: rgba(85, 82, 124, 0.9);
         text-align: center;
 
+        transform: translate3d(0px, 15px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+        transform-style: preserve-3d;
+        opacity: 0;
+        transition-property: all;
+
+        .projectBlock:hover & {
+            transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+            transform-style: preserve-3d;
+            opacity: 1;
+        }
     }
 
+   
     
     
     .projectItem{
@@ -110,6 +121,8 @@
         object-fit: cover;
     }
 
+   
+
     .buttonPink{
         display: flex;
         align-items: center;
@@ -124,7 +137,7 @@
         // cursor: pointer;
     }
 
-    .buttonPink:hover{
+    .buttonPink:hover {
         border-color: #f66565;
         color: #f66565;
         

@@ -59,7 +59,36 @@ p {
   margin: 3rem 15rem;
 }
 
-.sectionTitle {
+.sectionTitleMid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  gap: .5rem 1rem;
+  margin-top: 5rem;
+}
+
+.sectionTitleMid h1 {
+  margin: .5rem 0 .5rem 0;
+  padding: 0;
+}
+
+.sectionTitleMid h2 {
+  margin: .5rem 0 .5rem 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.sectionTitleLeft {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,32 +103,35 @@ p {
           flex-grow: 1;
   -ms-flex-negative: 1;
       flex-shrink: 1;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: left;
   gap: 1rem 1rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
   margin-bottom: 3rem;
+  max-width: 60%;
 }
 
-.sectionTitle h1 {
+.sectionTitleLeft h1 {
   margin: .5rem 0 .5rem 0;
   padding: 0;
 }
 
-.sectionTitle h2 {
+.sectionTitleLeft h2 {
   margin: .5rem 0 .5rem 0;
   padding: 0;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .scrollUpWrapper {
   position: absolute;
   top: 100vh;
-  right: 0.25rem;
+  right: 0.75rem;
   bottom: -5em;
   width: 3em;
   pointer-events: none;
@@ -110,18 +142,20 @@ p {
   position: -webkit-sticky;
   position: sticky;
   pointer-events: all;
-  top: calc(100vh - 5rem);
+  top: calc(100vh - 4rem);
   display: inline-block;
   text-decoration: none;
   font-family: "Space Grotesk", sans-serif;
-  color: #130F49;
+  color: #FFFFFF;
   font-size: 2rem;
   line-height: 3rem;
   text-align: center;
   width: 3rem;
   height: 3rem;
-  border-radius: 50%;
-  background-color: #f4f3ff;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  background-color: #130F49;
+  opacity: 15%;
   padding: 0.25rem;
 }
 
@@ -132,6 +166,33 @@ p {
 }
 
 @media screen and (max-width: 499px) {
+  .sectionTitleMid {
+    margin: 2rem 2rem 0 2rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sectionTitleMid h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .sectionTitleMid h2 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .sectionTitleLeft {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-width: 100%;
+  }
+  .sectionTitleLeft h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .sectionTitleLeft h2 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
   .contentWrap {
     margin: 0;
   }
@@ -146,20 +207,17 @@ p {
 header {
   background-color: #FFFFFF;
   color: #130F49;
-  margin: 3rem 3rem 7rem 3rem;
+  margin: 1rem 15rem 3.5rem 15rem;
 }
 
-.wrapper {
+nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -168,21 +226,38 @@ header {
           align-items: center;
 }
 
-.menuLinks {
-  gap: 4rem;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #130F49;
-  list-style: none;
+.nav-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+  font-size: 1.25rem;
 }
 
-.menuLinks a {
+.nav-ul li a {
+  display: inline-block;
+  color: #130F49;
+  font-family: "Karla", sans-serif;
+  padding: .75rem 1.2rem;
   text-decoration: none;
-  color: #130F49;
 }
 
-.menuLinks a:hover {
+.nav-ul a:hover {
   color: #34a1cd;
+}
+
+.hamburger {
+  background-color: transparent;
+  border: 0;
+  color: #130F49;
+  font-size: 1.25rem;
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger:focus {
+  outline: none;
 }
 
 .logo {
@@ -199,39 +274,30 @@ header {
 }
 
 @media screen and (max-width: 999px) {
-  .wrapper {
-    margin: 3rem 0 3rem 0;
-    padding: 0;
-  }
-  .wrapper .menuLinks {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    text-align: center;
-    gap: 2rem;
-  }
-  .wrapper li {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 50%;
-            flex: 1 1 50%;
-  }
-}
-
-@media screen and (max-width: 499px) {
   header {
     margin: 2rem;
   }
-  .wrapper {
-    margin: 1.5rem 0 1.5rem 0;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    text-align: center;
-    gap: 1rem;
+  nav {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
-  .wrapper li {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+  .nav-ul {
+    display: none;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    text-align: center;
+  }
+  .nav-ul.show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .hamburger {
+    display: block;
   }
 }
 
@@ -291,7 +357,7 @@ header {
   background-image: url("/Images/purpleDots.svg");
   background-position: top right;
   background-repeat: no-repeat;
-  background-size: 298px 186px;
+  background-size: 18.625rem 11.625rem;
 }
 
 @media screen and (max-width: 999px) {
@@ -308,7 +374,7 @@ header {
 
 @media screen and (max-width: 499px) {
   .mainHero {
-    margin: 1rem 2rem;
+    margin: 1rem 2rem 0 2rem;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: auto;
@@ -333,13 +399,14 @@ header {
   }
   .mainHero .heroText .heroHello {
     text-align: left;
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 2.5rem;
+    line-height: 2.75rem;
   }
   .mainHero .heroText .heroSubtext {
     text-align: left;
     font-size: 1.25rem;
-    line-height: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: -0.03rem;
     padding-top: 1rem;
   }
 }
@@ -377,9 +444,7 @@ header {
   -ms-flex-line-pack: center;
       align-content: center;
   text-align: center;
-  gap: 1rem 1rem;
-  padding-bottom: 5rem;
-  margin: 0 -5rem 0 -5rem;
+  gap: 0 1rem;
 }
 
 .experienceSection h1 {
@@ -394,47 +459,7 @@ header {
   letter-spacing: 2px;
 }
 
-.experienceTitle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -ms-flex-preferred-size: 4rem;
-      flex-basis: 4rem;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  text-align: center;
-  gap: 1rem 1rem;
-  margin-top: 5rem;
-  margin-bottom: 3rem;
-  margin: 3rem 15rem 0 15rem;
-}
-
-.experienceTitle h1 {
-  margin: .5rem 0 .5rem 0;
-  padding: 0;
-}
-
-.experienceTitle h2 {
-  margin: .5rem 0 .5rem 0;
-  padding: 0;
-  text-transform: uppercase;
-}
-
 .expCards {
-  margin-bottom: 2rem;
-  padding-top: 3rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -447,7 +472,7 @@ header {
           justify-content: space-between;
   -ms-flex-line-pack: center;
       align-content: center;
-  margin: 3rem 15rem;
+  margin: 5rem 15rem;
 }
 
 .cardBlock {
@@ -464,7 +489,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 2rem 1.5rem 2rem;
+  padding: 0 1.5rem;
   margin: 0 2rem;
   background-color: white;
   border-radius: 16px;
@@ -526,30 +551,9 @@ header {
           box-shadow: -1px 40px 80px 0 rgba(85, 82, 124, 0.25);
 }
 
-.card .line {
-  max-width: 30px;
-  margin: 30px 0 20px 0;
-}
-
 @media screen and (max-width: 499px) {
   .experienceSection {
     margin: 0 0 1rem 0;
-  }
-  .experienceTitle {
-    margin: 2rem 2rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-negative: 1;
-        flex-shrink: 1;
-  }
-  .experienceTitle h1 {
-    font-size: 2rem;
-    line-height: 2rem;
-  }
-  .experienceTitle h2 {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
   }
   .expCards {
     -ms-grid-columns: 1fr;
@@ -560,7 +564,7 @@ header {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 5rem 1rem;
-    margin: 0 1rem 0 1rem;
+    margin: 4rem 1rem;
   }
   .cardBlock {
     -webkit-box-orient: vertical;
@@ -707,6 +711,21 @@ header {
   border-radius: 16px;
   background-color: rgba(85, 82, 124, 0.9);
   text-align: center;
+  -webkit-transform: translate3d(0px, 15px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+          transform: translate3d(0px, 15px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  opacity: 0;
+  -webkit-transition-property: all;
+  transition-property: all;
+}
+
+.projectBlock:hover .projectBlock {
+  -webkit-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  opacity: 1;
 }
 
 .projectItem {
@@ -932,7 +951,7 @@ header {
 }
 
 .contactInfo a:hover {
-  color: #34a1cd;
+  color: #f8979b;
 }
 
 .contactInfo img {
@@ -952,36 +971,45 @@ header {
 
 @media screen and (max-width: 499px) {
   .contactMe {
-    margin: 3rem 2rem 1.5rem 2rem;
+    margin: 3rem 2rem 1rem 2rem;
+    padding: 1rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
   .contactTitle {
-    margin: 1rem 1rem;
+    margin: 1rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -ms-flex-negative: 1;
-        flex-shrink: 1;
   }
   .contactTitle h1 {
-    font-size: 2rem;
-    line-height: 2rem;
-  }
-  .contactTitle h2 {
     font-size: 1.5rem;
     line-height: 1.5rem;
   }
+  .contactTitle h2 {
+    font-size: 1.25rem;
+    line-height: 1rem;
+  }
   .contactInfo {
     padding: .5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .contactInfo img {
     margin: 0;
   }
+  .contactInfo h3 {
+    font-size: 1rem;
+  }
   .pinkDots {
     left: 5vw;
-    bottom: 102vh;
+    bottom: 37vh;
   }
 }
 
@@ -995,46 +1023,6 @@ header {
           flex-flow: column wrap;
   z-index: -1;
   position: relative;
-}
-
-.aboutTitle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -ms-flex-preferred-size: 4rem;
-      flex-basis: 4rem;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  text-align: left;
-  gap: 1rem 1rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  max-width: 60%;
-}
-
-.aboutTitle h1 {
-  margin: .5rem 0 .5rem 0;
-  padding: 0;
-}
-
-.aboutTitle h2 {
-  margin: .5rem 0 .5rem 0;
-  padding: 0;
-  text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
 .aboutBody {
@@ -1077,22 +1065,6 @@ header {
   .about-bg-block {
     display: none;
   }
-  .aboutTitle {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    max-width: 100%;
-  }
-  .aboutTitle h1 {
-    font-size: 2rem;
-    line-height: 2rem;
-  }
-  .aboutTitle h2 {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-  }
   .aboutBody {
     padding-bottom: 1rem;
   }
@@ -1102,6 +1074,7 @@ header {
 }
 
 .footerInfo {
+  margin: 3rem 15rem 1rem 15rem;
   font-family: "Karla", sans-serif;
   font-size: 1rem;
   line-height: 1rem;
@@ -1110,7 +1083,7 @@ header {
 }
 
 .footerInfo ul {
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .footerInfo p {
@@ -1118,9 +1091,18 @@ header {
 }
 
 .footerInfo .footerMenuLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 4rem;
   font-size: 1rem;
-  font-weight: bold;
   color: #130F49;
   list-style: none;
 }
@@ -1155,7 +1137,8 @@ header {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
 }
 
 .skillCard {
@@ -1177,44 +1160,6 @@ header {
 .skillCard:hover {
   -webkit-box-shadow: 11px 11px 130px 70px rgba(206, 212, 224, 0.18);
           box-shadow: 11px 11px 130px 70px rgba(206, 212, 224, 0.18);
-}
-
-.skillSectionTitle {
-  font-family: "Space Grotesk", sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -ms-flex-preferred-size: 4rem;
-      flex-basis: 4rem;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  text-align: center;
-  gap: 1rem 1rem;
-  margin-top: 5rem;
-  margin-bottom: 3rem;
-}
-
-.skillSectionTitle h1 {
-  margin: .5rem 0 .5rem 0;
-  padding: 0;
-}
-
-.skillSectionTitle h2 {
-  margin: .5rem 0 .5rem 0;
-  padding: 0;
-  text-transform: uppercase;
 }
 
 .skillFeature {
@@ -1278,28 +1223,12 @@ header {
 .skillDetails p {
   font-family: "Karla", sans-serif;
   font-size: 1.25rem;
-  line-height: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: -0.03rem;
   color: #55527c;
 }
 
 @media screen and (max-width: 499px) {
-  .skillSectionTitle {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-negative: 1;
-        flex-shrink: 1;
-  }
-  .skillSectionTitle h1 {
-    font-size: 2rem;
-    line-height: 1.5rem;
-  }
-  .skillSectionTitle h2 {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-  }
   .skillWrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1324,6 +1253,110 @@ header {
             justify-content: center;
     max-width: 100%;
     padding: .5rem;
+  }
+}
+
+.workIntroTitle h2 {
+  margin-top: 3rem;
+}
+
+/* Style the tab */
+.tabWrap {
+  background-color: #FFFFFF;
+  margin: 3rem 15rem;
+}
+
+.tab .centerButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  justify-self: center;
+}
+
+.tab button {
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  padding: 2rem 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 50%;
+  height: 100%;
+  font-family: "Karla", sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #130F49;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.tab button:hover {
+  -webkit-transform: scaleY(1.2) translateY(-6px);
+          transform: scaleY(1.2) translateY(-6px);
+}
+
+.tab button:hover span {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.tab button.active {
+  -webkit-transform: scaleY(1.2) translateY(-6px);
+          transform: scaleY(1.2) translateY(-6px);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 1.5rem 5rem;
+  border-top: none;
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+  background-color: #fff5f6;
+}
+
+.pinkBg {
+  background-color: #fff5f6;
+}
+
+.blueBg {
+  background-color: #d9f4ff;
+}
+
+/* Style the close button */
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.topright:hover {
+  color: red;
+}
+
+@media screen and (max-width: 499px) {
+  .tabWrap {
+    margin: 3rem 2rem;
+  }
+  .workIntroTitle {
+    margin: 1rem 0 2rem 0;
+  }
+  .centerButtons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    justify-self: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

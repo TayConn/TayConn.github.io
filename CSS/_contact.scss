@@ -70,7 +70,7 @@
         color: $color-darkBlue;
     }
     a:hover{
-        color: $color-skyBlue;
+        color: $color-lightCoral;
     }
 
     img{
@@ -91,34 +91,40 @@
 
 @media screen and (max-width: 499px){
     .contactMe{
-        margin: 3rem 2rem 1.5rem 2rem;
+        margin: 3rem 2rem 1rem 2rem;
+        padding: 1rem;
         justify-content: center;
     }
 
     .contactTitle{
-        margin: 1rem 1rem;
+        margin: 1rem;
         justify-content: center;
-        flex-shrink: 1;
         h1{
-            font-size: 2rem;
-            line-height: 2rem;
+            font-size: 1.5rem;
+            line-height: 1.5rem;
         }
 
         h2{
-            font-size: 1.5rem;
-            line-height: 1.5rem;
+            font-size: 1.25rem;
+            line-height: 1rem;
         }
     }
 
     .contactInfo{
         padding: .5rem;
+        flex-flow: column wrap;
+        align-items: center;
         img{
             margin: 0;
         }
+        h3{
+            font-size: 1rem;
+        }
+        
     }
 
     .pinkDots{
         left: 5vw;
-        bottom: 102vh;
+        bottom: 37vh;
     }
 }
