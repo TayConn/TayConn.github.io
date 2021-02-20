@@ -45,12 +45,21 @@
         min-height: 18rem;
         max-height: 28rem;
         grid-area: cartoon;
-
+    }
+    .backgroundHome{
         background-image: url('/Images/purpleDots.svg');
         background-position: top right;
         background-repeat: no-repeat;
-        background-size: 18.625rem 11.625rem;
-    }
+        background-size: 40%;
+        }
+
+    .backgroundDev{
+        background-image: url('/Images/PinkDots.svg');
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: 40%;
+        
+        }
 
 }
 

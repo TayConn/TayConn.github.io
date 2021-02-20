@@ -28,7 +28,7 @@
     }
 
     button {
-        // background-color: transparent;
+        background-color: $color-background;
         float: left;
         border: none;
         outline: none;
@@ -50,27 +50,10 @@
         transition: all .3s ease;
       }
 
-    //   .buttonBlobPurple{
-    //     background: url(/Images/purpleBlob_left.svg) no-repeat;
-    //     background-position: top center;
-    //     background-size: 100%;
-    // }
-    // .buttonBlobBlue{
-    //     background: url(/Images/blueBlob_right.svg) no-repeat;
-    //     background-position: top center;
-    //     background-size: 100%;
-    // }
-        // .buttonBlob.active{
-        //     transform: scale(1.5);
-        // }
 
       button:hover {
         // background-color: #ddd;
         transform: scaleY(1.2) translateY(-6px);
-
-        span{
-            transform: none;
-        }
       }
 
       button.active {
@@ -89,9 +72,22 @@
     border-top: none;
     border-bottom-left-radius: 32px;
     border-bottom-right-radius: 32px;
-    background-color: $color-snowPink;
+    background-color: $color-background;
     
   }
+
+.pinkBorder{
+    border-color: 3px solid $color-snowPink;
+    }
+
+.blueBorder{
+    border: 3px solid $color-babyBlue;
+    }
+
+.contentBorder{
+    border-top: none;
+}
+
 
 .pinkBg{
     background-color: $color-snowPink;
@@ -100,6 +96,7 @@
 .blueBg{
     background-color: $color-babyBlue;
     }
+
 
   /* Style the close button */
 .topright {

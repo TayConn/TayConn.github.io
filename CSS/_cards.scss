@@ -1,0 +1,169 @@
+.cardWrapper{
+    display: flex;
+    flex-flow: row wrap;
+
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+.infoCard{
+    // background-color: white;
+    border-radius: 16px;
+    max-width: 45%;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    margin: 1rem 1rem;
+    flex: 0 1 auto;
+    gap: .5rem .5rem;
+    
+
+    transition: box-shadow 500ms ease;
+}
+
+.whiteFill{
+    background-color: rgba(255, 255, 255, 0.75);
+    
+}
+
+.pinkFill{
+    background-color: rgba(255, 245, 246, 0.75);
+}
+
+.blueFill{
+    background-color: rgba(217, 244, 255, 0.75);
+}
+
+.infoCard:hover{
+    box-shadow: 11px 11px 130px 70px rgba(206, 212, 224, 0.18);
+}
+
+.cardFeature{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 0 1rem;
+    align-items: center;
+
+    h3{
+        font-family: $font-title;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        color: $color-darkBlue;
+    }
+}
+
+.infoCardIcon{
+    width: 65px;
+    height: 65px;
+}
+
+.blueCardBackground{
+    background-color: $color-babyBlue;
+    width: 65px;
+    height: 65px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.yellowCardBackground{
+    background-color: #fff4e4;
+    width: 65px;
+    height: 65px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.purpleSquareBackground{
+    background-color: $color-lilacWhite;
+    width: 65px;
+    height: 65px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.pinkSquareBackground{
+    background-color: #fff5f6;
+    width: 65px;
+    height: 65px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.cardDetails{
+
+    p{
+        font-family: $font-body;
+        font-size: 1.25rem;
+        line-height: 2rem;
+        letter-spacing: -0.03rem;
+        color: $color-mediumBlue;
+    }
+    
+}
+
+button{
+    background-color: $color-darkBlue;
+    border-radius: 16px;
+    padding: .75rem 1.5rem;
+    color: white;
+    text-align: center;
+    font-family: $font-title;
+    font-size: 1rem;
+    border:none;
+    transition: 200ms ease;
+    
+}
+
+button:hover{
+    background-color: $color-skyBlue;
+}
+
+.blobDots{
+    display: inline-block;
+    position: absolute;
+    min-width: 25%;
+    z-index: -21;
+    left: 2vw;
+    top: 30%;
+    opacity: 50%;
+}
+
+
+@media screen and (max-width: 499px) {
+
+    .cardWrapper{
+        display: flex;
+        flex-flow: column wrap;
+    
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .infoCard{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        max-width: 100%;
+        padding: 1.25rem;
+    }
+
+    .cardDetails{
+        margin: 0;
+        padding: 0;
+    }
+
+    .infoCard button{
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .blobDots{
+        top: 34%;
+        left: -14vw;
+        min-width: 80%;
+        z-index: -2;
+    }
+
+}

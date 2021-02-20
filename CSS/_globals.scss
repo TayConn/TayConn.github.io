@@ -115,8 +115,6 @@ p{
     $scrollLength: 100vh;
 
     .scrollUpWrapper{
-    // uncomment to visualize "track"
-    //outline: 1px solid red;
     position: absolute;
     top: $scrollLength;
     right: 0.75rem;
@@ -140,7 +138,6 @@ p{
     text-align: center;
     width: 3rem;
     height: 3rem;
-    // border-radius: 50%;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     background-color: $color-darkBlue;
@@ -198,6 +195,10 @@ p{
             justify-content: center;
 
         }
+
+        .scrollUpLink{
+            top: calc(100vh - 3rem);
+        }
     }
 
 
@@ -215,3 +216,5 @@ p{
 
 //template
 //https://nero-portfolio.webflow.io/
+
+// https://www.snapsound.com/

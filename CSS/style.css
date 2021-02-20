@@ -202,12 +202,28 @@ p {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .scrollUpLink {
+    top: calc(100vh - 3rem);
+  }
 }
 
 header {
   background-color: #FFFFFF;
   color: #130F49;
-  margin: 1rem 15rem 3.5rem 15rem;
+  margin: 2rem 15rem 3.5rem 15rem;
+}
+
+.hamburger {
+  background-color: transparent;
+  border: 0;
+  color: #130F49;
+  font-size: 1.25rem;
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger:focus {
+  outline: none;
 }
 
 nav {
@@ -247,17 +263,26 @@ nav {
   color: #34a1cd;
 }
 
-.hamburger {
-  background-color: transparent;
-  border: 0;
-  color: #130F49;
-  font-size: 1.25rem;
-  cursor: pointer;
+.nav-ul ul {
+  position: absolute;
+  padding: 0;
+  display: none;
+  list-style-type: none;
+}
+
+.nav-ul li:hover ul ul {
   display: none;
 }
 
-.hamburger:focus {
-  outline: none;
+.nav-ul li:hover ul {
+  display: block;
+  background-color: #fff5f6;
+}
+
+.nav-ul li li:hover ul {
+  display: block;
+  margin-left: 1rem;
+  margin-top: -2rem;
 }
 
 .logo {
@@ -275,7 +300,7 @@ nav {
 
 @media screen and (max-width: 999px) {
   header {
-    margin: 2rem;
+    margin: 1rem;
   }
   nav {
     -webkit-box-pack: end;
@@ -295,6 +320,7 @@ nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 1rem;
   }
   .hamburger {
     display: block;
@@ -354,10 +380,20 @@ nav {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: cartoon;
+}
+
+.mainHero .backgroundHome {
   background-image: url("/Images/purpleDots.svg");
   background-position: top right;
   background-repeat: no-repeat;
-  background-size: 18.625rem 11.625rem;
+  background-size: 40%;
+}
+
+.mainHero .backgroundDev {
+  background-image: url("/Images/PinkDots.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 40%;
 }
 
 @media screen and (max-width: 999px) {
@@ -1023,10 +1059,15 @@ nav {
           flex-flow: column wrap;
   z-index: -1;
   position: relative;
+  padding-top: 3rem;
+}
+
+.aboutMarginBottom {
+  margin-bottom: 7rem;
 }
 
 .aboutBody {
-  padding-bottom: 5rem;
+  padding-bottom: 1rem;
 }
 
 .aboutBody p {
@@ -1042,7 +1083,7 @@ nav {
 .about-bg-block {
   position: absolute;
   left: 0%;
-  top: 0%;
+  top: 5%;
   right: auto;
   bottom: auto;
   margin-left: -15rem;
@@ -1061,6 +1102,7 @@ nav {
 @media screen and (max-width: 499px) {
   .aboutWrapper {
     margin: 3rem 2rem 1.5rem 2rem;
+    padding-top: 0;
   }
   .about-bg-block {
     display: none;
@@ -1116,13 +1158,17 @@ nav {
   color: #34a1cd;
 }
 
+.footerMobile {
+  display: none;
+}
+
 @media screen and (max-width: 499px) {
   .footerInfo {
     display: none;
   }
 }
 
-.skillWrapper {
+.cardWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1141,8 +1187,7 @@ nav {
   margin-top: 2rem;
 }
 
-.skillCard {
-  background-color: white;
+.infoCard {
   border-radius: 16px;
   max-width: 45%;
   padding: 1.5rem 2rem 1.5rem 2rem;
@@ -1157,12 +1202,24 @@ nav {
   transition: box-shadow 500ms ease, -webkit-box-shadow 500ms ease;
 }
 
-.skillCard:hover {
+.whiteFill {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.pinkFill {
+  background-color: rgba(255, 245, 246, 0.75);
+}
+
+.blueFill {
+  background-color: rgba(217, 244, 255, 0.75);
+}
+
+.infoCard:hover {
   -webkit-box-shadow: 11px 11px 130px 70px rgba(206, 212, 224, 0.18);
           box-shadow: 11px 11px 130px 70px rgba(206, 212, 224, 0.18);
 }
 
-.skillFeature {
+.cardFeature {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1176,19 +1233,19 @@ nav {
           align-items: center;
 }
 
-.skillFeature h3 {
+.cardFeature h3 {
   font-family: "Space Grotesk", sans-serif;
   font-size: 1.5rem;
   line-height: 1.5rem;
   color: #130F49;
 }
 
-.skillCardIcon {
+.infoCardIcon {
   width: 65px;
   height: 65px;
 }
 
-.strategyBackground {
+.blueCardBackground {
   background-color: #d9f4ff;
   width: 65px;
   height: 65px;
@@ -1196,7 +1253,7 @@ nav {
   border-radius: 15px;
 }
 
-.designBackground {
+.yellowCardBackground {
   background-color: #fff4e4;
   width: 65px;
   height: 65px;
@@ -1204,7 +1261,7 @@ nav {
   border-radius: 15px;
 }
 
-.devBackground {
+.purpleSquareBackground {
   background-color: #f4f3ff;
   width: 65px;
   height: 65px;
@@ -1212,7 +1269,7 @@ nav {
   border-radius: 15px;
 }
 
-.launchBackground {
+.pinkSquareBackground {
   background-color: #fff5f6;
   width: 65px;
   height: 65px;
@@ -1220,7 +1277,7 @@ nav {
   border-radius: 15px;
 }
 
-.skillDetails p {
+.cardDetails p {
   font-family: "Karla", sans-serif;
   font-size: 1.25rem;
   line-height: 2rem;
@@ -1228,8 +1285,35 @@ nav {
   color: #55527c;
 }
 
+button {
+  background-color: #130F49;
+  border-radius: 16px;
+  padding: .75rem 1.5rem;
+  color: white;
+  text-align: center;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1rem;
+  border: none;
+  -webkit-transition: 200ms ease;
+  transition: 200ms ease;
+}
+
+button:hover {
+  background-color: #34a1cd;
+}
+
+.blobDots {
+  display: inline-block;
+  position: absolute;
+  min-width: 25%;
+  z-index: -21;
+  left: 2vw;
+  top: 30%;
+  opacity: 50%;
+}
+
 @media screen and (max-width: 499px) {
-  .skillWrapper {
+  .cardWrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1243,16 +1327,35 @@ nav {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
     margin-bottom: 1rem;
   }
-  .skillCard {
+  .infoCard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     max-width: 100%;
-    padding: .5rem;
+    padding: 1.25rem;
+  }
+  .cardDetails {
+    margin: 0;
+    padding: 0;
+  }
+  .infoCard button {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  .blobDots {
+    top: 34%;
+    left: -14vw;
+    min-width: 80%;
+    z-index: -2;
   }
 }
 
@@ -1278,6 +1381,7 @@ nav {
 }
 
 .tab button {
+  background-color: #FFFFFF;
   float: left;
   border: none;
   outline: none;
@@ -1302,11 +1406,6 @@ nav {
           transform: scaleY(1.2) translateY(-6px);
 }
 
-.tab button:hover span {
-  -webkit-transform: none;
-          transform: none;
-}
-
 .tab button.active {
   -webkit-transform: scaleY(1.2) translateY(-6px);
           transform: scaleY(1.2) translateY(-6px);
@@ -1319,7 +1418,19 @@ nav {
   border-top: none;
   border-bottom-left-radius: 32px;
   border-bottom-right-radius: 32px;
-  background-color: #fff5f6;
+  background-color: #FFFFFF;
+}
+
+.pinkBorder {
+  border-color: 3px solid #fff5f6;
+}
+
+.blueBorder {
+  border: 3px solid #d9f4ff;
+}
+
+.contentBorder {
+  border-top: none;
 }
 
 .pinkBg {

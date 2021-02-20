@@ -3,10 +3,15 @@
     flex-flow: column wrap;
     z-index: -1;
     position: relative;
+    padding-top:3rem;
+}
+
+.aboutMarginBottom{
+    margin-bottom: 7rem;
 }
 
 .aboutBody{
-    padding-bottom: 5rem;
+    padding-bottom: 1rem;
     p{
         text-align: left;
         margin-bottom: .25rem;
@@ -22,7 +27,7 @@
 .about-bg-block{
     position: absolute;
     left: 0%;
-    top:0%;
+    top:5%;
     right: auto;
     bottom: auto;
     margin-left: -15rem;
@@ -41,7 +46,9 @@
 @media screen and (max-width: 499px){
     .aboutWrapper{
         margin: 3rem 2rem 1.5rem 2rem;
+        padding-top: 0;
     }
+
 
     .about-bg-block{
         display: none;
