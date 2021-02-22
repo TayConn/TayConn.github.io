@@ -1,0 +1,130 @@
+.portfolioWrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 5rem;
+
+    ul{
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        font-family: $font-body;
+        margin: 0;
+        padding-bottom: 1.5rem;
+    }
+}
+
+.skills-tools-left{
+    background-color: $color-lilacWhite;
+    max-width: 30%;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    
+}
+
+.portfolioMainContent{
+    background-color: $color-background;
+    max-width: 70%;
+    margin-left: 5rem;
+
+    h1{
+        margin:0;
+    }
+
+    p{
+        color: $color-darkBlue;
+        font-size: 1.25rem;
+        line-height: 2rem;
+        
+    }
+}
+
+.imageGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 2rem;
+    margin-top: 4rem;
+
+    justify-content: space-evenly;
+    align-content: start;
+
+    // .imgZoom{
+    //     transition: transform .2s;
+    // }
+
+    .gallery-image1{
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+        max-width: 100%;
+        height: auto;
+    }
+
+    .gallery-image2{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: 100%;
+        height: auto;
+        
+        
+    }
+    .gallery-image3{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        max-width: 100%;
+        height: auto;
+        border-radius: 16px;
+        object-fit: fill;
+        
+    }
+
+    .gallery-image4{
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        max-width: 100%;
+        height: auto;
+        border-radius: 16px;
+    }
+
+}
+
+.skillsTitle{
+    display: flex;
+    flex-flow: column wrap;
+    flex-basis: 4rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    gap: 1rem 1rem;
+    
+    padding: .5rem 0 .5rem 0;
+    // max-width: 100%;
+
+        h2{
+            margin: .5rem 0 .5rem 0;
+            padding: 0;
+            font-size: 2rem;
+            line-height: 2rem;
+            color: $color-darkBlue;
+        }
+}
+
+@media screen and (max-width: 499px){
+    .imageGrid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
