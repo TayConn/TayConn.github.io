@@ -224,8 +224,9 @@
 
     .imageGrid{
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: column-reverse wrap;
         justify-content: center;
+        gap: 1rem;
     }
 
     .pinkDots-portfolio{

@@ -1239,6 +1239,7 @@ nav {
   font-size: 1.5rem;
   line-height: 1.5rem;
   color: #130F49;
+  padding-left: .5rem;
 }
 
 .infoCardIcon {
@@ -1751,12 +1752,13 @@ button:hover {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse wrap;
+            flex-flow: column-reverse wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    gap: 1rem;
   }
   .pinkDots-portfolio {
     display: none;
