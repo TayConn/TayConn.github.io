@@ -1239,7 +1239,6 @@ nav {
   font-size: 1.5rem;
   line-height: 1.5rem;
   color: #130F49;
-  padding-left: .5rem;
 }
 
 .infoCardIcon {
@@ -1348,6 +1347,9 @@ button:hover {
   .cardDetails {
     margin: 0;
     padding: 0;
+  }
+  .cardFeature h3 {
+    padding-left: .5rem;
   }
   .infoCard button {
     margin-left: 25%;

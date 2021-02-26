@@ -50,7 +50,7 @@
         font-size: 1.5rem;
         line-height: 1.5rem;
         color: $color-darkBlue;
-        padding-left: .5rem;
+        
     }
 }
 
@@ -153,6 +153,12 @@ button:hover{
     .cardDetails{
         margin: 0;
         padding: 0;
+    }
+
+    .cardFeature{
+        h3{
+            padding-left: .5rem;
+        }
     }
 
     .infoCard button{
