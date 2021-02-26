@@ -219,7 +219,7 @@ header {
   border: 0;
   color: #130F49;
   font-size: 1.25rem;
-  cursor: pointer;
+  cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym57.cur), auto !important;
   display: none;
 }
 
@@ -258,6 +258,7 @@ nav {
   font-family: "Karla", sans-serif;
   padding: .75rem 1.2rem;
   text-decoration: none;
+  cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym57.cur), auto !important;
 }
 
 .nav-ul a:hover {
@@ -284,19 +285,6 @@ nav {
   display: block;
   margin-left: 1rem;
   margin-top: -2rem;
-}
-
-.logo {
-  width: 100px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.circleAccent {
-  background-image: url("/Images/img_Circle.svg");
-  background-position: top right;
-  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 999px) {
@@ -420,7 +408,7 @@ nav {
   }
   .mainHero .cartoonMe {
     padding: 0 0 1rem 0;
-    min-height: 5rem;
+    min-width: 75vw;
     max-height: 15rem;
     -ms-grid-column-align: center;
         justify-self: center;
@@ -1008,7 +996,7 @@ nav {
 
 @media screen and (max-width: 499px) {
   .contactMe {
-    margin: 3rem 2rem 1rem 2rem;
+    margin: 3rem 1rem 1rem 1rem;
     padding: 1rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1046,7 +1034,7 @@ nav {
   }
   .pinkDots {
     left: 5vw;
-    bottom: 37vh;
+    bottom: 45vh;
   }
 }
 
@@ -1301,6 +1289,7 @@ button {
 
 button:hover {
   background-color: #34a1cd;
+  cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym57.cur), auto !important;
 }
 
 .blobDots {
@@ -1349,7 +1338,7 @@ button:hover {
     padding: 0;
   }
   .cardFeature h3 {
-    padding-left: .5rem;
+    padding-left: 1rem;
   }
   .infoCard button {
     margin-left: 25%;

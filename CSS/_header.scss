@@ -9,7 +9,7 @@
         border: 0;
         color: $color-darkBlue;
         font-size: 1.25rem;
-        cursor: pointer;
+        cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym57.cur), auto !important;
         display: none;
     }
 
@@ -36,6 +36,8 @@
             font-family: $font-body;
             padding: .75rem 1.2rem;
             text-decoration: none;
+            cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym57.cur), auto !important;
+
         }
 
         a:hover{
@@ -66,19 +68,6 @@
             
         }
 }
-
-//images
-
-    .logo{
-    width: 100px;
-    align-self: center;
-    }
-
-    .circleAccent{
-    background-image: url('/Images/img_Circle.svg');
-    background-position: top right;
-    background-repeat: no-repeat;
-    }
 
 //media queries
 

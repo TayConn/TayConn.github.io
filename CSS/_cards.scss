@@ -118,6 +118,7 @@ button{
 
 button:hover{
     background-color: $color-skyBlue;
+    cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym57.cur), auto !important;
 }
 
 .blobDots{
@@ -157,7 +158,7 @@ button:hover{
 
     .cardFeature{
         h3{
-            padding-left: .5rem;
+            padding-left: 1rem;
         }
     }
 
