@@ -18,7 +18,14 @@ body {
 
     //scroll top code
     position: relative;
+}
 
+h3{
+    font-family: $font-title;
+    font-size: 1rem;
+    line-height: 1rem;
+    letter-spacing: 2px;
+    color: $color-lightGreyBlue;
 }
 
 h2{
@@ -145,8 +152,6 @@ p{
     opacity: 15%;
     padding: 0.25rem;
     }
-    
-    
 
     @media screen and (prefers-reduced-motion: no-preference) {
         html {
