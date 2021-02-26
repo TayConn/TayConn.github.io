@@ -143,6 +143,16 @@
     }
 
     .gallery-image10{
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 6;
+        grid-row-end: 8;
+        max-width: 100%;
+        height: auto;
+        border-radius: 16px;
+    }
+
+    .gallery-image11{
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 5;
@@ -151,7 +161,15 @@
         height: auto;
         border-radius: 16px;
     }
-
+    .gallery-image12{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 7;
+        grid-row-end: 8;
+        max-width: 100%;
+        height: auto;
+        border-radius: 16px;
+    }
 }
 
 .skillsTitle{
@@ -164,9 +182,7 @@
     align-items: flex-start;
     text-align: left;
     gap: 1rem 1rem;
-    
     padding: .5rem 0 .5rem 0;
-    // max-width: 100%;
 
         h2{
             margin: .5rem 0 .5rem 0;
@@ -177,9 +193,42 @@
         }
 }
 
+.pinkDots-portfolio{
+    display: inline-block;
+    position: absolute;
+    max-width: 100%;
+    z-index: 1;
+    left: 10vw;
+    bottom: 45vh;
+}
+
 @media screen and (max-width: 499px){
+    .portfolioWrapper{
+        margin: 2rem 1rem;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
+    .portfolioMainContent{
+        max-width: 100%;
+        margin: 2rem 0 0 0;
+        h1{
+            font-size: 2.5rem;
+            line-height: 2.75rem;
+        }
+    }
+
+    .skills-tools-left{
+        max-width: 100%;
+    }
+
     .imageGrid{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
+    .pinkDots-portfolio{
+        display: none;
     }
 }

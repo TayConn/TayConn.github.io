@@ -1585,6 +1585,102 @@ button:hover {
   border-radius: 16px;
 }
 
+.imageGrid .gallery-image5 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+.imageGrid .gallery-image6 {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 5;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 4;
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+.imageGrid .gallery-image7 {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 5;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+.imageGrid .gallery-image8 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 5;
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+.imageGrid .gallery-image9 {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 5;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  grid-row-end: 6;
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+.imageGrid .gallery-image10 {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 5;
+  -ms-grid-row: 6;
+      grid-row-start: 6;
+  grid-row-end: 8;
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+.imageGrid .gallery-image11 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  grid-row-end: 7;
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+.imageGrid .gallery-image12 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 7;
+      grid-row-start: 7;
+  grid-row-end: 8;
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
 .skillsTitle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1619,12 +1715,51 @@ button:hover {
   color: #130F49;
 }
 
+.pinkDots-portfolio {
+  display: inline-block;
+  position: absolute;
+  max-width: 100%;
+  z-index: 1;
+  left: 10vw;
+  bottom: 45vh;
+}
+
 @media screen and (max-width: 499px) {
+  .portfolioWrapper {
+    margin: 2rem 1rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .portfolioMainContent {
+    max-width: 100%;
+    margin: 2rem 0 0 0;
+  }
+  .portfolioMainContent h1 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+  .skills-tools-left {
+    max-width: 100%;
+  }
   .imageGrid {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .pinkDots-portfolio {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
