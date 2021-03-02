@@ -1,0 +1,226 @@
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Karla', sans-serif;
+    
+    background-color: $color-background;
+
+    //scroll top code
+    position: relative;
+}
+
+h3{
+    font-family: $font-title;
+    font-size: 1rem;
+    line-height: 1rem;
+    letter-spacing: 2px;
+    color: $color-lightGreyBlue;
+}
+
+h2{
+    font-family: $font-title;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    letter-spacing: 2px;
+    color: $color-lightGreyBlue;
+}
+
+h1{
+    font-family: $font-title;
+    font-size: 4rem;
+    line-height: 4rem;
+    color: $color-darkBlue;
+}
+
+p{
+    font-family: $font-body;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: $color-lightGreyBlue;
+    letter-spacing: -0.03rem;
+}
+
+    .pink{
+    background-color: $color-snowPink;
+    }
+
+    .subWrapper{
+        display: flex;
+        flex-flow: row wrap;
+        gap: 1rem 1rem;
+    }
+
+    .contentWrap{
+        margin: 3rem 15rem;
+    }
+
+    .sectionTitleMid{
+        display: flex;
+        flex-flow: column wrap;
+        
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        
+        gap: .5rem 1rem;
+        margin-top: 5rem;
+        
+            h1{
+                margin: .5rem 0 .5rem 0;
+                padding: 0;
+                
+            }
+
+            h2{
+                margin: .5rem 0 .5rem 0;;
+                padding: 0;
+                text-transform: uppercase;
+                
+            }
+
+    }
+
+    .sectionTitleLeft{        
+        display: flex;
+        flex-flow: column wrap;
+        flex-basis: 4rem;
+        flex-grow: 1;
+        flex-shrink: 1;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+        gap: 1rem 1rem;
+        
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        max-width: 60%;
+
+            h1{
+                margin: .5rem 0 .5rem 0;
+                padding: 0;
+                
+            }
+
+            h2{
+                margin: .5rem 0 .5rem 0;;
+                padding: 0;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+    }
+
+    $scrollLength: 100vh;
+
+    .scrollUpWrapper{
+    position: absolute;
+    top: $scrollLength;
+    right: 0.75rem;
+    bottom: -5em;
+    width: 3em;
+    pointer-events: none;
+    }
+
+    .scrollUpLink{
+    position: fixed;
+    position: sticky;
+    pointer-events: all;
+    top: calc(100vh - 3rem);
+
+    display: inline-block;
+    text-decoration: none;
+    font-family: $font-title;
+    color: $color-background;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    background-color: $color-darkBlue;
+    opacity: 15%;
+    padding: 0.25rem;
+    }
+
+    @media screen and (prefers-reduced-motion: no-preference) {
+        html {
+          scroll-behavior: smooth;
+        }
+      }
+
+    @media screen and (max-width: 499px) {
+        .sectionTitleMid{
+            margin: 2rem 2rem 0 2rem;
+            justify-content: center;
+            
+            h1{
+                font-size: 2rem;
+                line-height: 2rem;
+            }
+    
+            h2{
+                font-size: 1.5rem;
+                line-height: 1.5rem;
+            }
+            
+        }
+
+        .sectionTitleLeft{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        max-width: 100%;
+
+        h1{
+            font-size: 2rem;
+            line-height: 2rem;
+        }
+
+        h2{
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+        }
+        }
+
+        .contentWrap{
+            margin: 0;
+        }
+
+        .subWrapper{
+            margin: 3rem 2rem 1.5rem 2rem;
+            justify-content: center;
+
+        }
+
+        .scrollUpLink{
+            top: calc(100vh - 3rem);
+        }
+    }
+
+
+
+//resources
+
+//https://animate.style/
+
+//https://css-tricks.com/aos-css-driven-scroll-animation-library/ 
+
+//https://codepen.io/mafevito/pen/oNjQNvy
+
+//scroll up
+//https://moderncss.dev/pure-css-smooth-scroll-back-to-top/
+
+//template
+//https://nero-portfolio.webflow.io/
+
+// https://www.snapsound.com/

@@ -1,0 +1,140 @@
+
+.mainHero{
+
+    // margin: 5rem 5rem 0 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr;
+    grid-template-areas: "text cartoon";
+    justify-items: center;
+    align-items: center;
+
+    
+
+    .heroText{
+        grid-area: text;
+        justify-self: center;
+        
+        .heroHello{
+            font-family: $font-title;
+            color: $color-darkBlue;
+            font-size: 5rem;
+            line-height: 5rem;
+            font-weight: bold;
+            margin: 0;
+    
+            span{
+                color:$color-skyBlue;
+            }
+        }
+
+        .heroSubtext{
+            font-family: $font-body;
+            color: $color-mediumBlue;
+            padding-top: 2rem;
+            font-size: 1.25rem;
+            line-height: 2rem;
+            letter-spacing: -0.03rem;
+            
+        }
+    }
+
+    .cartoonMe{
+        padding: 0 5rem 0 5rem;
+        justify-self: center;
+        min-height: 18rem;
+        max-height: 28rem;
+        grid-area: cartoon;
+    }
+
+    .portfolioImg{
+        padding: 0 5rem 0 5rem;
+        justify-self: center;
+        min-height: 18rem;
+        max-height: 28rem;
+        grid-area: cartoon;
+    }
+
+    .backgroundHome{
+        background-image: url('/Images/purpleDots.svg');
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: 40%;
+        }
+
+    .backgroundDev{
+        background-image: url('/Images/PinkDots.svg');
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: 40%;
+        
+        }
+
+}
+
+// Media Queries
+
+@media screen and (max-width: 999px){
+    .heroHello{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .heroSubtext{
+        font-size: 1rem;
+        line-height: 1rem;
+        padding-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 499px){
+    .mainHero{
+    margin: 1rem 1rem 0 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "text"
+        "cartoon";
+    
+    .cartoonMe{
+        padding: 0 0 1rem 0;
+        // min-height: 5rem;
+        min-width: 75vw;
+        max-height: 15rem;
+        justify-self: center;
+        grid-area: cartoon;
+        background-image:none;
+        
+    }
+
+    .portfolioImg{
+        padding: 0 0 1rem 0;
+        // min-height: 5rem;
+        min-width: 85vw;
+        max-height: 15rem;
+        justify-self: center;
+        grid-area: cartoon;
+        background-image:none;
+    }
+
+    .heroText{
+        grid-area: text;
+        margin-left: .5rem;
+
+        .heroHello{
+            text-align: left;
+            font-size: 2.5rem;
+            line-height: 2.75rem; 
+        }
+
+        .heroSubtext{
+            text-align: left;
+            font-size: 1.25rem;
+            line-height: 2rem;
+            letter-spacing: -0.03rem;
+            padding-top: 1rem;
+        }
+    }
+
+    }
+}
