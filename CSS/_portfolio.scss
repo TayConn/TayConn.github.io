@@ -242,6 +242,13 @@
         align-items: center;
     }
 
+    .hobbiesWrapper{
+        margin: 2rem 1rem;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
     .portfolioMainContent{
         max-width: 100%;
         margin: 2rem 0 0 0;

@@ -1658,6 +1658,19 @@ button:hover {
         -ms-flex-align: center;
             align-items: center;
   }
+  .hobbiesWrapper {
+    margin: 2rem 1rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .portfolioMainContent {
     max-width: 100%;
     margin: 2rem 0 0 0;
