@@ -175,6 +175,10 @@
             -webkit-transition: all 0.3s ease-in-out 0s;
             -moz-transition: all 0.3s ease-in-out 0s;
             transition: all 0.3s ease-in-out 0s;
+
+            p{
+                color: #fff;
+            font-size: 0.8em;}
           }
           
           .content:hover .content-details{
@@ -191,10 +195,6 @@
             text-transform: uppercase;
           }
           
-          .content-details p{
-            color: #fff;
-            font-size: 0.8em;
-          }
 
           .fadeIn-top{
             top: 20%;
@@ -247,6 +247,7 @@
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
+        gap: 1.5rem;
     }
 
     .portfolioMainContent{
@@ -260,6 +261,23 @@
     }
 
     .skills-tools-left{
+        max-width: 100%;
+    }
+
+    .hobbies-movies{
+        max-width: 100%;
+        
+    }
+    
+    .hobbies-music{
+        max-width: 100%;
+    }
+    
+    .hobbies-games{
+        max-width: 100%;
+    }
+    
+    .hobbies-books{
         max-width: 100%;
     }
 

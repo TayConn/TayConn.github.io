@@ -1578,6 +1578,11 @@ button:hover {
   transition: all 0.3s ease-in-out 0s;
 }
 
+.imageGrid .content-details p {
+  color: #fff;
+  font-size: 0.8em;
+}
+
 .imageGrid .content:hover .content-details {
   top: 50%;
   left: 50%;
@@ -1590,11 +1595,6 @@ button:hover {
   letter-spacing: 0.15em;
   margin-bottom: 0.5em;
   text-transform: uppercase;
-}
-
-.imageGrid .content-details p {
-  color: #fff;
-  font-size: 0.8em;
 }
 
 .imageGrid .fadeIn-top {
@@ -1670,6 +1670,7 @@ button:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    gap: 1.5rem;
   }
   .portfolioMainContent {
     max-width: 100%;
@@ -1680,6 +1681,18 @@ button:hover {
     line-height: 2.75rem;
   }
   .skills-tools-left {
+    max-width: 100%;
+  }
+  .hobbies-movies {
+    max-width: 100%;
+  }
+  .hobbies-music {
+    max-width: 100%;
+  }
+  .hobbies-games {
+    max-width: 100%;
+  }
+  .hobbies-books {
     max-width: 100%;
   }
   .imageGrid {
