@@ -1,6 +1,8 @@
 .contactMe{
     background-color: $color-babyBlue;
-    border-radius: 32px;
+    // border-radius: 32px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 
     display: flex;
     flex-flow: column wrap;

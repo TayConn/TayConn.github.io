@@ -10,8 +10,6 @@
 }
 
 .infoCard{
-    // background-color: white;
-    border-radius: 16px;
     max-width: 45%;
     padding: 1.5rem 2rem 1.5rem 2rem;
     margin: 1rem 1rem;
@@ -24,15 +22,21 @@
 
 .whiteFill{
     background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 16px;
     
 }
 
 .pinkFill{
     background-color: rgba(255, 245, 246, 0.75);
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    
 }
 
 .blueFill{
     background-color: rgba(217, 244, 255, 0.75);
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 .infoCard:hover{
