@@ -1,7 +1,7 @@
 .aboutWrapper{
     display: flex;
     flex-flow: column wrap;
-    z-index: -1;
+    z-index: 1;
     position: relative;
     padding-top:3rem;
 }
@@ -22,6 +22,24 @@
         max-width: 75%;
         }
 
+}
+
+button{
+    background-color: $color-darkBlue;
+    border-radius: 16px;
+    padding: .75rem 1.5rem;
+    color: white;
+    text-align: center;
+    font-family: $font-title;
+    font-size: 1rem;
+    border:none;
+    transition: 200ms ease;
+    
+}
+
+button:hover{
+    background-color: $color-skyBlue;
+    cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym57.cur), auto !important;
 }
 
 .about-bg-block{

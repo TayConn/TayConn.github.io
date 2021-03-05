@@ -805,28 +805,6 @@ nav {
      object-fit: cover;
 }
 
-.buttonPink {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 1rem;
-  padding: .5rem 2rem;
-  border: 2px solid #f8979b;
-  border-radius: 12px;
-  background: transparent;
-  color: #f8979b;
-  font-size: 1.25rem;
-  text-decoration: none;
-}
-
-.buttonPink:hover {
-  border-color: #f66565;
-  color: #f66565;
-}
-
 @media screen and (max-width: 499px) {
   .work-bg-block {
     width: 70%;
@@ -1078,7 +1056,7 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  z-index: -1;
+  z-index: 1;
   position: relative;
   padding-top: 3rem;
 }
@@ -1099,6 +1077,24 @@ nav {
   line-height: 2rem;
   letter-spacing: -0.03rem;
   max-width: 75%;
+}
+
+button {
+  background-color: #130F49;
+  border-radius: 16px;
+  padding: .75rem 1.5rem;
+  color: white;
+  text-align: center;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1rem;
+  border: none;
+  -webkit-transition: 200ms ease;
+  transition: 200ms ease;
+}
+
+button:hover {
+  background-color: #34a1cd;
+  cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym57.cur), auto !important;
 }
 
 .about-bg-block {
@@ -1385,118 +1381,6 @@ button:hover {
     left: -14vw;
     min-width: 80%;
     z-index: -2;
-  }
-}
-
-.workIntroTitle h2 {
-  margin-top: 3rem;
-}
-
-/* Style the tab */
-.tabWrap {
-  background-color: #FFFFFF;
-  margin: 3rem 15rem;
-}
-
-.tab .centerButtons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  justify-self: center;
-}
-
-.tab button {
-  background-color: #FFFFFF;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  border-top-left-radius: 32px;
-  border-top-right-radius: 32px;
-  padding: 2rem 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  width: 50%;
-  height: 100%;
-  font-family: "Karla", sans-serif;
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: #130F49;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-}
-
-.tab button:hover {
-  -webkit-transform: scaleY(1.2) translateY(-6px);
-          transform: scaleY(1.2) translateY(-6px);
-}
-
-.tab button.active {
-  -webkit-transform: scaleY(1.2) translateY(-6px);
-          transform: scaleY(1.2) translateY(-6px);
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 1.5rem 5rem;
-  border-top: none;
-  border-bottom-left-radius: 32px;
-  border-bottom-right-radius: 32px;
-  background-color: #FFFFFF;
-}
-
-.pinkBorder {
-  border-color: 3px solid #fff5f6;
-}
-
-.blueBorder {
-  border: 3px solid #d9f4ff;
-}
-
-.contentBorder {
-  border-top: none;
-}
-
-.pinkBg {
-  background-color: #fff5f6;
-}
-
-.blueBg {
-  background-color: #d9f4ff;
-}
-
-/* Style the close button */
-.topright {
-  float: right;
-  cursor: pointer;
-  font-size: 28px;
-}
-
-.topright:hover {
-  color: red;
-}
-
-@media screen and (max-width: 499px) {
-  .tabWrap {
-    margin: 3rem 2rem;
-  }
-  .workIntroTitle {
-    margin: 1rem 0 2rem 0;
-  }
-  .centerButtons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
-    justify-self: center;
   }
 }
 
