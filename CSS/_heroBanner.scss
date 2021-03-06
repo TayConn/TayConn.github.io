@@ -46,6 +46,15 @@
         max-height: 28rem;
         grid-area: cartoon;
     }
+
+    .portfolioImg{
+        padding: 0 5rem 0 5rem;
+        justify-self: center;
+        min-height: 18rem;
+        max-height: 28rem;
+        grid-area: cartoon;
+    }
+
     .backgroundHome{
         background-image: url('/Images/purpleDots.svg');
         background-position: top right;
@@ -80,7 +89,7 @@
 
 @media screen and (max-width: 499px){
     .mainHero{
-    margin: 1rem 2rem 0 2rem;
+    margin: 1rem 1rem 0 1rem;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
@@ -95,9 +104,22 @@
         justify-self: center;
         grid-area: cartoon;
         background-image:none;
+        
     }
+
+    .portfolioImg{
+        padding: 0 0 1rem 0;
+        // min-height: 5rem;
+        min-width: 85vw;
+        max-height: 15rem;
+        justify-self: center;
+        grid-area: cartoon;
+        background-image:none;
+    }
+
     .heroText{
         grid-area: text;
+        margin-left: .5rem;
 
         .heroHello{
             text-align: left;

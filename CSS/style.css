@@ -1685,15 +1685,19 @@ button:hover {
   }
   .hobbies-movies {
     max-width: 100%;
+    margin: .75rem 0;
   }
   .hobbies-music {
     max-width: 100%;
+    margin: .75rem 0;
   }
   .hobbies-games {
     max-width: 100%;
+    margin: .75rem 0;
   }
   .hobbies-books {
     max-width: 100%;
+    margin: .75rem 0;
   }
   .imageGrid {
     display: -webkit-box;
