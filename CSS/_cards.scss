@@ -136,7 +136,7 @@ button:hover{
 }
 
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 800px) {
 
     .cardWrapper{
         display: flex;
@@ -178,4 +178,16 @@ button:hover{
         z-index: -2;
     }
 
+}
+
+@media screen and (min-width: 2000px){
+    .blobDots{
+        display: inline-block;
+        position: absolute;
+        min-width: 15%;
+        z-index: -21;
+        left: 8vw;
+        top: 25%;
+        opacity: 50%;
+    }
 }

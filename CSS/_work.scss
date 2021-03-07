@@ -72,34 +72,34 @@
         position: relative;
     }
 
-    .projectBlock{
-        position: absolute;
-        left: 0%;
-        top: 0%;
-        right: 0%;
-        bottom: 0%;
+    // .projectBlock{
+    //     position: absolute;
+    //     left: 0%;
+    //     top: 0%;
+    //     right: 0%;
+    //     bottom: 0%;
 
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
+    //     display: flex;
+    //     flex-flow: column wrap;
+    //     justify-content: center;
+    //     align-items: center;
         
-        margin: 20%;
-        border-radius: 16px;
-        background-color: rgba(85, 82, 124, 0.9);
-        text-align: center;
+    //     margin: 20%;
+    //     border-radius: 16px;
+    //     background-color: rgba(85, 82, 124, 0.9);
+    //     text-align: center;
 
-        transform: translate3d(0px, 15px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
-        transform-style: preserve-3d;
-        opacity: 0;
-        transition-property: all;
+    //     transform: translate3d(0px, 15px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+    //     transform-style: preserve-3d;
+    //     opacity: 0;
+    //     transition-property: all;
 
-        .projectBlock:hover & {
-            transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
-            transform-style: preserve-3d;
-            opacity: 1;
-        }
-    }
+    //     .projectBlock:hover & {
+    //         transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+    //         transform-style: preserve-3d;
+    //         opacity: 1;
+    //     }
+    // }
 
    
     .projectItem{
@@ -120,7 +120,7 @@
     }
 
     
-    @media screen and (max-width: 499px){
+    @media screen and (max-width: 800px){
         .work-bg-block{
             width: 70%;
             margin: -2rem;
@@ -185,4 +185,12 @@
             
     
         }
+    }
+
+    @media screen and (min-width: 2000px){
+        .cardWrapper{
+            margin: 0 10vw;
+            margin-bottom: 15rem;
+        }
+
     }

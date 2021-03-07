@@ -159,7 +159,7 @@ p{
         }
       }
 
-    @media screen and (max-width: 499px) {
+    @media screen and (max-width: 800px) {
         .sectionTitleMid{
             margin: 2rem 2rem 0 2rem;
             justify-content: center;
@@ -203,10 +203,20 @@ p{
         }
 
         .scrollUpLink{
-            top: calc(100vh - 3rem);
+            top: calc(100vh - 4rem);
+        }
+    }
+    @media screen and (min-width: 2000px){
+        .contentWrap{
+            margin: 0 25vw;
         }
     }
 
+    @media screen and (min-width: 1919px){
+        .contentWrap{
+            margin: 0 15vw;
+        }
+    }
 
 
 //resources

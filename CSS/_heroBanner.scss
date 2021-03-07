@@ -87,7 +87,7 @@
     }
 }
 
-@media screen and (max-width: 499px){
+@media screen and (max-width: 800px){
     .mainHero{
     margin: 1rem 1rem 0 1rem;
     grid-template-columns: 1fr;
@@ -110,8 +110,8 @@
     .portfolioImg{
         padding: 0 0 1rem 0;
         // min-height: 5rem;
-        min-width: 85vw;
-        max-height: 15rem;
+        min-width: auto;
+        max-height: auto;
         justify-self: center;
         grid-area: cartoon;
         background-image:none;
@@ -136,5 +136,11 @@
         }
     }
 
+    }
+}
+
+@media screen and (min-width: 2000px){
+    .mainHero{
+        margin: 0 30vw;
     }
 }

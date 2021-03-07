@@ -174,7 +174,7 @@ p {
   }
 }
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 800px) {
   .sectionTitleMid {
     margin: 2rem 2rem 0 2rem;
     -webkit-box-pack: center;
@@ -212,7 +212,19 @@ p {
             justify-content: center;
   }
   .scrollUpLink {
-    top: calc(100vh - 3rem);
+    top: calc(100vh - 4rem);
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .contentWrap {
+    margin: 0 25vw;
+  }
+}
+
+@media screen and (min-width: 1919px) {
+  .contentWrap {
+    margin: 0 15vw;
   }
 }
 
@@ -416,7 +428,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 800px) {
   .mainHero {
     margin: 1rem 1rem 0 1rem;
     -ms-grid-columns: 1fr;
@@ -438,8 +450,8 @@ nav {
   }
   .mainHero .portfolioImg {
     padding: 0 0 1rem 0;
-    min-width: 85vw;
-    max-height: 15rem;
+    min-width: auto;
+    max-height: auto;
     -ms-grid-column-align: center;
         justify-self: center;
     -ms-grid-row: 2;
@@ -464,6 +476,12 @@ nav {
     line-height: 2rem;
     letter-spacing: -0.03rem;
     padding-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .mainHero {
+    margin: 0 30vw;
   }
 }
 
@@ -500,6 +518,7 @@ nav {
   -ms-flex-line-pack: center;
       align-content: center;
   text-align: center;
+  margin-top: 5rem;
   gap: 0 1rem;
 }
 
@@ -607,7 +626,7 @@ nav {
           box-shadow: -1px 40px 80px 0 rgba(85, 82, 124, 0.25);
 }
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 800px) {
   .experienceSection {
     margin: 0 0 1rem 0;
   }
@@ -646,6 +665,12 @@ nav {
   .card h4 {
     font-size: 1.75rem;
     line-height: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .expCards {
+    margin: 5rem 25vw;
   }
 }
 
@@ -744,46 +769,6 @@ nav {
   position: relative;
 }
 
-.projectBlock {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 20%;
-  border-radius: 16px;
-  background-color: rgba(85, 82, 124, 0.9);
-  text-align: center;
-  -webkit-transform: translate3d(0px, 15px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
-          transform: translate3d(0px, 15px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  opacity: 0;
-  -webkit-transition-property: all;
-  transition-property: all;
-}
-
-.projectBlock:hover .projectBlock {
-  -webkit-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
-          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  opacity: 1;
-}
-
 .projectItem {
   width: 33%;
   height: auto;
@@ -805,7 +790,7 @@ nav {
      object-fit: cover;
 }
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 800px) {
   .work-bg-block {
     width: 70%;
     margin: -2rem;
@@ -884,6 +869,13 @@ nav {
         -ms-flex-align: center;
             align-items: center;
     margin: 15%;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .cardWrapper {
+    margin: 0 10vw;
+    margin-bottom: 15rem;
   }
 }
 
@@ -1001,10 +993,10 @@ nav {
   max-width: 100%;
   z-index: 1;
   left: 10vw;
-  bottom: 45vh;
+  bottom: 25vh;
 }
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 800px) {
   .contactMe {
     margin: 3rem 1rem 1rem 1rem;
     padding: 1rem;
@@ -1043,8 +1035,19 @@ nav {
     font-size: 1rem;
   }
   .pinkDots {
-    left: 5vw;
-    bottom: 45vh;
+    left: -18%;
+    bottom: 38vh;
+    opacity: 50%;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .contactMe {
+    margin: 0 15vw;
+  }
+  .pinkDots {
+    left: 27vw;
+    bottom: 15vh;
   }
 }
 
@@ -1079,24 +1082,6 @@ nav {
   max-width: 75%;
 }
 
-button {
-  background-color: #130F49;
-  border-radius: 16px;
-  padding: .75rem 1.5rem;
-  color: white;
-  text-align: center;
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 1rem;
-  border: none;
-  -webkit-transition: 200ms ease;
-  transition: 200ms ease;
-}
-
-button:hover {
-  background-color: #34a1cd;
-  cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym57.cur), auto !important;
-}
-
 .about-bg-block {
   position: absolute;
   left: 0%;
@@ -1116,19 +1101,31 @@ button:hover {
   opacity: 75%;
 }
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 800px) {
   .aboutWrapper {
-    margin: 3rem 2rem 1.5rem 2rem;
+    margin: 3rem 2rem 5rem 2rem;
     padding-top: 0;
   }
   .about-bg-block {
     display: none;
   }
   .aboutBody {
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
   }
   .aboutBody p {
     max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1919px) {
+  .about-bg-block {
+    left: -5%;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .aboutInnerWrapper {
+    margin: 0 11vw;
   }
 }
 
@@ -1179,7 +1176,7 @@ button:hover {
   display: none;
 }
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 800px) {
   .footerInfo {
     display: none;
   }
@@ -1334,7 +1331,7 @@ button:hover {
   opacity: 50%;
 }
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 800px) {
   .cardWrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1384,6 +1381,18 @@ button:hover {
   }
 }
 
+@media screen and (min-width: 2000px) {
+  .blobDots {
+    display: inline-block;
+    position: absolute;
+    min-width: 15%;
+    z-index: -21;
+    left: 8vw;
+    top: 25%;
+    opacity: 50%;
+  }
+}
+
 .portfolioWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1417,14 +1426,14 @@ button:hover {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
   margin: 5rem 0;
-  gap: 0 1rem;
+  gap: 0 4rem;
 }
 
 .hobbiesWrapper ul {
@@ -1641,10 +1650,10 @@ button:hover {
   max-width: 100%;
   z-index: 1;
   left: 10vw;
-  bottom: 45vh;
+  bottom: 20vh;
 }
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 800px) {
   .portfolioWrapper {
     margin: 2rem 1rem;
     -webkit-box-orient: vertical;
@@ -1750,6 +1759,18 @@ button:hover {
   }
   .pinkDots-portfolio {
     display: none;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .imageGrid {
+    margin: 5rem 7vw;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .imageGrid {
+    margin: 2rem 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

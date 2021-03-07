@@ -24,61 +24,52 @@
 
 }
 
-button{
-    background-color: $color-darkBlue;
-    border-radius: 16px;
-    padding: .75rem 1.5rem;
-    color: white;
-    text-align: center;
-    font-family: $font-title;
-    font-size: 1rem;
-    border:none;
-    transition: 200ms ease;
-    
-}
-
-button:hover{
-    background-color: $color-skyBlue;
-    cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym57.cur), auto !important;
-}
-
-.about-bg-block{
-    position: absolute;
-    left: 0%;
-    top:5%;
-    right: auto;
-    bottom: auto;
-    margin-left: -15rem;
-    z-index: -1;
-    width: 85%;
-    min-height: 100%;
-    border-top-right-radius: 55px;
-    border-bottom-right-radius: 55px;
-    background-color: $color-lilacWhite;
-    z-index: -2;
-    object-fit: fill;
-    opacity: 75%;
-}
-
-
-@media screen and (max-width: 499px){
-    .aboutWrapper{
-        margin: 3rem 2rem 1.5rem 2rem;
-        padding-top: 0;
-    }
-
-
     .about-bg-block{
-        display: none;
+        position: absolute;
+        left: 0%;
+        top:5%;
+        right: auto;
+        bottom: auto;
+        margin-left: -15rem;
+        z-index: -1;
+        width: 85%;
+        min-height: 100%;
+        border-top-right-radius: 55px;
+        border-bottom-right-radius: 55px;
+        background-color: $color-lilacWhite;
+        z-index: -2;
+        object-fit: fill;
+        opacity: 75%;
     }
 
-    .aboutBody{
-        padding-bottom: 1rem;
-        
-        p{
-            max-width: 100%;
-            }
-    
+
+    @media screen and (max-width: 800px){
+        .aboutWrapper{
+            margin: 3rem 2rem 5rem 2rem;
+            padding-top: 0;
+        }
+
+
+        .about-bg-block{
+            display: none;
+        }
+
+        .aboutBody{
+            padding-bottom: 2rem;
+            p{
+                max-width: 100%;
+                }
+        }
     }
 
-}
+    @media screen and (min-width: 1919px){
+        .about-bg-block{
+            left: -5%;
+        }
+    }
+
+    @media screen and (min-width: 2000px){
+        .aboutInnerWrapper{
+            margin: 0 11vw;
+        }
+    }
