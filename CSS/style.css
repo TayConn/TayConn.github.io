@@ -993,7 +993,7 @@ nav {
   max-width: 100%;
   z-index: 1;
   left: 10vw;
-  bottom: 25vh;
+  bottom: 20vh;
 }
 
 @media screen and (max-width: 800px) {
@@ -1035,7 +1035,7 @@ nav {
     font-size: 1rem;
   }
   .pinkDots {
-    left: -18%;
+    left: -10%;
     bottom: 38vh;
     opacity: 50%;
   }
