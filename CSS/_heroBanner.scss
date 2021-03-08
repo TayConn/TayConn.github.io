@@ -111,6 +111,7 @@
         padding: 0 0 1rem 0;
         // min-height: 5rem;
         min-width: auto;
+        max-width: 90vw;
         max-height: auto;
         justify-self: center;
         grid-area: cartoon;
@@ -124,7 +125,8 @@
         .heroHello{
             text-align: left;
             font-size: 2.5rem;
-            line-height: 2.75rem; 
+            line-height: 2.75rem;
+            max-width: 85vw; 
         }
 
         .heroSubtext{

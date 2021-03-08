@@ -56,10 +56,10 @@
 
 .contactInfo{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: center;
     align-content: center;
-    padding: 2rem 2rem;
+    padding: 1rem 2rem;
     
     h3{
         font-family: $font-title;
@@ -75,10 +75,21 @@
         color: $color-lightCoral;
     }
 
+    .contactInnerWrap{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
     img{
         max-width: 50px;
         margin-right: 2rem;
-        margin-top: 1rem;
+        // margin-top: 1rem;
+
+        .github-Icon{
+            max-height: 64px;
+        }
     }
 }
 
@@ -123,6 +134,19 @@
             font-size: 1rem;
         }
         
+    }
+
+    .contactInnerWrap{
+        flex-flow: row nowrap;
+        margin-bottom: 1rem;
+        min-width: 90vw;
+
+        img{
+            margin-right: 1rem;
+        }
+        .github-Icon{
+            max-height: 50px;
+        }
     }
 
     .pinkDots{

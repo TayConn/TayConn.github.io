@@ -451,6 +451,7 @@ nav {
   .mainHero .portfolioImg {
     padding: 0 0 1rem 0;
     min-width: auto;
+    max-width: 90vw;
     max-height: auto;
     -ms-grid-column-align: center;
         justify-self: center;
@@ -469,6 +470,7 @@ nav {
     text-align: left;
     font-size: 2.5rem;
     line-height: 2.75rem;
+    max-width: 85vw;
   }
   .mainHero .heroText .heroSubtext {
     text-align: left;
@@ -954,16 +956,16 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  padding: 2rem 2rem;
+  padding: 1rem 2rem;
 }
 
 .contactInfo h3 {
@@ -981,10 +983,29 @@ nav {
   color: #f8979b;
 }
 
+.contactInfo .contactInnerWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .contactInfo img {
   max-width: 50px;
   margin-right: 2rem;
-  margin-top: 1rem;
+}
+
+.contactInfo img .github-Icon {
+  max-height: 64px;
 }
 
 .pinkDots {
@@ -1033,6 +1054,20 @@ nav {
   }
   .contactInfo h3 {
     font-size: 1rem;
+  }
+  .contactInnerWrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    margin-bottom: 1rem;
+    min-width: 90vw;
+  }
+  .contactInnerWrap img {
+    margin-right: 1rem;
+  }
+  .contactInnerWrap .github-Icon {
+    max-height: 50px;
   }
   .pinkDots {
     left: -10%;
@@ -1454,7 +1489,7 @@ button:hover {
 
 .hobbies-movies {
   background-color: #f4f3ff;
-  max-width: 30%;
+  min-width: 25%;
   padding: 1.5rem 1.5rem 0 1.5rem;
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -1462,7 +1497,7 @@ button:hover {
 
 .hobbies-music {
   background-color: #fff5f6;
-  max-width: 30%;
+  min-width: 25%;
   padding: 1.5rem 1.5rem 0 1.5rem;
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -1470,7 +1505,7 @@ button:hover {
 
 .hobbies-games {
   background-color: #d9f4ff;
-  max-width: 30%;
+  min-width: 25%;
   padding: 1.5rem 1.5rem 0 1.5rem;
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -1478,7 +1513,7 @@ button:hover {
 
 .hobbies-books {
   background-color: #fff4e4;
-  max-width: 30%;
+  min-width: 25%;
   padding: 1.5rem 1.5rem 0 1.5rem;
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -1669,10 +1704,10 @@ button:hover {
   }
   .hobbiesWrapper {
     margin: 2rem 1rem;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

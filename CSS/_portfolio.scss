@@ -44,7 +44,7 @@
 
 .hobbies-movies{
     background-color: $color-lilacWhite;
-    max-width: 30%;
+    min-width: 25%;
     padding: 1.5rem 1.5rem 0 1.5rem;
     
     border-top-left-radius: 50px;
@@ -54,7 +54,7 @@
 
 .hobbies-music{
     background-color: $color-snowPink;
-    max-width: 30%;
+    min-width: 25%;
     padding: 1.5rem 1.5rem 0 1.5rem;
     
     border-top-left-radius: 50px;
@@ -63,7 +63,7 @@
 
 .hobbies-games{
     background-color: $color-babyBlue;
-    max-width: 30%;
+    min-width: 25%;
     padding: 1.5rem 1.5rem 0 1.5rem;
     
     border-top-left-radius: 50px;
@@ -72,7 +72,7 @@
 
 .hobbies-books{
     background-color: #fff4e4;
-    max-width: 30%;
+    min-width: 25%;
     padding: 1.5rem 1.5rem 0 1.5rem;
     
     border-top-left-radius: 50px;
@@ -245,7 +245,7 @@
 
     .hobbiesWrapper{
         margin: 2rem 1rem;
-        flex-flow: column nowrap;
+        flex-flow: row wrap;
         justify-content: center;
         align-items: center;
         gap: 1.5rem;
