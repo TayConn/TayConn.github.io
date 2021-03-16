@@ -1564,6 +1564,12 @@ button:hover {
   border-radius: 16px;
 }
 
+.imageGrid a {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .imageGrid .container {
   padding: 1em 0;
   float: left;
