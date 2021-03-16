@@ -97,7 +97,7 @@
 }
 
 .imageGrid{
-    grid-gap: 1rem;
+    grid-gap: .5rem;
     margin-top: 4rem;
 
     display: flex;
@@ -107,8 +107,6 @@
     align-content: center;
     align-items: flex-start;
     max-height: 1000px;
-    // position: relative;
-    // z-index: -1;
 
     img{
         height: auto;
