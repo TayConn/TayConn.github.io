@@ -630,6 +630,15 @@ nav {
           box-shadow: -1px 40px 80px 0 rgba(85, 82, 124, 0.25);
 }
 
+.card #icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+  border-radius: 100px;
+  -webkit-box-shadow: -1px 40px 80px 0 rgba(85, 82, 124, 0.25);
+          box-shadow: -1px 40px 80px 0 rgba(85, 82, 124, 0.25);
+}
+
 @media screen and (max-width: 800px) {
   .experienceSection {
     margin: 0 0 1rem 0;
@@ -1135,7 +1144,7 @@ nav {
   color: #55527c;
 }
 
-button {
+.button {
   background-color: #130F49;
   border-radius: 16px;
   padding: .75rem 1.5rem;
@@ -1146,9 +1155,10 @@ button {
   border: none;
   -webkit-transition: 200ms ease;
   transition: 200ms ease;
+  text-decoration: none;
 }
 
-button:hover {
+.button:hover {
   background-color: #34a1cd;
   cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym57.cur), auto !important;
 }
@@ -1161,6 +1171,17 @@ button:hover {
   left: 2vw;
   top: 30%;
   opacity: 50%;
+}
+
+#blobDots {
+  max-width: 25vw;
+  display: inline-block;
+  position: absolute;
+  z-index: -21;
+  left: 2vw;
+  top: 30%;
+  opacity: 50%;
+  overflow: visible;
 }
 
 @media screen and (max-width: 800px) {
@@ -1689,6 +1710,108 @@ button:hover {
     -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+.blinkLines-1 {
+  -webkit-animation: blink 1s linear infinite;
+          animation: blink 1s linear infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.blinkLines-2 {
+  -webkit-animation: blink 1s linear infinite;
+          animation: blink 1s linear infinite;
+}
+
+.blinkLines-3 {
+  -webkit-animation: blink 1s linear infinite;
+          animation: blink 1s linear infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.blinkLines-4 {
+  -webkit-animation: blink 1s linear infinite;
+          animation: blink 1s linear infinite;
+}
+
+.blinkLines-5 {
+  -webkit-animation: blink 1s linear infinite;
+          animation: blink 1s linear infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.blinkLines-6 {
+  -webkit-animation: blink 1s linear infinite;
+          animation: blink 1s linear infinite;
+}
+
+.blinkLines-7 {
+  -webkit-animation: blink 1s linear infinite;
+          animation: blink 1s linear infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.float_subtle {
+  -webkit-animation: float 3.5s ease-in-out infinite;
+          animation: float 3.5s ease-in-out infinite;
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  50% {
+    -webkit-transform: translate(0, 1rem);
+            transform: translate(0, 1rem);
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  50% {
+    -webkit-transform: translate(0, 1rem);
+            transform: translate(0, 1rem);
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
   }
 }
 /*# sourceMappingURL=style.css.map */

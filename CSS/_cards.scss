@@ -108,7 +108,7 @@
     
 }
 
-button{
+.button{
     background-color: $color-darkBlue;
     border-radius: 16px;
     padding: .75rem 1.5rem;
@@ -118,10 +118,10 @@ button{
     font-size: 1rem;
     border:none;
     transition: 200ms ease;
-    
+    text-decoration: none;
 }
 
-button:hover{
+.button:hover{
     background-color: $color-skyBlue;
     cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym57.cur), auto !important;
 }
@@ -134,6 +134,17 @@ button:hover{
     left: 2vw;
     top: 30%;
     opacity: 50%;
+}
+
+#blobDots{
+    max-width: 25vw;
+    display: inline-block;
+    position: absolute;
+    z-index: -21;
+    left: 2vw;
+    top: 30%;
+    opacity: 50%;
+    overflow: visible;
 }
 
 
