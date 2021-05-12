@@ -1212,7 +1212,7 @@ nav {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    max-width: 100%;
+    max-width: 75%;
     padding: 1.25rem;
   }
   .cardDetails {
@@ -1222,7 +1222,7 @@ nav {
   .cardFeature h3 {
     padding-left: 1rem;
   }
-  .infoCard button {
+  .infoCard .button {
     margin-left: 25%;
     margin-right: 25%;
   }

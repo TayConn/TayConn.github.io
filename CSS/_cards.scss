@@ -16,10 +16,9 @@
     margin: 1rem 1rem;
     flex: 0 1 auto;
     gap: .5rem .5rem;
-    
-
     transition: box-shadow 500ms ease;
 }
+
 
 .whiteFill{
     background-color: rgba(255, 255, 255, 0.75);
@@ -79,6 +78,7 @@
     padding: 10px;
     border-radius: 15px;
 }
+
 
 .purpleSquareBackground{
     background-color: $color-lilacWhite;
@@ -163,7 +163,7 @@
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
-        max-width: 100%;
+        max-width: 75%;
         padding: 1.25rem;
     }
 
@@ -178,7 +178,7 @@
         }
     }
 
-    .infoCard button{
+    .infoCard .button{
         margin-left: 25%;
         margin-right: 25%;
     }
