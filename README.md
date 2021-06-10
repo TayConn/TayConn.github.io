@@ -1,4 +1,4 @@
 # Portfolio
-Front-facing portfolio
 
-A straightforward repository holding the code for my portfolio site :) 
+A straightforward portfolio repository to hold the code for my portfolio site.
+
