@@ -1,13 +1,14 @@
-.footerInfo{
-    // display: flex;
-    // flex-flow: row wrap;
-
+    footer{
+    display: flex;
+    flex-flow: column nowrap;
     margin: 3rem 15rem 1rem 15rem;
     font-family: $font-body;
     font-size: 1rem;
     line-height: 1rem;
     color: $color-darkBlue;
     text-align: center;
+    justify-content: center;
+    gap: 1rem;
 
     ul{
         margin-bottom: 1.5rem;
@@ -21,6 +22,7 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
+        align-content: center;
         gap: 4rem;
 
         font-size: 1rem;
@@ -38,15 +40,73 @@
     }
 }
 
-.footerMobile{
-    display: none;
-}
-   
 
-@media screen and (max-width: 800px){
-    .footerInfo{
-        display:none;
+@media screen and (min-width: 699px) and (max-width: 1024px){
+    footer{
+        margin: 2.5rem 1rem 0;
+        gap: .25vw;
+        justify-content: space-around;
+
+        .footerMenuLinks{
+            display: flex;
+            flex-flow: row wrap;
+            align-content: center;
+            justify-content: center;
+            gap: 2rem;
+    
+            font-size: 1rem;
+            color: $color-darkBlue;
+            list-style: none;
+    
+            padding: 0;
+            
+            a{
+                text-decoration: none;
+                color: $color-darkBlue;
+            }
+    
+            a:hover{
+                color: $color-skyBlue;
+            }
+        }
     }
-}
    
+}
+
+@media screen and (max-width: 698px){
+   
+        footer{
+            flex-flow: column nowrap;
+            margin: 2.5rem .5rem 0;
+            gap: .25vw;
+            justify-content: space-around;
+            padding: 0 .5rem;
+
+            .footerMenuLinks{
+                display: flex;
+                flex-flow: row wrap;
+                align-content: center;
+                justify-content: center;
+                gap: 1.25rem;
+        
+                font-size: 1rem;
+                color: $color-darkBlue;
+                list-style: none;
+                
+                padding: 0;
+                
+                a{
+                    text-decoration: none;
+                    color: $color-darkBlue;
+                }
+        
+                a:hover{
+                    color: $color-skyBlue;
+                }
+            }
+        }
+        
+      
+}
+
    

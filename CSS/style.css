@@ -174,7 +174,49 @@ p {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 698px) {
+  .contentWrap {
+    margin: 0;
+  }
+  .sectionTitleMid {
+    margin: 2rem 1rem 0 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sectionTitleMid h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .sectionTitleMid h2 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .sectionTitleLeft {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-width: 100%;
+  }
+  .sectionTitleLeft h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .sectionTitleLeft h2 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .subWrapper {
+    margin: 3rem 2rem 1.5rem 2rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .scrollUpLink {
+    top: calc(100vh - 4rem);
+  }
+}
+
+@media screen and (min-width: 699px) and (max-width: 1024px) {
   .sectionTitleMid {
     margin: 2rem 2rem 0 2rem;
     -webkit-box-pack: center;
@@ -307,7 +349,40 @@ nav {
   margin-top: -2rem;
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (min-width: 699px) and (max-width: 1024px) {
+  header {
+    margin: 1rem;
+  }
+  nav {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .nav-ul {
+    display: none;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    text-align: center;
+  }
+  .nav-ul.show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hamburger {
+    display: block;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 698px) {
   header {
     margin: 1rem;
   }
@@ -337,13 +412,13 @@ nav {
 }
 
 .mainHero {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "text cartoon";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse nowrap;
+          flex-flow: row-reverse nowrap;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -351,14 +426,11 @@ nav {
 }
 
 .mainHero .heroText {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: text;
   -ms-grid-column-align: center;
       justify-self: center;
 }
 
-.mainHero .heroText .heroHello {
+.mainHero .heroText h1 {
   font-family: "Space Grotesk", sans-serif;
   color: #130F49;
   font-size: 5rem;
@@ -367,17 +439,25 @@ nav {
   margin: 0;
 }
 
-.mainHero .heroText .heroHello span {
+.mainHero .heroText h1 span {
   color: #34a1cd;
 }
 
-.mainHero .heroText .heroSubtext {
+.mainHero .heroText p {
   font-family: "Karla", sans-serif;
   color: #55527c;
   padding-top: 2rem;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   line-height: 2rem;
   letter-spacing: -0.03rem;
+}
+
+.mainHero .content {
+  position: relative;
+  width: 100%;
+  max-width: 25vw;
+  margin: 0;
+  overflow: hidden;
 }
 
 .mainHero .cartoonMe {
@@ -386,20 +466,6 @@ nav {
       justify-self: center;
   min-height: 18rem;
   max-height: 28rem;
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: cartoon;
-}
-
-.mainHero .portfolioImg {
-  padding: 0 5rem 0 5rem;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  min-height: 18rem;
-  max-height: 28rem;
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: cartoon;
 }
 
 .mainHero .backgroundHome {
@@ -409,33 +475,16 @@ nav {
   background-size: 40%;
 }
 
-.mainHero .backgroundDev {
-  background-image: url("/Images/PinkDots.svg");
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: 40%;
-}
-
-@media screen and (max-width: 999px) {
-  .heroHello {
-    font-size: 2rem;
-    line-height: 2rem;
-  }
-  .heroSubtext {
-    font-size: 1rem;
-    line-height: 1rem;
-    padding-bottom: 2rem;
-  }
-}
-
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 699px) and (max-width: 1024px) {
   .mainHero {
-    margin: 1rem 1rem 0 1rem;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
-        grid-template-areas: "text" "cartoon";
+    margin: 2rem 2rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
   }
   .mainHero .cartoonMe {
     padding: 0 0 1rem 0;
@@ -443,47 +492,62 @@ nav {
     max-height: 15rem;
     -ms-grid-column-align: center;
         justify-self: center;
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: cartoon;
     background-image: none;
   }
-  .mainHero .portfolioImg {
-    padding: 0 0 1rem 0;
-    min-width: auto;
-    max-width: 90vw;
-    max-height: auto;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: cartoon;
-    background-image: none;
+  .mainHero .heroText span {
+    color: #34a1cd;
+  }
+  .mainHero .heroText h1 {
+    font-size: 4rem;
+    line-height: 4.25rem;
+  }
+  .mainHero .heroText p {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    padding-bottom: 2rem;
+    max-width: 80vw;
+  }
+}
+
+@media screen and (max-width: 698px) {
+  .mainHero {
+    margin: 1rem 1rem 0 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
   }
   .mainHero .heroText {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: text;
     margin-left: .5rem;
   }
-  .mainHero .heroText .heroHello {
+  .mainHero .heroText span {
+    color: #34a1cd;
+  }
+  .mainHero .heroText h1 {
     text-align: left;
     font-size: 2.5rem;
     line-height: 2.75rem;
     max-width: 85vw;
+    text-align: center;
   }
-  .mainHero .heroText .heroSubtext {
+  .mainHero .heroText p {
     text-align: left;
     font-size: 1.25rem;
     line-height: 2rem;
     letter-spacing: -0.03rem;
     padding-top: 1rem;
+    text-align: center;
   }
-}
-
-@media screen and (min-width: 2000px) {
-  .mainHero {
-    margin: 0 30vw;
+  .mainHero .cartoonMe {
+    padding: 0 0 2rem 0;
+    min-width: 75vw;
+    max-height: 13rem;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    background-image: none;
   }
 }
 
@@ -639,7 +703,55 @@ nav {
           box-shadow: -1px 40px 80px 0 rgba(85, 82, 124, 0.25);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 699px) and (max-width: 1024px) {
+  .mask {
+    max-width: 98vw;
+  }
+  .experienceSection {
+    margin: 0 0 1rem 0;
+  }
+  .expCards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 5rem 1rem;
+    margin: 4rem;
+  }
+  .cardBlock {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    margin: 0 1rem;
+    padding: 0;
+  }
+  .card {
+    margin: 0 .5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    min-width: 0;
+  }
+  .card p {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    padding: 0 .5rem;
+  }
+  .card h4 {
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 698px) {
+  .mask {
+    max-width: 97vw;
+  }
   .experienceSection {
     margin: 0 0 1rem 0;
   }
@@ -705,6 +817,7 @@ nav {
           flex-grow: 1;
   -ms-flex-negative: 1;
       flex-shrink: 1;
+  margin: 5rem 0 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -823,7 +936,66 @@ nav {
   bottom: 20vh;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 699px) and (max-width: 1024px) {
+  .contactMe {
+    margin: 3rem 4rem 1rem;
+    padding: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contactTitle {
+    margin: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contactTitle h1 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .contactTitle h2 {
+    font-size: 1.25rem;
+    line-height: 1rem;
+  }
+  .contactInfo {
+    padding: .5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactInfo img {
+    margin: 0;
+  }
+  .contactInfo h3 {
+    font-size: 1rem;
+  }
+  .contactInnerWrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    margin-bottom: 1rem;
+    min-width: 90vw;
+  }
+  .contactInnerWrap img {
+    margin-right: 1rem;
+  }
+  .contactInnerWrap .github-Icon {
+    max-height: 50px;
+  }
+  .pinkDots {
+    left: -5%;
+    bottom: 18vh;
+    opacity: 50%;
+  }
+}
+
+@media screen and (max-width: 698px) {
   .contactMe {
     margin: 3rem 1rem 1rem 1rem;
     padding: 1rem;
@@ -876,8 +1048,8 @@ nav {
     max-height: 50px;
   }
   .pinkDots {
-    left: -10%;
-    bottom: 38vh;
+    left: -5%;
+    bottom: 25vh;
     opacity: 50%;
   }
 }
@@ -902,7 +1074,7 @@ nav {
           flex-flow: column wrap;
   z-index: 1;
   position: relative;
-  padding-top: 3rem;
+  padding: 3rem 0 2rem;
 }
 
 .aboutMarginBottom {
@@ -910,7 +1082,7 @@ nav {
 }
 
 .aboutBody {
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 .aboutBody p {
@@ -929,7 +1101,7 @@ nav {
   top: 5%;
   right: auto;
   bottom: auto;
-  margin-left: -15rem;
+  margin-left: -20rem;
   z-index: -1;
   width: 85%;
   min-height: 100%;
@@ -942,7 +1114,7 @@ nav {
   opacity: 75%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 699px) and (max-width: 1024px) {
   .aboutWrapper {
     margin: 3rem 2rem 5rem 2rem;
     padding-top: 0;
@@ -958,9 +1130,22 @@ nav {
   }
 }
 
-@media screen and (min-width: 1919px) {
+@media screen and (max-width: 698px) {
+  .aboutWrapper {
+    margin: 3rem 0 5rem;
+    padding-top: 0;
+  }
+  .aboutInnerWrapper {
+    margin: 0 2rem;
+  }
   .about-bg-block {
-    left: -5%;
+    display: none;
+  }
+  .aboutBody {
+    padding-bottom: 2rem;
+  }
+  .aboutBody p {
+    max-width: 100%;
   }
 }
 
@@ -970,24 +1155,35 @@ nav {
   }
 }
 
-.footerInfo {
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
   margin: 3rem 15rem 1rem 15rem;
   font-family: "Karla", sans-serif;
   font-size: 1rem;
   line-height: 1rem;
   color: #130F49;
   text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
 }
 
-.footerInfo ul {
+footer ul {
   margin-bottom: 1.5rem;
 }
 
-.footerInfo p {
+footer p {
   text-align: center;
 }
 
-.footerInfo .footerMenuLinks {
+footer .footerMenuLinks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -998,28 +1194,95 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   gap: 4rem;
   font-size: 1rem;
   color: #130F49;
   list-style: none;
 }
 
-.footerInfo .footerMenuLinks a {
+footer .footerMenuLinks a {
   text-decoration: none;
   color: #130F49;
 }
 
-.footerInfo .footerMenuLinks a:hover {
+footer .footerMenuLinks a:hover {
   color: #34a1cd;
 }
 
-.footerMobile {
-  display: none;
+@media screen and (min-width: 699px) and (max-width: 1024px) {
+  footer {
+    margin: 2.5rem 1rem 0;
+    gap: .25vw;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  footer .footerMenuLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 2rem;
+    font-size: 1rem;
+    color: #130F49;
+    list-style: none;
+    padding: 0;
+  }
+  footer .footerMenuLinks a {
+    text-decoration: none;
+    color: #130F49;
+  }
+  footer .footerMenuLinks a:hover {
+    color: #34a1cd;
+  }
 }
 
-@media screen and (max-width: 800px) {
-  .footerInfo {
-    display: none;
+@media screen and (max-width: 698px) {
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    margin: 2.5rem .5rem 0;
+    gap: .25vw;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 0 .5rem;
+  }
+  footer .footerMenuLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 1.25rem;
+    font-size: 1rem;
+    color: #130F49;
+    list-style: none;
+    padding: 0;
+  }
+  footer .footerMenuLinks a {
+    text-decoration: none;
+    color: #130F49;
+  }
+  footer .footerMenuLinks a:hover {
+    color: #34a1cd;
   }
 }
 
@@ -1044,7 +1307,7 @@ nav {
 
 .infoCard {
   max-width: 45%;
-  padding: 1.5rem 2rem 1.5rem 2rem;
+  padding: 1.5rem 2rem 2rem 2rem;
   margin: 1rem 1rem;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
@@ -1136,6 +1399,10 @@ nav {
   border-radius: 15px;
 }
 
+.cardDetails {
+  padding-bottom: 1rem;
+}
+
 .cardDetails p {
   font-family: "Karla", sans-serif;
   font-size: 1.25rem;
@@ -1163,16 +1430,6 @@ nav {
   cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym57.cur), auto !important;
 }
 
-.blobDots {
-  display: inline-block;
-  position: absolute;
-  min-width: 25%;
-  z-index: -21;
-  left: 2vw;
-  top: 30%;
-  opacity: 50%;
-}
-
 #blobDots {
   max-width: 25vw;
   display: inline-block;
@@ -1184,7 +1441,7 @@ nav {
   overflow: visible;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 699px) and (max-width: 1024px) {
   .cardWrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1193,9 +1450,9 @@ nav {
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1213,7 +1470,7 @@ nav {
         -ms-flex-pack: center;
             justify-content: center;
     max-width: 75%;
-    padding: 1.25rem;
+    padding: 1.25rem 1.25rem 2rem 1.25rem;
   }
   .cardDetails {
     margin: 0;
@@ -1226,23 +1483,40 @@ nav {
     margin-left: 25%;
     margin-right: 25%;
   }
-  .blobDots {
-    top: 34%;
+  #blobDots {
+    top: 30%;
     left: -14vw;
-    min-width: 80%;
+    min-width: 70%;
     z-index: -2;
   }
 }
 
-@media screen and (min-width: 2000px) {
-  .blobDots {
-    display: inline-block;
-    position: absolute;
-    min-width: 15%;
-    z-index: -21;
-    left: 8vw;
-    top: 25%;
-    opacity: 50%;
+@media screen and (max-width: 698px) {
+  .infoCard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 100%;
+  }
+  .cardDetails {
+    margin: 0;
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .cardFeature h3 {
+    padding-left: 1rem;
+  }
+  #blobDots {
+    display: none;
   }
 }
 
@@ -1269,6 +1543,10 @@ nav {
   font-family: "Karla", sans-serif;
   margin: 0;
   padding-bottom: 1.5rem;
+}
+
+.portfolio--Content__Wrapper {
+  margin: 3rem 15rem;
 }
 
 .hobbiesWrapper {
@@ -1299,8 +1577,8 @@ nav {
 
 .skills-tools-left {
   background-color: #f4f3ff;
-  max-width: 30%;
-  padding: 1.5rem 1.5rem 0 1.5rem;
+  max-width: 33%;
+  padding: 2rem;
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
 }
@@ -1339,8 +1617,12 @@ nav {
 
 .portfolioMainContent {
   background-color: #FFFFFF;
-  max-width: 70%;
+  max-width: 67%;
   margin-left: 5rem;
+}
+
+.portfolioMainContent span {
+  color: #34a1cd;
 }
 
 .portfolioMainContent h1 {
@@ -1349,37 +1631,49 @@ nav {
 
 .portfolioMainContent p {
   color: #130F49;
-  font-size: 1.25rem;
-  line-height: 2rem;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+}
+
+.aboutMe_Content__wrapper {
+  max-width: 67%;
+}
+
+.aboutMe_Content__wrapper span {
+  color: #34a1cd;
+}
+
+.aboutMe_Content__wrapper h1 {
+  margin: 0;
+}
+
+.aboutMe_Content__wrapper p {
+  color: #130F49;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+}
+
+.imageGrid__wrapper {
+  margin: 0 10rem;
 }
 
 .imageGrid {
-  grid-gap: .5rem;
-  margin-top: 4rem;
+  grid-gap: 1rem;
+  margin: 4rem 0 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  max-height: 1000px;
-}
-
-.imageGrid img {
-  height: auto;
-  max-width: 20vw;
-  -ms-flex-preferred-size: auto;
-      flex-basis: auto;
-  border-radius: 16px;
 }
 
 .imageGrid a {
@@ -1390,8 +1684,7 @@ nav {
 
 .imageGrid .container {
   padding: 1em 0;
-  float: left;
-  width: 33%;
+  border-radius: 1rem 0 1rem 0;
 }
 
 .imageGrid .title {
@@ -1402,10 +1695,18 @@ nav {
 
 .imageGrid .content {
   position: relative;
-  width: 90%;
-  max-width: 20vw;
-  margin: auto;
+  width: 100%;
+  max-width: 25vw;
+  margin: 0;
   overflow: hidden;
+}
+
+.imageGrid img {
+  height: auto;
+  width: 100%;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  border-radius: 16px;
 }
 
 .imageGrid .content-overlay {
@@ -1427,10 +1728,6 @@ nav {
   opacity: 1;
 }
 
-.imageGrid .content-image {
-  width: 100%;
-}
-
 .imageGrid .content-details {
   position: absolute;
   text-align: center;
@@ -1446,9 +1743,13 @@ nav {
   transition: all 0.3s ease-in-out 0s;
 }
 
+.imageGrid .content-details a {
+  font-size: 1rem;
+}
+
 .imageGrid .content-details p {
   color: #fff;
-  font-size: 0.8em;
+  font-size: 1rem;
 }
 
 .imageGrid .content:hover .content-details {
@@ -1506,19 +1807,19 @@ nav {
 .pinkDots-portfolio {
   display: inline-block;
   position: absolute;
-  max-width: 100%;
+  width: 100%;
   z-index: 1;
-  left: 10vw;
-  bottom: 20vh;
+  left: 10%;
+  bottom: 20%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 699px) and (max-width: 1024px) {
   .portfolioWrapper {
-    margin: 2rem 1rem;
+    margin: 2rem;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse nowrap;
+            flex-flow: column-reverse nowrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1526,15 +1827,22 @@ nav {
         -ms-flex-align: center;
             align-items: center;
   }
+  .portfolio--Content__Wrapper {
+    margin: 0rem;
+  }
+  .knowMe__wrapper {
+    margin: 2rem;
+    max-width: 100%;
+  }
   .hobbiesWrapper {
-    margin: 2rem 1rem;
+    margin: 2rem;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1542,42 +1850,65 @@ nav {
   }
   .portfolioMainContent {
     max-width: 100%;
-    margin: 2rem 0 0 0;
+    margin: 2rem 1rem;
   }
   .portfolioMainContent h1 {
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
-  .skills-tools-left {
+  .aboutMe_Content__wrapper {
     max-width: 100%;
+    margin: 2rem 0 0 0;
+  }
+  .aboutMe_Content__wrapper h1 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+  .skills-tools-left {
+    min-width: 100vw;
+    padding: 1rem 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0 15%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    border-radius: 0;
   }
   .hobbies-movies {
     max-width: 100%;
     margin: .75rem 0;
+    padding: 2.5rem;
   }
   .hobbies-music {
     max-width: 100%;
     margin: .75rem 0;
+    padding: 2.5rem;
   }
   .hobbies-games {
     max-width: 100%;
     margin: .75rem 0;
+    padding: 2.5rem;
   }
   .hobbies-books {
     max-width: 100%;
     margin: .75rem 0;
+    padding: 2.5rem;
   }
   .imageGrid {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1595,41 +1926,190 @@ nav {
         -ms-flex-order: -1;
             order: -1;
   }
-  .imageGrid .container {
-    padding: 1em 0;
-    min-width: 100%;
-    float: none;
-  }
-  .imageGrid .container .content {
+  .imageGrid .content {
     position: relative;
     width: 100%;
     min-width: 90vw;
     margin: auto;
     overflow: hidden;
   }
-  .imageGrid .container .content .content-overlay {
+  .imageGrid .content .content-overlay {
     overflow: hidden;
   }
-  .imageGrid .container .content .content-details {
+  .imageGrid .content .content-details {
     overflow: hidden;
   }
-  .imageGrid .container .content .content-image {
+  .imageGrid .content .content-image {
     max-width: 100%;
   }
   .pinkDots-portfolio {
     display: none;
   }
-}
-
-@media screen and (min-width: 2000px) {
-  .imageGrid {
-    margin: 5rem 7vw;
+  .content {
+    position: relative;
+    width: 100%;
+    min-width: 90vw;
+    margin: auto;
+    overflow: hidden;
+  }
+  .content .content-overlay {
+    overflow: hidden;
+  }
+  .content .content-details {
+    overflow: hidden;
+  }
+  .content .content-image {
+    max-width: 100%;
   }
 }
 
-@media screen and (min-width: 1920px) {
-  .imageGrid {
+@media screen and (max-width: 698px) {
+  .portfolioWrapper {
     margin: 2rem 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse nowrap;
+            flex-flow: column-reverse nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .portfolio--Content__Wrapper {
+    margin: 0rem;
+  }
+  .knowMe__wrapper {
+    margin: 1rem;
+    max-width: 100%;
+  }
+  .hobbiesWrapper {
+    margin: 2rem .5rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1.5rem;
+  }
+  .portfolioMainContent {
+    max-width: 100%;
+    margin: 2rem;
+  }
+  .portfolioMainContent h1 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+  .aboutMe_Content__wrapper {
+    max-width: 100%;
+    margin: 2rem 0 0 0;
+  }
+  .aboutMe_Content__wrapper h1 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+  .skills-tools-left {
+    min-width: 100%;
+    border-radius: 0;
+    padding: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0 .5rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .hobbies-movies {
+    max-width: 100%;
+    margin: .75rem 0;
+    padding: 2.5rem;
+  }
+  .hobbies-music {
+    max-width: 100%;
+    margin: .75rem 0;
+    padding: 2.5rem;
+  }
+  .hobbies-games {
+    max-width: 100%;
+    margin: .75rem 0;
+    padding: 2.5rem;
+  }
+  .hobbies-books {
+    max-width: 100%;
+    margin: .75rem 0;
+    padding: 2.5rem;
+  }
+  .imageGrid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: .5rem 0;
+    min-width: 100%;
+    max-height: 100%;
+    margin: 0;
+  }
+  .imageGrid img {
+    max-width: 100vw;
+    height: auto;
+  }
+  .imageGrid .item-order-top {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .imageGrid .content {
+    position: relative;
+    width: 100%;
+    min-width: 90vw;
+    margin: auto;
+    overflow: hidden;
+  }
+  .imageGrid .content .content-overlay {
+    overflow: hidden;
+  }
+  .imageGrid .content .content-details {
+    overflow: hidden;
+  }
+  .imageGrid .content .content-image {
+    max-width: 100%;
+  }
+  .pinkDots-portfolio {
+    display: none;
+  }
+  .content {
+    position: relative;
+    width: 100%;
+    min-width: 90vw;
+    margin: auto;
+    overflow: hidden;
+  }
+  .content .content-overlay {
+    overflow: hidden;
+  }
+  .content .content-details {
+    overflow: hidden;
+  }
+  .content .content-image {
+    max-width: 100%;
   }
 }
 

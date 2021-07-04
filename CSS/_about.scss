@@ -3,7 +3,8 @@
     flex-flow: column wrap;
     z-index: 1;
     position: relative;
-    padding-top:3rem;
+    padding: 3rem 0 2rem;
+    
 }
 
 .aboutMarginBottom{
@@ -11,7 +12,7 @@
 }
 
 .aboutBody{
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     p{
         text-align: left;
         margin-bottom: 1rem;
@@ -30,7 +31,7 @@
         top:5%;
         right: auto;
         bottom: auto;
-        margin-left: -15rem;
+        margin-left: -20rem;
         z-index: -1;
         width: 85%;
         min-height: 100%;
@@ -43,7 +44,7 @@
     }
 
 
-    @media screen and (max-width: 800px){
+    @media screen and (min-width: 699px) and (max-width: 1024px){
         .aboutWrapper{
             margin: 3rem 2rem 5rem 2rem;
             padding-top: 0;
@@ -62,11 +63,26 @@
         }
     }
 
-    @media screen and (min-width: 1919px){
+    @media screen and (max-width: 698px){
+        .aboutWrapper{
+            margin: 3rem 0 5rem;
+            padding-top: 0;
+        }
+        .aboutInnerWrapper{
+            margin: 0 2rem;
+        }
         .about-bg-block{
-            left: -5%;
+            display: none;
+        }
+
+        .aboutBody{
+            padding-bottom: 2rem;
+            p{
+                max-width: 100%;
+                }
         }
     }
+
 
     @media screen and (min-width: 2000px){
         .aboutInnerWrapper{

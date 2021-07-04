@@ -14,6 +14,10 @@
     }
 }
 
+.portfolio--Content__Wrapper{
+    margin: 3rem 15rem;
+}
+
 .hobbiesWrapper{
     display: flex;
     flex-flow: row nowrap;
@@ -34,12 +38,11 @@
 
 .skills-tools-left{
     background-color: $color-lilacWhite;
-    max-width: 30%;
-    padding: 1.5rem 1.5rem 0 1.5rem;
+    max-width: 33%;
+    padding: 2rem;
     
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
-    
 }
 
 .hobbies-movies{
@@ -81,40 +84,58 @@
 
 .portfolioMainContent{
     background-color: $color-background;
-    max-width: 70%;
+    max-width: 67%;
     margin-left: 5rem;
-
+    span{
+        color:$color-skyBlue;
+    }
     h1{
         margin:0;
     }
 
     p{
         color: $color-darkBlue;
-        font-size: 1.25rem;
-        line-height: 2rem;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
         
     }
 }
 
-.imageGrid{
-    grid-gap: .5rem;
-    margin-top: 4rem;
-
-    display: flex;
-    flex-flow: column wrap;
+.aboutMe_Content__wrapper{
+    max-width: 67%;
     
-    justify-content: flex-start;
-    align-content: center;
-    align-items: flex-start;
-    max-height: 1000px;
+    span{
+        color:$color-skyBlue;
+    }
+    h1{
+        margin:0;
+    }
 
-    img{
-        height: auto;
-        max-width: 20vw;
-        flex-basis: auto;
-        border-radius: 16px;
+    p{
+        color: $color-darkBlue;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
         
     }
+}
+
+.imageGrid__wrapper{
+    margin: 0 10rem;
+}
+
+.imageGrid{
+    grid-gap: 1rem;
+    // margin-top: 4rem;
+    margin: 4rem 0 2rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    
+    justify-content: space-around;
+    align-content: center;
+    align-items: flex-start;
+
+    
 
     a{
         color: white;
@@ -124,10 +145,9 @@
 
     .container{
         padding: 1em 0;
-        float: left;
-        width: 33%;
+        border-radius: 1rem 0 1rem 0;
+        
       }
-
 
         .title{
             color: $color-darkBlue;
@@ -137,10 +157,17 @@
 
         .content{
             position: relative;
-            width: 90%;
-            max-width: 20vw;
-            margin: auto;
+            width: 100%;
+            max-width: 25vw;
+            margin: 0;
             overflow: hidden;
+        }
+
+        img{
+            height: auto;
+            width:100%;
+            flex-basis: auto;
+            border-radius: 16px;
         }
 
         .content-overlay{
@@ -160,10 +187,7 @@
         .content:hover .content-overlay{
             opacity: 1;
           }
-          
-          .content-image{
-            width: 100%;
-          }
+
           
           .content-details {
             position: absolute;
@@ -180,10 +204,12 @@
             -webkit-transition: all 0.3s ease-in-out 0s;
             -moz-transition: all 0.3s ease-in-out 0s;
             transition: all 0.3s ease-in-out 0s;
-
+            a{
+                font-size: 1rem;
+            }
             p{
                 color: #fff;
-            font-size: 0.8em;}
+            font-size: 1rem;}
           }
           
           .content:hover .content-details{
@@ -232,31 +258,49 @@
 .pinkDots-portfolio{
     display: inline-block;
     position: absolute;
-    max-width: 100%;
+    width: 100%;
     z-index: 1;
-    left: 10vw;
-    bottom: 20vh;
+    left: 10%;
+    bottom: 20%;
 }
 
 
-@media screen and (max-width: 800px){
+@media screen and (min-width: 699px) and (max-width: 1024px){
     
     .portfolioWrapper{
-        margin: 2rem 1rem;
-        flex-flow: column nowrap;
+        margin: 2rem;
+        flex-flow: column-reverse nowrap;
         justify-content: center;
         align-items: center;
     }
 
+    .portfolio--Content__Wrapper{
+        margin: 0rem;
+    }
+
+    .knowMe__wrapper{
+        margin: 2rem;
+        max-width: 100%;
+    }
+
     .hobbiesWrapper{
-        margin: 2rem 1rem;
+        margin: 2rem;
         flex-flow: row wrap;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         gap: 1.5rem;
     }
 
     .portfolioMainContent{
+        max-width: 100%;
+        margin: 2rem 1rem;
+
+        h1{
+            font-size: 2.5rem;
+            line-height: 2.75rem;
+        }
+    }
+    .aboutMe_Content__wrapper{
         max-width: 100%;
         margin: 2rem 0 0 0;
 
@@ -267,41 +311,50 @@
     }
 
     .skills-tools-left{
-        max-width: 100%;
+        min-width: 100vw;
+        padding: 1rem 10%;
+        display: flex;
+        gap: 0 15%;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        border-radius: 0;
     }
 
     .hobbies-movies{
         max-width: 100%;
         margin: .75rem 0;
+        padding: 2.5rem;
         
     }
     
     .hobbies-music{
         max-width: 100%;
         margin: .75rem 0;
+        padding: 2.5rem;
     }
     
     .hobbies-games{
         max-width: 100%;
         margin: .75rem 0;
+        padding: 2.5rem;
     }
     
     .hobbies-books{
         max-width: 100%;
         margin: .75rem 0;
+        padding: 2.5rem;
     }
 
     .imageGrid{
         display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
+        flex-flow: row wrap;
+        justify-content: space-around;
         align-items: center;
         gap: .5rem 0;
         min-width: 100%;
         max-height: 100%;
         margin: 0;
         
-
         img{
             max-width: 100vw;
             height: auto;
@@ -310,47 +363,185 @@
         .item-order-top{
             order: -1;
         }
+        .content{
+            position: relative;
+            width: 100%;
+            min-width: 90vw;
+            margin: auto;
+            overflow: hidden;
 
-        .container{
-            padding: 1em 0;
-            min-width: 100%;
-            float: none;
-            
-
-            .content{
-                position: relative;
-                width: 100%;
-                min-width: 90vw;
-                margin: auto;
+            .content-overlay{
                 overflow: hidden;
+            }
 
-                .content-overlay{
-                    overflow: hidden;
-                }
-
-                .content-details {
-                    overflow: hidden;
-                 }
-                .content-image{
-                max-width: 100%;
-                }
+            .content-details {
+                overflow: hidden;
              }
-        }
+            .content-image{
+            max-width: 100%;
+            }
+         }
     }
 
     .pinkDots-portfolio{
         display: none;
     }
+    .content{
+        position: relative;
+        width: 100%;
+        min-width: 90vw;
+        margin: auto;
+        overflow: hidden;
+
+        .content-overlay{
+            overflow: hidden;
+        }
+
+        .content-details {
+            overflow: hidden;
+         }
+        .content-image{
+        max-width: 100%;
+        }
+     }
 }
 
-@media screen and (min-width: 2000px){
-    .imageGrid{
-        margin: 5rem 7vw;
-    }
-}
 
-@media screen and (min-width: 1920px){
-    .imageGrid{
+
+   @media screen and (max-width: 698px){
+        
+    .portfolioWrapper{
         margin: 2rem 0;
+        flex-flow: column-reverse nowrap;
+        justify-content: center;
+        align-items: center;
     }
-}
+    .portfolio--Content__Wrapper{
+        margin: 0rem;
+    }
+    .knowMe__wrapper{
+        margin: 1rem;
+        max-width: 100%;
+    } 
+    .hobbiesWrapper{
+        margin: 2rem .5rem;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .portfolioMainContent{
+        max-width: 100%;
+        margin: 2rem;
+
+        h1{
+            font-size: 2.5rem;
+            line-height: 2.75rem;
+        }
+    }
+
+    .aboutMe_Content__wrapper{
+        max-width: 100%;
+        margin: 2rem 0 0 0;
+
+        h1{
+            font-size: 2.5rem;
+            line-height: 2.75rem;
+        }
+    }
+
+    .skills-tools-left{
+        min-width: 100%;
+        border-radius: 0;
+        padding: 2rem;
+        display: flex;
+        gap: 0 .5rem;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+
+    .hobbies-movies{
+        max-width: 100%;
+        margin: .75rem 0;
+        padding: 2.5rem;
+    }
+    
+    .hobbies-music{
+        max-width: 100%;
+        margin: .75rem 0;
+        padding: 2.5rem;
+    }
+    
+    .hobbies-games{
+        max-width: 100%;
+        margin: .75rem 0;
+        padding: 2.5rem;
+    }
+    
+    .hobbies-books{
+        max-width: 100%;
+        margin: .75rem 0;
+        padding: 2.5rem;
+    }
+
+    .imageGrid{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        gap: .5rem 0;
+        min-width: 100%;
+        max-height: 100%;
+        margin: 0;
+        
+        img{
+            max-width: 100vw;
+            height: auto;
+        }
+
+        .item-order-top{
+            order: -1;
+        }
+        .content{
+            position: relative;
+            width: 100%;
+            min-width: 90vw;
+            margin: auto;
+            overflow: hidden;
+
+            .content-overlay{
+                overflow: hidden;
+            }
+
+            .content-details {
+                overflow: hidden;
+             }
+            .content-image{
+            max-width: 100%;
+            }
+         }
+    }
+
+    .pinkDots-portfolio{
+        display: none;
+    }
+    .content{
+        position: relative;
+        width: 100%;
+        min-width: 90vw;
+        margin: auto;
+        overflow: hidden;
+
+        .content-overlay{
+            overflow: hidden;
+        }
+
+        .content-details {
+            overflow: hidden;
+         }
+        .content-image{
+        max-width: 100%;
+        }
+     }
+   }          

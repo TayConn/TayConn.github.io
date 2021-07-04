@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Karla&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="/CSS/style.css">
     <link rel="javascript" href="/JS/script.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
      <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XM21Q4G8WD"></script>
@@ -39,120 +40,85 @@
             </ul>
         </nav>
     </header>
-
-    <section aria-label="Introduction" class="mainHero contentWrap content">
-        <img class="portfolioImg" src="/Images/WebDev_thumbnail_small.png" alt="An image with multiple examples of my website portfolio projects based around web development">
-        <div class="heroText">
-            <h1 class="heroHello"><span>Web </span>Development</h1>
-            <p class="heroSubtext">Here is a small collection of development projects I have worked on. I have a lot of room to grow, but growth can be very exciting and rewarding.</p>
-        </div>
-    </section>
-
-    <section aria-label="development-skills" class="contentWrap" id="skills">
+    <section aria-label="development-skills" class="portfolio--Content__Wrapper" id="skills">
         <div class="portfolioWrapper">
             <div class="skills-tools-left">
-                <div class="skillsTitle">
-                    <h2>Skills</h2>
+                <div>
+                    <div class="skillsTitle">
+                        <h2>Skills</h2>
+                    </div>
+                    <ul>
+                        <li>HTML & CSS/Sass</li>
+                        <li>Javascript</li>
+                        <li>Accessability</li>
+                        <li>Lo + Hi fidelity Prototypes</li>
+                        <li>UI & UX Design</li>
+                        <li>Graphic Creation</li>
+                        <li>Copywritting</li>
+                    </ul>
                 </div>
-                <ul>
-                    <li>HTML & CSS/Sass</li>
-                    <li>Javascript</li>
-                    <li>Lo + Hi fidelity Prototypes</li>
-                    <li>UI & UX Design</li>
-                    <li>Accessability</li>
-                    <li>Graphic Creation</li>
-                    <li>Copywritting</li>
-                </ul>
-                <div class="skillsTitle">
-                    <h2>Tools</h2>
+                <div>
+                    <div class="skillsTitle">
+                        <h2>Tools</h2>
+                    </div>
+                    <ul>
+                        <li>Visual Studio Code</li>
+                        <li>NPM</li>
+                        <li>GitHub</li>
+                        <li>CMS (CommonSpot)</li>
+                        <li>Adobe XD | Figma</li>
+                        <li>Adobe Illustrator</li>
+                        <li>Adobe Photoshop</li>
+                    </ul>
                 </div>
-                <ul>
-                    <li>CMS (CommonSpot)</li>
-                    <li>Adobe XD | Sketch | Figma</li>
-                    <li>Adobe Illustrator</li>
-                    <li>Adobe Photoshop</li>
-                </ul>
             </div>
             <div class="portfolioMainContent">
-                <h1>Overview</h1>
+                <h1><span>Web Development</span> Overview</h1>
+                <p>Here is a small collection of development projects I have worked on. I have a lot of room to grow, but growth can be very exciting and rewarding.</p>
                 <p>With over 5 years of experience working professionally on websites using CMS (Content Management Systems), I am confident in my skills as a web content specialist. I also have extensive experience working with responsive HTML email templates for B2C communications.</p>
-                <p>Outside of my roles as a Digital Media Specialist, I have actively worked on expanding my development skills through traditional education and online communities based around challenge exercises and fundamental skill building.</p>
+                <p>Outside of my roles as a Digital Marketing Specialist, I have actively worked on expanding my development skills through traditional education and online communities based around challenge exercises and fundamental skill building.</p>
                 <p>My current objective is to expand on my Javascript skill sets - then to start integrating frameworks such as React and Typescript into my workflows.</p>
             </div> 
         </div>
-                <div class="imageGrid">
-                    <div class="container">
-                        <div class="content">
-                            <div class="content-overlay"></div>
-                            <img class="content-image" src="/Images/coffeeRoasters-Index.png" alt="An image of a full screen shot of a homepage of a coffee seller site">
-                            <div class="content-details fadeIn-top">
-                                <h3>Skill Builder</h3>
-                                <p>Coffeeroasters Homepage | Frontend Challenge</p>
-                                <p>100% Handcoded, HTML, CSS/Sass</p>
-                            </div>
-                        </div>
+    </section>
+    <section class="imageGrid__wrapper">
+        <div class="imageGrid">
+                <div class="content">
+                    <div class="content-overlay"></div>
+                    <img class="content-image" src="/Images/planetSite_multidevice.png" alt="An image of a full screen shot of a homepage of a planet solar system site">
+                    <div class="content-details fadeIn-top">
+                        <h3>Skill Builder</h3>
+                        <p>Planet Information Site | Frontend Challenge</p>
+                        <a href="https://github.com/TayConn/planet-facts-site" title="View on Github"><i class="devicon-github-original"></i> View on Github</a><br/>
+                        <a href="https://planet-facts-site.vercel.app/" title="View Live Site"><i class="fas fa-external-link-alt"></i> View Live Site</a>
+                        <p>Vanilla Javascript, HTML, CSS/Sass</p>
                     </div>
-                    <div class="container">
-                        <div class="content">
-                            <div class="content-overlay"></div>
-                            <img class="content-image" src="/Images/web-flushotPage.jpg" alt="An image of a full screen shot of the 2020 flu shot campaign webpage">
-                            <div class="content-details fadeIn-top">
-                                <h3>NorthBay Healthcare</h3>
-                                <p><a href="https://www.northbay.org/flushot/" alt="Click to view the flu shot page on NorthBay.org" target="_blank">Seasonal Flu Shot webpage</a></p>
-                                <p>Graphic creation, CMS template editing (HTML/CSS)</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="content">
+                    <div class="content-overlay"></div>
+                    <img class="content-image" src="/Images/TypeMaster_Responsive_multidevice.png" alt="An image of a full screen shot of a homepage of a coffee seller site">
+                    <div class="content-details fadeIn-top">
+                        <h3>Skill Builder</h3>
+                        <p>Keyboard Launch Site | Frontend Challenge</p>
+                        <a href="https://github.com/TayConn/typemaster_productSite" title="View on Github"><i class="devicon-github-original"></i> View on Github</a><br/>
+                        <a href="https://typemaster-product-site.vercel.app/" title="View Live Site"><i class="fas fa-external-link-alt"></i> View Live Site</a>
+                        <p>Vanilla Javascript, HTML, CSS/Sass</p>
                     </div>
-                    <div class="container">
-                        <div class="content">
-                            <div class="content-overlay"></div>
-                            <img class="content-image" src="/Images/faq_accordion_img.png" alt="An image of a desktop view and mobile view of an FAQ accordion I coded.">
-                            <div class="content-details fadeIn-top">
-                                <h3>Skill Builder</h3>
-                                <p><a href="https://accordian-faq-gdsslight.vercel.app/" alt="click here to visit the live view of this piece." target="_blank">Animated FAQ</a></p>
-                                <p>Handcoded HTML, CSS/Sass, Vanilla JS. Flexbox & Mobile-first</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="content">
+                    <div class="content-overlay"></div>
+                    <img class="content-image" src="/Images/CoffeeSub_Responsive_multidevice.png" alt="An image of a full screen shot of a homepage of a coffee seller site">
+                    <div class="content-details fadeIn-top">
+                        <h3>Skill Builder</h3>
+                        <p>Coffeeroasters Homepage | Frontend Challenge</p>
+                        <a href="https://github.com/TayConn/CoffeeSubscriptionSite" title="View on Github"><i class="devicon-github-original"></i> View on Github</a>
+                        <p>Vanilla Javascript, HTML, CSS/Sass</p>
                     </div>
-                    <div class="container">
-                        <div class="content">
-                            <div class="content-overlay"></div>
-                            <img class="content-image" src="/Images/Email-Detailed_img.png" alt="an image showing one of my favorite email templates in multiple screen sizes">
-                            <div class="content-details fadeIn-top">
-                                <h3>NorthBay Healthcare</h3>
-                                <p><a href="https://www.northbay.org/2020_May_NBPulse_Web.cfm" alt="Click here to view the full email" target="_blank">Responsive Design Emails</a></p>
-                                <p>100% Handcoded Email templates (HTML & CSS)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="content">
-                            <div class="content-overlay"></div>
-                            <img class="content-image" src="/Images/Email-Thumbnail2.png" alt="an image showing a collection of responsive design email templates that I created" >
-                            <div class="content-details fadeIn-top">
-                                <h3>NorthBay Healthcare</h3>
-                                <p>Collection of responsive emails</p>
-                                <p>Handcoded Email templates (HTML & CSS)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="content">
-                            <div class="content-overlay"></div>
-                            <img class="content-image" src="/Images/web_urgentCare.jpg" alt="an image showing the homepage of NorthBay Urgent Care">
-                            <div class="content-details fadeIn-top">
-                                <h3>NorthBay Healthcare</h3>
-                                <p><a href="https://www.northbay.org/urgent-care/" alt="click here to view the full urgent care page" target="_blank">Urgent Care webpage</a></p>
-                                <p>Graphic creation, CMS template editing (HTML/CSS)</p>
-                            </div>
-                        </div>
-                    </div>
-                 </div>
-            </div>
-        </div>
+                </div>
+         </div>
     </section>
     
-    <section aria-label="contact" class="contentWrap" id="contact">
+    <section aria-label="contact" class="portfolio--Content__Wrapper" id="contact">
         <div class="contactMe">
             <div class="contactTitle">
                 <h2>Contact Me</h2>
@@ -177,8 +143,8 @@
         <a href="#top" class="scrollUpLink" aria-label="Scroll-to-Top">&#94;</a>
     </div>
     
-    <footer aria-label="footer-navigation" class="footerInfo">
-        <ul class="wrapper footerMenuLinks">
+    <footer aria-label="footer-navigation">
+        <ul class="footerMenuLinks">
             <li><a href="index.html" alt="click here to return to the homepage">Home</a></li>
             <li><a href="/index.html#skills" alt="click here to view my skillset">Skills</a></li>
             <li><a href="/index.html#work" alt="click here to view my works">Work</a></li>

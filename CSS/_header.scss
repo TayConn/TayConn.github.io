@@ -69,9 +69,35 @@
         }
 }
 
+@media screen and (min-width: 699px) and (max-width: 1024px){
+    header{
+        margin: 1rem;
+    }
+    nav{
+        justify-content: flex-end;
+    }
+    .nav-ul{
+        display: none;
+        width: 100%;
+        flex-flow: row wrap;
+        text-align: center;
+    }
+
+    .nav-ul.show{
+        display: flex;
+        margin-top: 1rem;
+        justify-content: center;
+    }
+
+    .hamburger{
+        display:block;
+        font-size: 1.5rem;
+    }
+}
+
 //media queries
 
-    @media screen and (max-width: 999px){
+    @media screen and (max-width: 698px){
         header{
             margin: 1rem;
         }

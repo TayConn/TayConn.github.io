@@ -131,7 +131,49 @@
         
     }
 
-    @media screen and (max-width: 800px) {
+    @media screen and (min-width: 699px) and (max-width: 1024px){
+        .mask{
+            max-width: 98vw;
+        }
+        .experienceSection{
+            margin: 0 0 1rem 0;
+        }
+
+        .expCards{
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            justify-content: center;
+            gap: 5rem 1rem;
+            margin: 4rem;
+        }
+        .cardBlock{
+            flex-flow: column wrap;
+            margin: 0 1rem;
+            padding: 0;
+        }
+        .card{
+            margin: 0 .5rem;
+            flex-flow: column wrap;
+            min-width: 0;
+
+            p{
+                font-size: 1.25rem;
+                line-height: 1.5rem;
+                padding: 0 .5rem;
+                
+            }
+
+            h4{
+                font-size: 1.75rem;
+                line-height: 1.75rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 698px){
+        .mask{
+            max-width: 97vw;
+        }
         .experienceSection{
             margin: 0 0 1rem 0;
         }

@@ -12,7 +12,7 @@
 
 .infoCard{
     max-width: 45%;
-    padding: 1.5rem 2rem 1.5rem 2rem;
+    padding: 1.5rem 2rem 2rem 2rem;
     margin: 1rem 1rem;
     flex: 0 1 auto;
     gap: .5rem .5rem;
@@ -97,7 +97,7 @@
 }
 
 .cardDetails{
-
+    padding-bottom: 1rem;
     p{
         font-family: $font-body;
         font-size: 1.25rem;
@@ -126,15 +126,6 @@
     cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym57.cur), auto !important;
 }
 
-.blobDots{
-    display: inline-block;
-    position: absolute;
-    min-width: 25%;
-    z-index: -21;
-    left: 2vw;
-    top: 30%;
-    opacity: 50%;
-}
 
 #blobDots{
     max-width: 25vw;
@@ -148,13 +139,13 @@
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 699px) and (max-width: 1024px){
 
     .cardWrapper{
         display: flex;
         flex-flow: column wrap;
     
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         margin-bottom: 1rem;
     }
@@ -164,7 +155,7 @@
         flex-flow: column nowrap;
         justify-content: center;
         max-width: 75%;
-        padding: 1.25rem;
+        padding: 1.25rem 1.25rem 2rem 1.25rem;
     }
 
     .cardDetails{
@@ -183,23 +174,40 @@
         margin-right: 25%;
     }
 
-    .blobDots{
-        top: 34%;
+    #blobDots{
+        top: 30%;
         left: -14vw;
-        min-width: 80%;
+        min-width: 70%;
         z-index: -2;
     }
 
 }
 
-@media screen and (min-width: 2000px){
-    .blobDots{
-        display: inline-block;
-        position: absolute;
-        min-width: 15%;
-        z-index: -21;
-        left: 8vw;
-        top: 25%;
-        opacity: 50%;
+@media screen and (max-width: 698px){
+   
+
+    .infoCard{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        max-width: 100%;
     }
+
+    .cardDetails{
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .cardFeature{
+        h3{
+            padding-left: 1rem;
+        }
+    }
+
+
+    #blobDots{
+        display:none;
+    }
+
 }

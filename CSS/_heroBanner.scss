@@ -1,21 +1,16 @@
 
 .mainHero{
-
-    // margin: 5rem 5rem 0 5rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr;
-    grid-template-areas: "text cartoon";
+    display: flex;
+    flex-flow: row-reverse nowrap;
     justify-items: center;
     align-items: center;
-
     
 
     .heroText{
-        grid-area: text;
+       
         justify-self: center;
         
-        .heroHello{
+        h1{
             font-family: $font-title;
             color: $color-darkBlue;
             font-size: 5rem;
@@ -28,15 +23,23 @@
             }
         }
 
-        .heroSubtext{
+        p {
             font-family: $font-body;
             color: $color-mediumBlue;
             padding-top: 2rem;
-            font-size: 1.25rem;
+            font-size: 1.5rem;
             line-height: 2rem;
             letter-spacing: -0.03rem;
             
         }
+    }
+
+    .content{
+        position: relative;
+        width: 100%;
+        max-width: 25vw;
+        margin: 0;
+        overflow: hidden;
     }
 
     .cartoonMe{
@@ -44,16 +47,9 @@
         justify-self: center;
         min-height: 18rem;
         max-height: 28rem;
-        grid-area: cartoon;
+       
     }
 
-    .portfolioImg{
-        padding: 0 5rem 0 5rem;
-        justify-self: center;
-        min-height: 18rem;
-        max-height: 28rem;
-        grid-area: cartoon;
-    }
 
     .backgroundHome{
         background-image: url('/Images/purpleDots.svg');
@@ -62,87 +58,87 @@
         background-size: 40%;
         }
 
-    .backgroundDev{
-        background-image: url('/Images/PinkDots.svg');
-        background-position: top right;
-        background-repeat: no-repeat;
-        background-size: 40%;
-        
-        }
-
 }
 
 // Media Queries
 
-@media screen and (max-width: 999px){
-    .heroHello{
-        font-size: 2rem;
-        line-height: 2rem;
-    }
+@media screen and (min-width: 699px) and (max-width: 1024px){
+    .mainHero{
+        margin: 2rem 2rem 0;
+        display: flex;
+        flex-flow: column nowrap;
 
-    .heroSubtext{
-        font-size: 1rem;
-        line-height: 1rem;
-        padding-bottom: 2rem;
+        
+        .cartoonMe{
+            padding: 0 0 1rem 0;
+            min-width: 75vw;
+            max-height: 15rem;
+            justify-self: center;
+            background-image:none;
+            
+        }
+
+        .heroText{
+            span{
+                color:$color-skyBlue;
+            }
+
+            h1{
+                font-size: 4rem;
+                line-height: 4.25rem;
+            }
+            p{
+                font-size: 1.25rem;
+                line-height: 2rem;
+                padding-bottom: 2rem;
+                max-width: 80vw;
+            }
+        }
+
     }
+    
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 698px){
     .mainHero{
     margin: 1rem 1rem 0 1rem;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-        "text"
-        "cartoon";
-    
-    .cartoonMe{
-        padding: 0 0 1rem 0;
-        // min-height: 5rem;
-        min-width: 75vw;
-        max-height: 15rem;
-        justify-self: center;
-        grid-area: cartoon;
-        background-image:none;
-        
-    }
-
-    .portfolioImg{
-        padding: 0 0 1rem 0;
-        // min-height: 5rem;
-        min-width: auto;
-        max-width: 90vw;
-        max-height: auto;
-        justify-self: center;
-        grid-area: cartoon;
-        background-image:none;
-    }
+    display: flex;
+    flex-flow: column nowrap;
 
     .heroText{
-        grid-area: text;
         margin-left: .5rem;
 
-        .heroHello{
+        span{
+            color:$color-skyBlue;
+        }
+
+        h1 {
             text-align: left;
             font-size: 2.5rem;
             line-height: 2.75rem;
             max-width: 85vw; 
+            text-align: center;
         }
 
-        .heroSubtext{
+        p {
             text-align: left;
             font-size: 1.25rem;
             line-height: 2rem;
             letter-spacing: -0.03rem;
             padding-top: 1rem;
+            text-align: center;
         }
     }
 
+        .cartoonMe{
+            padding: 0 0 2rem 0;
+            min-width: 75vw;
+            max-height: 13rem;
+            justify-self: center;
+            background-image:none;
+        
+        }
     }
-}
-
-@media screen and (min-width: 2000px){
-    .mainHero{
-        margin: 0 30vw;
-    }
+        
+    
 }

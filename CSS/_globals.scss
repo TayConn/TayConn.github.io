@@ -159,7 +159,54 @@ p{
         }
       }
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 698px){
+        .contentWrap{
+            margin: 0;
+        }
+        .sectionTitleMid{
+            margin: 2rem 1rem 0 1rem;
+            justify-content: center;
+            
+            h1{
+                font-size: 2rem;
+                line-height: 2rem;
+            }
+    
+            h2{
+                font-size: 1.5rem;
+                line-height: 1.5rem;
+            }
+            
+        }
+
+        .sectionTitleLeft{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        max-width: 100%;
+
+            h1{
+                font-size: 2rem;
+                line-height: 2rem;
+            }
+
+            h2{
+                font-size: 1.5rem;
+                line-height: 1.5rem;
+            }
+        }
+
+        .subWrapper{
+            margin: 3rem 2rem 1.5rem 2rem;
+            justify-content: center;
+
+        }
+
+        .scrollUpLink{
+            top: calc(100vh - 4rem);
+        }
+    }
+
+    @media screen and (min-width: 699px) and (max-width: 1024px) {
         .sectionTitleMid{
             margin: 2rem 2rem 0 2rem;
             justify-content: center;
@@ -181,15 +228,15 @@ p{
         margin-bottom: 1rem;
         max-width: 100%;
 
-        h1{
-            font-size: 2rem;
-            line-height: 2rem;
-        }
+            h1{
+                font-size: 2rem;
+                line-height: 2rem;
+            }
 
-        h2{
-            font-size: 1.5rem;
-            line-height: 1.5rem;
-        }
+            h2{
+                font-size: 1.5rem;
+                line-height: 1.5rem;
+            }
         }
 
         .contentWrap{
@@ -206,6 +253,7 @@ p{
             top: calc(100vh - 4rem);
         }
     }
+  
     @media screen and (min-width: 2000px){
         .contentWrap{
             margin: 0 25vw;

@@ -1,6 +1,5 @@
 .contactMe{
     background-color: $color-babyBlue;
-    // border-radius: 32px;
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
 
@@ -9,6 +8,7 @@
     flex-basis: 4rem;
     flex-grow: 1;
     flex-shrink: 1;
+    margin: 5rem 0 0;
     
     justify-content: space-between;
     align-content: center;
@@ -85,7 +85,6 @@
     img{
         max-width: 50px;
         margin-right: 2rem;
-        // margin-top: 1rem;
 
         .github-Icon{
             max-height: 64px;
@@ -102,7 +101,61 @@
     bottom: 20vh;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (min-width: 699px) and (max-width: 1024px){
+    .contactMe{
+        margin: 3rem 4rem 1rem;
+        padding: 1rem;
+        justify-content: center;
+    }
+
+    .contactTitle{
+        margin: 1rem;
+        justify-content: center;
+        h1{
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+        }
+
+        h2{
+            font-size: 1.25rem;
+            line-height: 1rem;
+        }
+    }
+
+    .contactInfo{
+        padding: .5rem;
+        flex-flow: column wrap;
+        align-items: center;
+        img{
+            margin: 0;
+        }
+        h3{
+            font-size: 1rem;
+        }
+        
+    }
+
+    .contactInnerWrap{
+        flex-flow: row nowrap;
+        margin-bottom: 1rem;
+        min-width: 90vw;
+
+        img{
+            margin-right: 1rem;
+        }
+        .github-Icon{
+            max-height: 50px;
+        }
+    }
+
+    .pinkDots{
+        left: -5%;
+        bottom:18vh;
+        opacity: 50%;
+    }
+}
+
+@media screen and (max-width: 698px){
     .contactMe{
         margin: 3rem 1rem 1rem 1rem;
         padding: 1rem;
@@ -150,8 +203,8 @@
     }
 
     .pinkDots{
-        left: -10%;
-        bottom:38vh;
+        left: -5%;
+        bottom:25vh;
         opacity: 50%;
     }
 }
