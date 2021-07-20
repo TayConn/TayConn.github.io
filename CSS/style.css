@@ -264,9 +264,9 @@ p {
   }
 }
 
-@media screen and (min-width: 1919px) {
+@media screen and (min-width: 1025px) and (max-width: 1999px) {
   .contentWrap {
-    margin: 0 15vw;
+    margin: 3rem 5rem;
   }
 }
 
@@ -428,6 +428,13 @@ nav {
 .mainHero .heroText {
   -ms-grid-column-align: center;
       justify-self: center;
+  -ms-flex-preferred-size: 4rem;
+      flex-basis: 4rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
 }
 
 .mainHero .heroText h1 {
@@ -475,9 +482,9 @@ nav {
   background-size: 40%;
 }
 
-@media screen and (min-width: 699px) and (max-width: 1024px) {
+@media screen and (min-width: 699px) and (max-width: 1224px) {
   .mainHero {
-    margin: 2rem 2rem 0;
+    margin: 2rem 6rem 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -485,6 +492,7 @@ nav {
     -webkit-box-direction: normal;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
+    gap: 2rem;
   }
   .mainHero .cartoonMe {
     padding: 0 0 1rem 0;
@@ -509,7 +517,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 698px) {
+@media screen and (min-width: 350px) and (max-width: 698px) {
   .mainHero {
     margin: 1rem 1rem 0 1rem;
     display: -webkit-box;
@@ -555,7 +563,7 @@ nav {
   --svg: url(/Images/drips-alpha-short.svg);
   background-color: white;
   height: 186px;
-  width: 99vw;
+  width: 98.75vw;
   opacity: 1;
   mask-image: var(--svg);
   -webkit-mask-image: var(--svg);
@@ -703,6 +711,15 @@ nav {
           box-shadow: -1px 40px 80px 0 rgba(85, 82, 124, 0.25);
 }
 
+@media screen and (min-width: 1025px) and (max-width: 1999px) {
+  .expCards {
+    margin: 5rem 2rem;
+  }
+  .mask {
+    max-width: 98vw;
+  }
+}
+
 @media screen and (min-width: 699px) and (max-width: 1024px) {
   .mask {
     max-width: 98vw;
@@ -808,8 +825,8 @@ nav {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
   -ms-flex-preferred-size: 4rem;
       flex-basis: 4rem;
   -webkit-box-flex: 1;
@@ -828,7 +845,7 @@ nav {
 }
 
 .contactMe h1 {
-  margin: .5rem 0 .5rem 0;
+  margin: .5rem 0;
   padding: 0;
   font-family: "Space Grotesk", sans-serif;
   font-size: 2rem;
@@ -837,7 +854,7 @@ nav {
 }
 
 .contactMe h2 {
-  margin: .5rem 0 .5rem 0;
+  margin: .5rem 0;
   padding: 0;
   text-transform: uppercase;
   font-family: "Space Grotesk", sans-serif;
@@ -927,15 +944,6 @@ nav {
   max-height: 64px;
 }
 
-.pinkDots {
-  display: inline-block;
-  position: absolute;
-  max-width: 100%;
-  z-index: 1;
-  left: 10vw;
-  bottom: 20vh;
-}
-
 @media screen and (min-width: 699px) and (max-width: 1024px) {
   .contactMe {
     margin: 3rem 4rem 1rem;
@@ -995,7 +1003,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 698px) {
+@media screen and (min-width: 350px) and (max-width: 698px) {
   .contactMe {
     margin: 3rem 1rem 1rem 1rem;
     padding: 1rem;
@@ -1054,16 +1062,6 @@ nav {
   }
 }
 
-@media screen and (min-width: 2000px) {
-  .contactMe {
-    margin: 0 15vw;
-  }
-  .pinkDots {
-    left: 27vw;
-    bottom: 15vh;
-  }
-}
-
 .aboutWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1102,7 +1100,6 @@ nav {
   right: auto;
   bottom: auto;
   margin-left: -20rem;
-  z-index: -1;
   width: 85%;
   min-height: 100%;
   border-top-right-radius: 55px;
@@ -1114,13 +1111,15 @@ nav {
   opacity: 75%;
 }
 
-@media screen and (min-width: 699px) and (max-width: 1024px) {
+@media screen and (min-width: 699px) and (max-width: 1300px) {
   .aboutWrapper {
-    margin: 3rem 2rem 5rem 2rem;
-    padding-top: 0;
+    margin: 3rem 7rem 5rem;
+    padding-top: 1rem;
   }
   .about-bg-block {
-    display: none;
+    top: 2%;
+    margin-left: -10rem;
+    width: 95%;
   }
   .aboutBody {
     padding-bottom: 2rem;
@@ -1150,8 +1149,9 @@ nav {
 }
 
 @media screen and (min-width: 2000px) {
-  .aboutInnerWrapper {
-    margin: 0 11vw;
+  .about-bg-block {
+    margin-left: -50vw;
+    width: 160%;
   }
 }
 
@@ -1163,7 +1163,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  margin: 3rem 15rem 1rem 15rem;
+  margin: 3rem 0 1rem;
   font-family: "Karla", sans-serif;
   font-size: 1rem;
   line-height: 1rem;
@@ -1189,8 +1189,8 @@ footer .footerMenuLinks {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1209,6 +1209,24 @@ footer .footerMenuLinks a {
 
 footer .footerMenuLinks a:hover {
   color: #34a1cd;
+}
+
+.pinkDots {
+  display: inline-block;
+  position: absolute;
+  max-width: 25vw;
+  z-index: 1;
+  left: 10vw;
+  bottom: 20vh;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1999px) {
+  .pinkDots {
+    max-width: 25vw;
+    z-index: 1;
+    left: 1vw;
+    bottom: 10vh;
+  }
 }
 
 @media screen and (min-width: 699px) and (max-width: 1024px) {
@@ -1296,9 +1314,9 @@ footer .footerMenuLinks a:hover {
           flex-flow: row wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   -ms-flex-line-pack: center;
       align-content: center;
   margin-bottom: 3rem;
@@ -1813,7 +1831,43 @@ footer .footerMenuLinks a:hover {
   bottom: 20%;
 }
 
-@media screen and (min-width: 699px) and (max-width: 1024px) {
+@media screen and (min-width: 1225px) and (max-width: 1999px) {
+  .portfolio--Content__Wrapper {
+    margin: 0 4rem;
+  }
+  .aboutMe_Content__wrapper {
+    max-width: 100%;
+    margin: 0 4rem;
+  }
+  .hobbiesWrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    gap: 2rem;
+  }
+  .hobbies-movies {
+    min-width: 45%;
+    padding: 2.5rem 3.5rem 0;
+  }
+  .hobbies-music {
+    min-width: 45%;
+    padding: 2.5rem 3.5rem 0;
+  }
+  .hobbies-games {
+    min-width: 45%;
+    padding: 2.5rem 3.5rem 0;
+  }
+  .hobbies-books {
+    min-width: 45%;
+    padding: 2.5rem 3.5rem 0;
+  }
+  .imageGrid__wrapper {
+    margin: 0 5rem;
+  }
+}
+
+@media screen and (min-width: 699px) and (max-width: 1224px) {
   .portfolioWrapper {
     margin: 2rem;
     -webkit-box-orient: vertical;

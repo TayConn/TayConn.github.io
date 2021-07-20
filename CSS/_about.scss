@@ -32,7 +32,6 @@
         right: auto;
         bottom: auto;
         margin-left: -20rem;
-        z-index: -1;
         width: 85%;
         min-height: 100%;
         border-top-right-radius: 55px;
@@ -43,17 +42,20 @@
         opacity: 75%;
     }
 
-
-    @media screen and (min-width: 699px) and (max-width: 1024px){
+    
+    @media screen and (min-width: 699px) and (max-width: 1300px){
         .aboutWrapper{
-            margin: 3rem 2rem 5rem 2rem;
-            padding-top: 0;
+            margin: 3rem 7rem 5rem;
+            padding-top: 1rem;
         }
 
 
         .about-bg-block{
-            display: none;
+            top:2%;
+            margin-left: -10rem;
+            width: 95%;
         }
+        
 
         .aboutBody{
             padding-bottom: 2rem;
@@ -85,7 +87,9 @@
 
 
     @media screen and (min-width: 2000px){
-        .aboutInnerWrapper{
-            margin: 0 11vw;
+        .about-bg-block{
+            margin-left: -50vw;
+            width: 160%;
         }
+
     }

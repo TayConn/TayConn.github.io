@@ -264,8 +264,46 @@
     bottom: 20%;
 }
 
+@media screen and (min-width: 1225px) and (max-width: 1999px){
+    .portfolio--Content__Wrapper{
+        margin: 0 4rem;
+    }
 
-@media screen and (min-width: 699px) and (max-width: 1024px){
+    .aboutMe_Content__wrapper{
+        max-width: 100%;
+        margin: 0 4rem;
+    }
+
+    .hobbiesWrapper{
+        flex-flow: row wrap;
+        gap: 2rem;
+    }
+    
+.hobbies-movies{
+    min-width: 45%;
+    padding: 2.5rem 3.5rem 0;
+}
+
+.hobbies-music{
+    min-width: 45%;
+    padding: 2.5rem 3.5rem 0;
+}
+
+.hobbies-games{
+    min-width: 45%;
+    padding: 2.5rem 3.5rem 0;
+}
+
+.hobbies-books{
+    min-width: 45%;
+    padding: 2.5rem 3.5rem 0;
+}
+.imageGrid__wrapper{
+    margin: 0 5rem;
+}
+}
+
+@media screen and (min-width: 699px) and (max-width: 1224px){
     
     .portfolioWrapper{
         margin: 2rem;

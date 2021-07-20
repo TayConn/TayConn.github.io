@@ -44,19 +44,19 @@ dripfx.forEach(drip => {
     observer_drip.observe(drip);
 });
 
-//Slide in from left accent
-const slideInfx = document.querySelectorAll('.about-bg-block');
+// //Slide in from left accent
+// const slideInfx = document.querySelectorAll('.about-bg-block');
 
-observer_slide = new IntersectionObserver(entries_slide => {
-    entries_slide.forEach(entry_slide => {
-        if (entry_slide.intersectionRatio > 0){
-            entry_slide.target.classList.add('slide-in-left');
-        } else {
-        entry_slide.target.classList.remove('slide-in-left');
-        }
-    });
-});
+// observer_slide = new IntersectionObserver(entries_slide => {
+//     entries_slide.forEach(entry_slide => {
+//         if (entry_slide.intersectionRatio > 0.25){
+//             entry_slide.target.classList.add('slide-in-left');
+//         } else {
+//         entry_slide.target.classList.remove('slide-in-left');
+//         }
+//     });
+// });
 
-slideInfx.forEach(slide => {
-    observer_slide.observe(slide);
-});
+// slideInfx.forEach(slide => {
+//     observer_slide.observe(slide);
+// });

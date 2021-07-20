@@ -1,7 +1,7 @@
     footer{
     display: flex;
     flex-flow: column nowrap;
-    margin: 3rem 15rem 1rem 15rem;
+    margin: 3rem 0 1rem;
     font-family: $font-body;
     font-size: 1rem;
     line-height: 1rem;
@@ -20,7 +20,7 @@
 
     .footerMenuLinks{
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: row nowrap;
         justify-content: center;
         align-content: center;
         gap: 4rem;
@@ -39,7 +39,25 @@
         }
     }
 }
+.pinkDots{
+    display: inline-block;
+    position: absolute;
+    max-width: 25vw;
+    z-index: 1;
+    left: 10vw;
+    bottom: 20vh;
+}
 
+@media screen and (min-width: 1025px) and (max-width: 1999px){
+    .pinkDots{
+        // display: inline-block;
+        // position: absolute;
+        max-width: 25vw;
+        z-index: 1;
+        left: 1vw;
+        bottom: 10vh;
+    }
+}
 
 @media screen and (min-width: 699px) and (max-width: 1024px){
     footer{
@@ -72,6 +90,7 @@
     }
    
 }
+
 
 @media screen and (max-width: 698px){
    

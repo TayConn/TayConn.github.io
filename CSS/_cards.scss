@@ -3,7 +3,7 @@
     flex-flow: row wrap;
 
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
     align-content: center;
     margin-bottom: 3rem;
     margin-top: 2rem;
@@ -17,6 +17,7 @@
     flex: 0 1 auto;
     gap: .5rem .5rem;
     transition: box-shadow 500ms ease;
+    
 }
 
 

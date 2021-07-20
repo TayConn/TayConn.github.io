@@ -7,9 +7,12 @@
     
 
     .heroText{
-       
+
         justify-self: center;
-        
+        flex-basis: 4rem;
+        flex-grow: 1;
+        flex-shrink: 1;
+
         h1{
             font-family: $font-title;
             color: $color-darkBlue;
@@ -61,12 +64,66 @@
 }
 
 // Media Queries
+// @media screen and (min-width: 1025px) and (max-width: 1920px){
+    
+// .mainHero{
+//     display: flex;
+//     flex-flow: row-reverse nowrap;
+//     justify-items: space-around;
+//     align-items: center;
+    
 
-@media screen and (min-width: 699px) and (max-width: 1024px){
+//     .heroText{
+//         max-width: 55vw;
+//         justify-self: center;
+        
+//         h1{
+//             font-family: $font-title;
+//             color: $color-darkBlue;
+//             font-size: 5rem;
+//             line-height: 5rem;
+//             font-weight: bold;
+//             margin: 0;
+    
+//             span{
+//                 color:$color-skyBlue;
+//             }
+//         }
+
+//         p {
+//             font-family: $font-body;
+//             color: $color-mediumBlue;
+//             padding-top: 2rem;
+//             font-size: 1.5rem;
+//             line-height: 2rem;
+//             letter-spacing: -0.03rem;
+            
+//         }
+//     }
+
+//     .cartoonMe{
+//         padding: 0 2rem;
+//         justify-self: center;
+//         max-width: 25vw;
+//     }
+
+
+//     .backgroundHome{
+//         background-image: url('/Images/purpleDots.svg');
+//         background-position: top right;
+//         background-repeat: no-repeat;
+//         background-size: 40%;
+//         }
+
+// }
+// }
+
+@media screen and (min-width: 699px) and (max-width: 1224px){
     .mainHero{
-        margin: 2rem 2rem 0;
+        margin: 2rem 6rem 0;
         display: flex;
         flex-flow: column nowrap;
+        gap: 2rem;
 
         
         .cartoonMe{
@@ -99,7 +156,7 @@
     
 }
 
-@media screen and (max-width: 698px){
+@media screen and (min-width: 350px) and (max-width: 698px){
     .mainHero{
     margin: 1rem 1rem 0 1rem;
     display: flex;

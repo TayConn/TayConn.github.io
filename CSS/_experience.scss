@@ -2,7 +2,7 @@
     --svg: url(/Images/drips-alpha-short.svg);
     background-color: white;
     height: 186px;
-    width: 99vw;
+    width: 98.75vw;
     opacity: 1;
 
     mask-image: var(--svg);
@@ -129,6 +129,14 @@
             box-shadow: -1px 40px 80px 0 rgba(85, 82, 124, 0.25);
         }
         
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1999px){
+       .expCards{
+        margin: 5rem 2rem;
+       }
+       .mask{
+           max-width: 98vw;
+       }
     }
 
     @media screen and (min-width: 699px) and (max-width: 1024px){
