@@ -50,8 +50,6 @@
     text-align: center;
     
     gap: 1rem 1rem;
-    // margin-top: 5rem;
-    // margin-bottom: 5rem;
 }
 
 .contactInfo{
@@ -140,12 +138,6 @@
             max-height: 50px;
         }
     }
-
-    .pinkDots{
-        left: -5%;
-        bottom:18vh;
-        opacity: 50%;
-    }
 }
 
 @media screen and (min-width: 350px) and (max-width: 698px){
@@ -195,9 +187,9 @@
         }
     }
 
-    .pinkDots{
-        left: -5%;
-        bottom:25vh;
-        opacity: 50%;
-    }
+    // .pinkDots{
+    //     left: -5%;
+    //     bottom:25vh;
+    //     opacity: 50%;
+    // }
 }

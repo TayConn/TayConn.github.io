@@ -382,7 +382,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 698px) {
+@media screen and (min-width: 350px) and (max-width: 698px) {
   header {
     margin: 1rem;
   }
@@ -722,7 +722,7 @@ nav {
 
 @media screen and (min-width: 699px) and (max-width: 1024px) {
   .mask {
-    max-width: 98vw;
+    max-width: 97vw;
   }
   .experienceSection {
     margin: 0 0 1rem 0;
@@ -765,7 +765,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 698px) {
+@media screen and (min-width: 350px) and (max-width: 698px) {
   .mask {
     max-width: 97vw;
   }
@@ -996,11 +996,6 @@ nav {
   .contactInnerWrap .github-Icon {
     max-height: 50px;
   }
-  .pinkDots {
-    left: -5%;
-    bottom: 18vh;
-    opacity: 50%;
-  }
 }
 
 @media screen and (min-width: 350px) and (max-width: 698px) {
@@ -1054,11 +1049,6 @@ nav {
   }
   .contactInnerWrap .github-Icon {
     max-height: 50px;
-  }
-  .pinkDots {
-    left: -5%;
-    bottom: 25vh;
-    opacity: 50%;
   }
 }
 
@@ -1118,8 +1108,8 @@ nav {
   }
   .about-bg-block {
     top: 2%;
-    margin-left: -10rem;
-    width: 95%;
+    margin-left: -7rem;
+    width: 85vw;
   }
   .aboutBody {
     padding-bottom: 2rem;
@@ -1129,7 +1119,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 698px) {
+@media screen and (min-width: 350px) and (max-width: 698px) {
   .aboutWrapper {
     margin: 3rem 0 5rem;
     padding-top: 0;
@@ -1262,9 +1252,19 @@ footer .footerMenuLinks a:hover {
   footer .footerMenuLinks a:hover {
     color: #34a1cd;
   }
+  .pinkDots {
+    left: -5%;
+    bottom: 13vh;
+    opacity: 50%;
+  }
 }
 
-@media screen and (max-width: 698px) {
+@media screen and (min-width: 350px) and (max-width: 698px) {
+  .pinkDots {
+    left: -5%;
+    bottom: 10vh;
+    opacity: 50%;
+  }
   footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1822,15 +1822,6 @@ footer .footerMenuLinks a:hover {
   color: #130F49;
 }
 
-.pinkDots-portfolio {
-  display: inline-block;
-  position: absolute;
-  width: 100%;
-  z-index: 1;
-  left: 10%;
-  bottom: 20%;
-}
-
 @media screen and (min-width: 1225px) and (max-width: 1999px) {
   .portfolio--Content__Wrapper {
     margin: 0 4rem;
@@ -1867,7 +1858,7 @@ footer .footerMenuLinks a:hover {
   }
 }
 
-@media screen and (min-width: 699px) and (max-width: 1224px) {
+@media screen and (min-width: 699px) and (max-width: 1300px) {
   .portfolioWrapper {
     margin: 2rem;
     -webkit-box-orient: vertical;
@@ -1900,7 +1891,7 @@ footer .footerMenuLinks a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
   }
   .portfolioMainContent {
     max-width: 100%;
@@ -1934,24 +1925,24 @@ footer .footerMenuLinks a:hover {
     border-radius: 0;
   }
   .hobbies-movies {
-    max-width: 100%;
+    max-width: 43vw;
     margin: .75rem 0;
-    padding: 2.5rem;
+    padding: 2.25rem;
   }
   .hobbies-music {
-    max-width: 100%;
+    max-width: 43vw;
     margin: .75rem 0;
-    padding: 2.5rem;
+    padding: 2.25rem;
   }
   .hobbies-games {
-    max-width: 100%;
+    max-width: 43vw;
     margin: .75rem 0;
-    padding: 2.5rem;
+    padding: 2.25rem;
   }
   .hobbies-books {
-    max-width: 100%;
+    max-width: 43vw;
     margin: .75rem 0;
-    padding: 2.5rem;
+    padding: 2.25rem;
   }
   .imageGrid {
     display: -webkit-box;
@@ -1996,9 +1987,6 @@ footer .footerMenuLinks a:hover {
   .imageGrid .content .content-image {
     max-width: 100%;
   }
-  .pinkDots-portfolio {
-    display: none;
-  }
   .content {
     position: relative;
     width: 100%;
@@ -2017,7 +2005,7 @@ footer .footerMenuLinks a:hover {
   }
 }
 
-@media screen and (max-width: 698px) {
+@media screen and (min-width: 350px) and (max-width: 698px) {
   .portfolioWrapper {
     margin: 2rem 0;
     -webkit-box-orient: vertical;
@@ -2050,7 +2038,7 @@ footer .footerMenuLinks a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 1.5rem;
+    gap: 1.25rem;
   }
   .portfolioMainContent {
     max-width: 100%;
@@ -2084,22 +2072,22 @@ footer .footerMenuLinks a:hover {
         justify-content: space-around;
   }
   .hobbies-movies {
-    max-width: 100%;
+    max-width: 45vw;
     margin: .75rem 0;
     padding: 2.5rem;
   }
   .hobbies-music {
-    max-width: 100%;
+    max-width: 45vw;
     margin: .75rem 0;
     padding: 2.5rem;
   }
   .hobbies-games {
-    max-width: 100%;
+    max-width: 45vw;
     margin: .75rem 0;
     padding: 2.5rem;
   }
   .hobbies-books {
-    max-width: 100%;
+    max-width: 45vw;
     margin: .75rem 0;
     padding: 2.5rem;
   }
@@ -2145,9 +2133,6 @@ footer .footerMenuLinks a:hover {
   }
   .imageGrid .content .content-image {
     max-width: 100%;
-  }
-  .pinkDots-portfolio {
-    display: none;
   }
   .content {
     position: relative;

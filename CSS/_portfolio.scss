@@ -255,14 +255,6 @@
         }
 }
 
-.pinkDots-portfolio{
-    display: inline-block;
-    position: absolute;
-    width: 100%;
-    z-index: 1;
-    left: 10%;
-    bottom: 20%;
-}
 
 @media screen and (min-width: 1225px) and (max-width: 1999px){
     .portfolio--Content__Wrapper{
@@ -303,7 +295,7 @@
 }
 }
 
-@media screen and (min-width: 699px) and (max-width: 1224px){
+@media screen and (min-width: 699px) and (max-width: 1300px){
     
     .portfolioWrapper{
         margin: 2rem;
@@ -326,7 +318,7 @@
         flex-flow: row wrap;
         justify-content: space-evenly;
         align-items: center;
-        gap: 1.5rem;
+        gap: 1rem;
     }
 
     .portfolioMainContent{
@@ -359,28 +351,28 @@
     }
 
     .hobbies-movies{
-        max-width: 100%;
+        max-width: 43vw;
         margin: .75rem 0;
-        padding: 2.5rem;
+        padding: 2.25rem;
         
     }
     
     .hobbies-music{
-        max-width: 100%;
+        max-width: 43vw;
         margin: .75rem 0;
-        padding: 2.5rem;
+        padding: 2.25rem;
     }
     
     .hobbies-games{
-        max-width: 100%;
+        max-width: 43vw;
         margin: .75rem 0;
-        padding: 2.5rem;
+        padding: 2.25rem;
     }
     
     .hobbies-books{
-        max-width: 100%;
+        max-width: 43vw;
         margin: .75rem 0;
-        padding: 2.5rem;
+        padding: 2.25rem;
     }
 
     .imageGrid{
@@ -421,9 +413,6 @@
          }
     }
 
-    .pinkDots-portfolio{
-        display: none;
-    }
     .content{
         position: relative;
         width: 100%;
@@ -446,7 +435,7 @@
 
 
 
-   @media screen and (max-width: 698px){
+   @media screen and (min-width: 350px) and (max-width: 698px){
         
     .portfolioWrapper{
         margin: 2rem 0;
@@ -466,7 +455,7 @@
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
-        gap: 1.5rem;
+        gap: 1.25rem;
     }
 
     .portfolioMainContent{
@@ -500,25 +489,25 @@
     }
 
     .hobbies-movies{
-        max-width: 100%;
+        max-width: 45vw;
         margin: .75rem 0;
         padding: 2.5rem;
     }
     
     .hobbies-music{
-        max-width: 100%;
+        max-width: 45vw;
         margin: .75rem 0;
         padding: 2.5rem;
     }
     
     .hobbies-games{
-        max-width: 100%;
+        max-width: 45vw;
         margin: .75rem 0;
         padding: 2.5rem;
     }
     
     .hobbies-books{
-        max-width: 100%;
+        max-width: 45vw;
         margin: .75rem 0;
         padding: 2.5rem;
     }
@@ -561,9 +550,7 @@
          }
     }
 
-    .pinkDots-portfolio{
-        display: none;
-    }
+  
     .content{
         position: relative;
         width: 100%;

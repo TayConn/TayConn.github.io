@@ -50,8 +50,6 @@
 
 @media screen and (min-width: 1025px) and (max-width: 1999px){
     .pinkDots{
-        // display: inline-block;
-        // position: absolute;
         max-width: 25vw;
         z-index: 1;
         left: 1vw;
@@ -88,12 +86,20 @@
             }
         }
     }
-   
+    .pinkDots{
+        left: -5%;
+        bottom:13vh;
+        opacity: 50%;
+    }
 }
 
 
-@media screen and (max-width: 698px){
-   
+@media screen and (min-width: 350px) and (max-width: 698px){
+    .pinkDots{
+        left: -5%;
+        bottom:10vh;
+        opacity: 50%;
+    }
         footer{
             flex-flow: column nowrap;
             margin: 2.5rem .5rem 0;

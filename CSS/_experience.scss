@@ -141,7 +141,7 @@
 
     @media screen and (min-width: 699px) and (max-width: 1024px){
         .mask{
-            max-width: 98vw;
+            max-width: 97vw;
         }
         .experienceSection{
             margin: 0 0 1rem 0;
@@ -178,7 +178,7 @@
         }
     }
 
-    @media screen and (max-width: 698px){
+    @media screen and (min-width: 350px) and (max-width: 698px){
         .mask{
             max-width: 97vw;
         }

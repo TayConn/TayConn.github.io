@@ -97,7 +97,7 @@
 
 //media queries
 
-    @media screen and (max-width: 698px){
+    @media screen and (min-width: 350px) and (max-width: 698px){
         header{
             margin: 1rem;
         }
