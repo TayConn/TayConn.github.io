@@ -6,10 +6,11 @@
 - Javascript file is minimal, but lives in ./JS
 - HTML pages live in the root, 4 pages in total 
 
-### Skills
+### Skills & Goals
 - Responsive web design and animation leveraging SCSS/CSS
 - Accessible HTML semantic language
 - Javascript driven animation triggers
+- Showing ability to create a multi-page site that flows effectively between pages
 - Proving visual web design skills
 
 ### Building the project
