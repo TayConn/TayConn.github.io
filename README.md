@@ -1,7 +1,7 @@
 # A straightforward portfolio repository to hold the code for my portfolio site.
 
 ### How to review repository
-- view the live site here: https://tayconn.github.io/ 
+- View the live site here: https://tayconn.github.io/ 
 - All CSS styling was made in .SCSS and lives in the ./CSS directory
 - Javascript file is minimal, but lives in ./JS
 - HTML pags live in the root, 4 pages in total 
