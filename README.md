@@ -4,7 +4,7 @@
 - View the live site here: https://tayconn.github.io/ 
 - All CSS styling was made in .SCSS and lives in the ./CSS directory
 - Javascript file is minimal, but lives in ./JS
-- HTML pags live in the root, 4 pages in total 
+- HTML pages live in the root, 4 pages in total 
 
 ### Skills
 - Responsive web design and animation leveraging SCSS/CSS
